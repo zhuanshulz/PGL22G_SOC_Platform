@@ -1,4 +1,4 @@
-﻿# 该PDS项目文件无需改动，可直接使用，自带BOOTLOADER程序，只需将keil 生成的.bin文件和数据拼接成sfc文件后烧录进flash中即可启动应用程序。  
+﻿# 该PDS项目文件无需改动，可直接使用，自带BOOTLOADER程序，只需将keil 生成的.bin文件和数据拼接成sfc文件后烧录进flash中即可启动应用程序，具体可参考doc文件夹下的教程。  
 
 # pgr_ARM_Cortex_M1设计实例目录结构图：  
 
