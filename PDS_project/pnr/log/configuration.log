@@ -2230,3 +2230,629 @@
 [DEBUG][2021-03-14 09:31:21] [14632] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2754] : end to send jtag flash program cmd.
 [DEBUG][2021-03-14 09:31:51] [14632] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:475] : stop the timer for monitoring connection timeout
 [INFO][2021-03-14 09:32:30] [14632] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmain.cpp:79] : /***************************End Configration***************************/
+[INFO][2021-03-15 18:48:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgworkspace.cpp:165] : /***************************Start Configuration***************************/
+[INFO][2021-03-15 18:48:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgworkspace.cpp:166] : Path: C:/pango/PDS_2020.3-SP3.1-ads/bin
+[INFO][2021-03-15 18:48:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgworkspace.cpp:167] : Version: 67625
+[INFO][2021-03-15 18:48:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgworkspace.cpp:355] : Current Path: C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr
+[INFO][2021-03-15 18:48:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgworkspace.cpp:356] : PDS Dir Path: C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr
+[DEBUG][2021-03-15 18:48:39] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1393] : Begin to Converte file.
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenuinfodialog.cpp:737] : begin to parse sfc file.
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:173] : begin to get device info from CFG file...
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:194] : end to get device info from CFG file...
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:173] : begin to get device info from CFG file...
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:194] : end to get device info from CFG file...
+[DEBUG][2021-03-15 18:48:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenuinfodialog.cpp:804] : end to parse sfc file.
+[DEBUG][2021-03-15 18:49:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1403] : End to Converte file.
+[DEBUG][2021-03-15 18:49:01] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:01] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:02] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:02] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[INFO][2021-03-15 18:49:04] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:839] : Configuration is not connect with server. connect first then scan chain.
+[DEBUG][2021-03-15 18:49:04] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:463] : Client Local host name:LAPTOP-33JRCVKD
+[DEBUG][2021-03-15 18:49:04] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:471] : Client Local Address:192.168.1.6
+[DEBUG][2021-03-15 18:49:04] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:498] : Server Address:127.0.0.1, Port:65420
+[INFO][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:538] : Connect OK, Server: 127.0.0.1  Port: 65420
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:317] : Finish.
+[INFO][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:318] : Connect server succeeded
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:1
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [check version information:40004] OK
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[1] cmd [check version information:40004]
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: check version information start
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:2
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [get_cable_paras:40010] OK
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:858] : Begin to send initialize chain cmd...
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:3
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Open config cable:20001] OK
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:877] : End to send initialize chain cmd.
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: check version information end
+[DEBUG][2021-03-15 18:49:05] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[check version information] execute successfully, takes 0.5 secs.
+[DEBUG][2021-03-15 18:49:06] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[2] cmd [get_cable_paras:40010]
+[DEBUG][2021-03-15 18:49:06] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: get_cable_paras start
+[DEBUG][2021-03-15 18:49:06] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: get_cable_paras end
+[DEBUG][2021-03-15 18:49:06] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[get_cable_paras] execute successfully, takes 1.0 secs.
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[3] cmd [Open config cable:20001]
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Open config cable start
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:228] : begin the exec of open cable cmd...
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgdatamanager.cpp:477] : Begin to deal with chain from server...
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgdatamanager.cpp:485] : Begin to set user chain...
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgdatamanager.cpp:502] : End to set user chain.
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:07] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[INFO][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:703] : set OpenLastPath: C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/generate_bitstream/m1_soc_top.sbit
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:173] : begin to get device info from CFG file...
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:194] : end to get device info from CFG file...
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:897] : End to deal wiht chain from server.
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:230] : end the exec of open cable cmd.
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Open config cable end
+[DEBUG][2021-03-15 18:49:08] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Open config cable] execute successfully, takes 2.8 secs.
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1786] : Begin to send scan outer flash cmd...
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:4
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Scan Outer SPI Flash:20300] OK
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1789] : End to send scan outer flash cmd.
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[4] cmd [Scan Outer SPI Flash:20300]
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Scan Outer SPI Flash start
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:924] : begin to exec scan jtag flash cmd...
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgdatamanager.cpp:551] : Begin to initialize JtagFlash for selected FPGA Device...
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:10] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[INFO][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:703] : set OpenLastPath: C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/generate_bitstream/m1_soc_top.sfc
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgflash.cpp:138] : begin to check SFC File and Flash Device Read Mode.
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgflash.cpp:179] : end to check SFC File and Flash Device Read Mode.
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1806] : End to initialize OuterFlash for selected FPGA Device...
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:926] : end to exec scan jtag flash cmd...
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Scan Outer SPI Flash end
+[DEBUG][2021-03-15 18:49:11] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Scan Outer SPI Flash] execute successfully, takes 1.3 secs.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2705] : begin to send promgram jtag flash cmd.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2766] : begin to send jtag flash erase cmd
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:5
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1103] : Begin to send embed flash erase data.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1162] : Begin to send flash erase data.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1173] : End to send flash erase data.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1109] : End to send embed flash erase data.
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Erase Outer Flash:20302] OK
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:13] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:14] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:14] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 7
+[DEBUG][2021-03-15 18:49:14] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:14] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 23
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:15] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 38
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:16] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 46
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 53
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 61
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:17] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 69
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 76
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:18] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 84
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 92
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[5] cmd [Erase Outer Flash:20302]
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Erase Outer Flash start
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Erase Outer Flash end
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Erase Outer Flash] execute successfully, takes 6.0 secs.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2803] : end to send jtag flash erase cmd.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:6
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1091] : Begin to send jtag flash program data.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1139] : Begin to send flash program data.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1156] : End to send flash program data.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1097] : End to send embed flash program data.
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Program Outer Flash:20301] OK
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:19] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:20] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:20] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 6
+[DEBUG][2021-03-15 18:49:20] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:20] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 10
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:21] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:22] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:22] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 20
+[DEBUG][2021-03-15 18:49:22] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:22] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 25
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:23] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:24] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:24] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 35
+[DEBUG][2021-03-15 18:49:24] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:24] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 40
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 45
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:25] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 50
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 55
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:26] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 60
+[DEBUG][2021-03-15 18:49:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 65
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 70
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:29] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:29] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 75
+[DEBUG][2021-03-15 18:49:29] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:29] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 80
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 85
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 90
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 95
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:31] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[6] cmd [Program Outer Flash:20301]
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Program Outer Flash start
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Program Outer Flash end
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Program Outer Flash] execute successfully, takes 13.0 secs.
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2815] : begin to send jtag flash verify cmd
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:7
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1115] : Begin to send embed flash verify data.
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1179] : Begin to send flash verify data.
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1196] : End to send flash verify data.
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1121] : End to send embed flash verify data.
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Verify Outer Flash:20303] OK
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 6
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 10
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 20
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 25
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 35
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 40
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 45
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 50
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 55
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 60
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 65
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 70
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 75
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 80
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 85
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 90
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 95
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[7] cmd [Verify Outer Flash:20303]
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Verify Outer Flash start
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Verify Outer Flash end
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Verify Outer Flash] execute successfully, takes 1.2 secs.
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2838] : end to send jtag flash verify cmd
+[DEBUG][2021-03-15 18:49:33] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2754] : end to send jtag flash program cmd.
+[DEBUG][2021-03-15 18:50:03] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:475] : stop the timer for monitoring connection timeout
+[DEBUG][2021-03-15 19:09:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1393] : Begin to Converte file.
+[DEBUG][2021-03-15 19:09:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1403] : End to Converte file.
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenuinfodialog.cpp:737] : begin to parse sfc file.
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:173] : begin to get device info from CFG file...
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:194] : end to get device info from CFG file...
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:173] : begin to get device info from CFG file...
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgutil.cpp:194] : end to get device info from CFG file...
+[DEBUG][2021-03-15 19:09:28] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenuinfodialog.cpp:804] : end to parse sfc file.
+[DEBUG][2021-03-15 19:09:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1786] : Begin to send scan outer flash cmd...
+[DEBUG][2021-03-15 19:09:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:8
+[DEBUG][2021-03-15 19:09:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Scan Outer SPI Flash:20300] OK
+[DEBUG][2021-03-15 19:09:32] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1789] : End to send scan outer flash cmd.
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[8] cmd [Scan Outer SPI Flash:20300]
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Scan Outer SPI Flash start
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:924] : begin to exec scan jtag flash cmd...
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgdatamanager.cpp:551] : Begin to initialize JtagFlash for selected FPGA Device...
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 19:09:35] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[INFO][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:703] : set OpenLastPath: C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/generate_bitstream/m1_soc_top.sfc
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgflash.cpp:138] : begin to check SFC File and Flash Device Read Mode.
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgflash.cpp:179] : end to check SFC File and Flash Device Read Mode.
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3376] : Begin to update graphic item and tree item ...
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:3398] : End to update graphic item and tree item ...
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:1806] : End to initialize OuterFlash for selected FPGA Device...
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:926] : end to exec scan jtag flash cmd...
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Scan Outer SPI Flash end
+[DEBUG][2021-03-15 19:09:37] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Scan Outer SPI Flash] execute successfully, takes 4.9 secs.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2705] : begin to send promgram jtag flash cmd.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2766] : begin to send jtag flash erase cmd
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:9
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1103] : Begin to send embed flash erase data.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1162] : Begin to send flash erase data.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1173] : End to send flash erase data.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1109] : End to send embed flash erase data.
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Erase Outer Flash:20302] OK
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:40] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 7
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:41] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 23
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:42] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 38
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 46
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 53
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:43] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 61
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 69
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:44] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 76
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 84
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:45] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 92
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[9] cmd [Erase Outer Flash:20302]
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Erase Outer Flash start
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Erase Outer Flash end
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Erase Outer Flash] execute successfully, takes 6.2 secs.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2803] : end to send jtag flash erase cmd.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:10
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1091] : Begin to send jtag flash program data.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1139] : Begin to send flash program data.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1156] : End to send flash program data.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1097] : End to send embed flash program data.
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Program Outer Flash:20301] OK
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:46] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 6
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 10
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:47] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:48] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:48] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 19:09:48] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:48] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 20
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 25
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:49] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:50] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:50] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 19:09:50] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:50] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 35
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 40
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:51] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 45
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 50
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:52] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:53] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:53] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 55
+[DEBUG][2021-03-15 19:09:53] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:53] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 60
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 65
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:54] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:55] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:55] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 70
+[DEBUG][2021-03-15 19:09:55] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:55] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 75
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 80
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:56] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 85
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 90
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:57] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:58] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:58] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 95
+[DEBUG][2021-03-15 19:09:58] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:58] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[10] cmd [Program Outer Flash:20301]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Program Outer Flash start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Program Outer Flash end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Program Outer Flash] execute successfully, takes 12.8 secs.
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2815] : begin to send jtag flash verify cmd
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:653] : Send RPC:11
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1115] : Begin to send embed flash verify data.
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1179] : Begin to send flash verify data.
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1196] : End to send flash verify data.
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:1121] : End to send embed flash verify data.
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:772] : Send cmd [Verify Outer Flash:20303] OK
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 1
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 6
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 10
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 15
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 20
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 25
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 30
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 35
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 40
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 45
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 50
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 55
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 60
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 65
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 70
+[DEBUG][2021-03-15 19:09:59] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 75
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 80
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 85
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 90
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 95
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[0] cmd [set progress bar:40001]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgcommand.cpp:835] : The value of Progress is 100
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: set progress bar start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: set progress bar end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:893] : Recv RPC[11] cmd [Verify Outer Flash:20303]
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:901] : Revc exec: Verify Outer Flash start
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\common\cdtcommunicate.cpp:903] : Revc exec: Verify Outer Flash end
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:437] : COMMAND[Verify Outer Flash] execute successfully, takes 1.2 secs.
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2838] : end to send jtag flash verify cmd
+[DEBUG][2021-03-15 19:10:00] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmenu.cpp:2754] : end to send jtag flash program cmd.
+[DEBUG][2021-03-15 19:10:30] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgclient.cpp:475] : stop the timer for monitoring connection timeout
+[INFO][2021-03-15 19:12:27] [9936] - [d:\wf\3\output_files\pds_pro\fab_develop\branches\pds_2020.3\source\sw\cdt\configuration\cfgmain.cpp:79] : /***************************End Configration***************************/

@@ -1,0 +1,27 @@
+--cpu Cortex-M1
+".\objects\startup_pango_m1.o"
+".\objects\system_pango_m1.o"
+".\objects\pango_m1_gpio.o"
+".\objects\pango_m1_spi.o"
+".\objects\pango_m1_timer.o"
+".\objects\pango_m1_uart.o"
+".\objects\pango_m1_wdog.o"
+".\objects\pango_m1_printk.o"
+".\objects\pango_m1_i2c.o"
+".\objects\pango_m1_memory.o"
+".\objects\croutine.o"
+".\objects\event_groups.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\port.o"
+".\objects\heap_4.o"
+".\objects\main.o"
+".\objects\pango_m1_it.o"
+".\objects\pango_spi_flash.o"
+".\objects\pango_i2c_eeprom.o"
+--strict --scatter ".\Objects\cortex_M1_demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\cortex_M1_demo.map" -o .\Objects\cortex_M1_demo.axf
