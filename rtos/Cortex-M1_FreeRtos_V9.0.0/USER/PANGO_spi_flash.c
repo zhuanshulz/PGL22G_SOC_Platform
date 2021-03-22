@@ -70,7 +70,7 @@ static uint8_t SPI_ReadByte(void)
  ********************************************************************/
 static void SFLASH_WriteEnable(void)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_WRITE_ENABLE);            //《写使能》指令
 	SPI_CS_DISABLE;                                //失能器件
 }
@@ -84,7 +84,7 @@ static void SFLASH_WriteEnable(void)
  ********************************************************************/
 static void SFLASH_WriteDisable(void)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_WRITE_DISABLE);           //《写失能》指令
 	SPI_CS_DISABLE;                                //失能器件
 }
@@ -99,7 +99,7 @@ static void SFLASH_WriteDisable(void)
 uint8_t SFLASH_ReadSR(void)
 {
 	uint8_t data_tmp;
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_READ_STATUS_REG);         //《读状态寄存器》指令
 	data_tmp = SPI_ReadByte();                     //读取一个字节
 	SPI_CS_DISABLE;                                //失能器件
@@ -132,7 +132,7 @@ void SFLASH_WriteSR(uint8_t SR)
 ********************************************************************/
 void SFLASH_ReadNByte(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t nByte)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_READ_DATA);               //《读数据》指令
 	SPI_WriteByte((uint8_t)((ReadAddr)>>16));      //发送24bit地址
 	SPI_WriteByte((uint8_t)((ReadAddr)>>8));
@@ -158,7 +158,7 @@ void SFLASH_ReadNByte(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t nByte)
 ********************************************************************/
 void SFLASH_FastReadNByte(uint8_t* pBuffer, uint32_t ReadAddr, uint16_t nByte)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_FAST_READ);               //《快读数据》指令
 	SPI_WriteByte((uint8_t)((ReadAddr)>>16));      //发送24bit地址
 	SPI_WriteByte((uint8_t)((ReadAddr)>>8));
@@ -187,7 +187,7 @@ void SFLASH_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t nByte)
 {
 	SFLASH_WriteEnable();                          //写使能
 
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_WRITE_PAGE);              //《页编程》指令
 	SPI_WriteByte((uint8_t)((WriteAddr)>>16));     //发送24bit地址
 	SPI_WriteByte((uint8_t)((WriteAddr)>>8));
@@ -329,7 +329,7 @@ void SFLASH_EraseBlock(uint32_t BlockAddr)
 	BlockAddr *= 65536;                            //块首地址
 	SFLASH_WriteEnable();                          //写使能
 	SFLASH_WaitForNoBusy();
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_ERASE_BLOCK);             //《擦除块》指令
 	SPI_WriteByte((uint8_t)((BlockAddr)>>16));     //擦除地址
 	SPI_WriteByte((uint8_t)((BlockAddr)>>8));
@@ -351,7 +351,7 @@ void SFLASH_EraseSector(uint32_t SectorAddr)
 	SectorAddr *= 4096;                            //扇区首地址
 	SFLASH_WriteEnable();                          //写使能
 	SFLASH_WaitForNoBusy();
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_ERASE_SECTOR);            //《擦除扇区》指令
 	SPI_WriteByte((uint8_t)((SectorAddr)>>16));    //擦除地址
 	SPI_WriteByte((uint8_t)((SectorAddr)>>8));
@@ -372,7 +372,7 @@ void SFLASH_EraseChip(void)
 {
 	SFLASH_WriteEnable();                          //写使能
 	SFLASH_WaitForNoBusy();
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_ERASE_CHIP);              //《擦除芯片》指令
 	SPI_CS_DISABLE;
 
@@ -388,7 +388,7 @@ void SFLASH_EraseChip(void)
 ********************************************************************/
 void SFLASH_PowerDown(void)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_POWER_DOWN);              //《掉电》指令
 	SPI_CS_DISABLE;                                //失能器件
 }
@@ -402,7 +402,7 @@ void SFLASH_PowerDown(void)
 ********************************************************************/
 void SFLASH_WAKEUP(void)
 {
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_RELEASE_POWER_DOWN);      //《掉电唤醒》指令
 	SPI_CS_DISABLE;                                //失能器件
 }
@@ -417,7 +417,7 @@ void SFLASH_WAKEUP(void)
 uint16_t SFLASH_ReadID(void)
 {
 	uint16_t ID = 0;
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 
 	SPI_WriteByte(SFLASH_DEVICE_ID);               //《设备ID》指令
 	SPI_WriteByte(0x00);
@@ -440,7 +440,7 @@ uint16_t SFLASH_ReadID(void)
 uint32_t SFLASH_ReadJEDEC_ID(void)
 {
 	uint32_t ID = 0;
-	SPI_CS_ENABLE;                                 //使能器件
+	SPI0_CS_ENABLE;                                 //使能器件
 
 	SPI_WriteByte(SFLASH_JEDEC_ID);                //《JEDEC_ID》指令
 

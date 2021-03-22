@@ -7,8 +7,9 @@
 
 #include "PANGO_M1.h"
 
-#define SPI_CS_ENABLE             SPI_CS_Enable(SPI_CS_SEL_1)
-#define SPI_CS_DISABLE            SPI_CS_Disable()
+#define SPI0_CS_ENABLE             SPI_CS_Enable(SPI_CS_SEL_1)
+#define SPI1_CS_ENABLE             SPI_CS_Enable(SPI_CS_SEL_2)
+#define SPI_CS_DISABLE            SPI_CS_Disable()		//全部取消SPI片选
 		
 /*指令寄存器*/
 #define SFLASH_WRITE_ENABLE       0x06                     //写使能

@@ -6,11 +6,12 @@
 #include "task.h"
 #include "timers.h"
 #include "queue.h"
+#include "PANGO_spi_flash.h"
 
 #define DELAY_CNT		8000000
 #define LED_CNT			(2)
-#define KEY_PIN			GPIO_Pin_0
-#define LED_PIN			GPIO_Pin_1
+#define KEY_PIN			GPIO_Pin_0					// input P17 key3
+#define LED_PIN			GPIO_Pin_1					// output V10	LED2
 #define UART0_Baud		115200
 #define WATCH_DOG 		800000000
 #define DATA_LEN		64									//注意：IIC单独页操作数据长度必须是页的最小单位（即：64的整数倍）
@@ -119,25 +120,8 @@ void GpioInit(void)
  ********************************************************************/
 void GPIO0_Handler(void)
 {
-	uint32_t temp_cnt = 1;
 	GPIO_IntClear(GPIO0, KEY_PIN);												//清除gpio中断
-	while(!(GPIO_ReadBits(GPIO0)&0x0001))
-	{
-		temp_cnt++;
-		if(temp_cnt >= 0x1000000)
-		{
-			temp_cnt = 0;
-			break;
-		}
-	}
-	if(temp_cnt == 0)
-	{
-		key_flag = false;
-	}
-	else
-	{
-		key_flag = true;
-	}
+	DEBUG_P("\n key input detected \n");
 }
 
 /********************************************************************
@@ -231,7 +215,26 @@ void SPIInit0(void)
 	SPI_InitStruct.POLARITY =DISABLE;								
 
 	SPI_Init(&SPI_InitStruct);
-	SPI_CS_ENABLE;													//SPI片选拉高
+	SPI0_CS_ENABLE;													//SPI片选拉高
+}
+/********************************************************************
+ ** 函数名称：SPIInit1
+ ** 函数功能：SPI初始化(用户只可以设置分频系数，其他设置操作无效)
+ ** 输入参数：无
+ ** 输出参数：无
+ ** 返回参数：无
+ ********************************************************************/
+void SPIInit1(void)
+{
+	SPI_InitTypeDef SPI_InitStruct;
+
+	SPI_InitStruct.CLKSEL= CLKSEL_CLK_DIV_4;						//设置SPI时钟频率，系统4分频
+	SPI_InitStruct.DIRECTION = DISABLE;								
+	SPI_InitStruct.PHASE =DISABLE;									
+	SPI_InitStruct.POLARITY =DISABLE;								
+
+	SPI_Init(&SPI_InitStruct);
+	SPI1_CS_ENABLE;													//SPI片选拉高
 }
 
 /********************************************************************
@@ -528,7 +531,8 @@ int main(void)
 	TimerInit();
 	GpioInit();
 	UartInit();
-	SPIInit0();
+	SPIInit0();	//SPI0 for spi flash device
+	SPIInit1();	//SPI1 for spi sdcard device
 	I2CInit();								
 	DEBUG_P("--- RTSO starting ---");
 	

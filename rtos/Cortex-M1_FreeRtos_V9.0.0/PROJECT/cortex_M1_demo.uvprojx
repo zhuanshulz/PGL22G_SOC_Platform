@@ -83,7 +83,7 @@
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>1</RunUserProg2>
             <UserProg1Name>C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin  -o  cortex_M1_demo.bin .\Objects\cortex_M1_demo.axf</UserProg1Name>
-            <UserProg2Name>make_hex.exe cortex_M1_demo.bin</UserProg2Name>
+            <UserProg2Name>make_hex128.exe cortex_M1_demo.bin</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\PERIPHERAL\inc;..\STARTUP;..\SYSTEM;..\USER;..\FreeRTOS;..\FreeRTOS\include;..\FreeRTOS\portable\Keil\ARM_CM1</IncludePath>
+              <IncludePath>..\CORE;..\PERIPHERAL\inc;..\STARTUP;..\SYSTEM;..\USER;..\FreeRTOS;..\FreeRTOS\include;..\FreeRTOS\portable\Keil\ARM_CM1;..\FreeRTOS\ff14a\source</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
