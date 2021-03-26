@@ -61,7 +61,12 @@ module m1_test;
       #100
       rst_key = 1;       
     end
-    
+    wire spi0_clk;
+    wire spi0_cs;
+    wire spi0_mosi;
+    wire spi1_clk;
+    wire spi1_cs;
+    wire spi1_mosi;
     always #(PLL_REFCLK_IN_PERIOD / 2) ex_clk_50m = ~ex_clk_50m;
     
 //    pullup (i2c0_sck);
@@ -79,7 +84,16 @@ module m1_test;
 //    .pad_TMS(1),  
 //    .pad_TDI(1),
     .RX(1),
+
+    .spi0_clk(spi0_clk),
+    .spi0_cs(spi0_cs),
+    .spi0_mosi(spi0_mosi),
     .spi0_miso(1),
+
+    .spi1_clk(spi1_clk),
+    .spi1_cs(spi1_cs),
+    .spi1_mosi(spi1_mosi),
+    .spi1_miso(1),
 //    .i2c0_sck(i2c0_sck),
 //    .i2c0_sda(i2c0_sda),
     

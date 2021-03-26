@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\PERIPHERAL\inc;..\STARTUP;..\SYSTEM;..\USER;..\FreeRTOS;..\FreeRTOS\include;..\FreeRTOS\portable\Keil\ARM_CM1;..\FreeRTOS\ff14a\source</IncludePath>
+              <IncludePath>..\CORE;..\PERIPHERAL\inc;..\STARTUP;..\SYSTEM;..\USER;..\FreeRTOS;..\FreeRTOS\include;..\FreeRTOS\portable\Keil\ARM_CM1;..\FreeRTOS\ff14a\source;..\FatFs</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -524,5 +524,14 @@
     <components/>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>cortex_M1_demo</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

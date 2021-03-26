@@ -1,7 +1,7 @@
 Dependencies for Project 'cortex_M1_demo', Target 'cortex_M1_demo': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\STARTUP\startup_PANGO_M1.s)(0x5F9F9E5D)(--cpu Cortex-M1 --li --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "ARMCM1 SETA 1"--list .\listings\startup_pango_m1.lst --xref -o .\objects\startup_pango_m1.o --depend .\objects\startup_pango_m1.d)
-F (..\SYSTEM\system_PANGO_M1.c)(0x5F1E3B9B)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\system_pango_m1.o --omf_browse .\objects\system_pango_m1.crf --depend .\objects\system_pango_m1.d)
+F (..\STARTUP\startup_PANGO_M1.s)(0x5F9F9E5D)(--cpu Cortex-M1 --li -g --apcs=interwork -IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "ARMCM1 SETA 1"--list .\listings\startup_pango_m1.lst --xref -o .\objects\startup_pango_m1.o --depend .\objects\startup_pango_m1.d)
+F (..\SYSTEM\system_PANGO_M1.c)(0x5F1E3B9B)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\system_pango_m1.o --omf_browse .\objects\system_pango_m1.crf --depend .\objects\system_pango_m1.d)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -13,7 +13,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -21,12 +21,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_gpio.c)(0x5DE8F29E)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_gpio.o --omf_browse .\objects\pango_m1_gpio.crf --depend .\objects\pango_m1_gpio.d)
+F (..\PERIPHERAL\src\PANGO_M1_gpio.c)(0x5DE8F29E)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_gpio.o --omf_browse .\objects\pango_m1_gpio.crf --depend .\objects\pango_m1_gpio.d)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -39,20 +39,20 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_spi.c)(0x5DEB11C6)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_spi.o --omf_browse .\objects\pango_m1_spi.crf --depend .\objects\pango_m1_spi.d)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+F (..\PERIPHERAL\src\PANGO_M1_spi.c)(0x605AAD3F)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_spi.o --omf_browse .\objects\pango_m1_spi.crf --depend .\objects\pango_m1_spi.d)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -71,12 +71,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_timer.c)(0x5DE8F316)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_timer.o --omf_browse .\objects\pango_m1_timer.crf --depend .\objects\pango_m1_timer.d)
+F (..\PERIPHERAL\src\PANGO_M1_timer.c)(0x5DE8F316)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_timer.o --omf_browse .\objects\pango_m1_timer.crf --depend .\objects\pango_m1_timer.d)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -88,7 +88,7 @@ I (..\SYSTEM\system_PANGO_M1.h)(0x5DEA2541)
 I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -96,12 +96,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_uart.c)(0x5DE8F357)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_uart.o --omf_browse .\objects\pango_m1_uart.crf --depend .\objects\pango_m1_uart.d)
+F (..\PERIPHERAL\src\PANGO_M1_uart.c)(0x5DE8F357)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_uart.o --omf_browse .\objects\pango_m1_uart.crf --depend .\objects\pango_m1_uart.d)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -113,7 +113,7 @@ I (..\SYSTEM\system_PANGO_M1.h)(0x5DEA2541)
 I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -121,12 +121,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_wdog.c)(0x5DE8F395)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_wdog.o --omf_browse .\objects\pango_m1_wdog.crf --depend .\objects\pango_m1_wdog.d)
+F (..\PERIPHERAL\src\PANGO_M1_wdog.c)(0x5DE8F395)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_wdog.o --omf_browse .\objects\pango_m1_wdog.crf --depend .\objects\pango_m1_wdog.d)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -138,7 +138,7 @@ I (..\SYSTEM\system_PANGO_M1.h)(0x5DEA2541)
 I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -146,12 +146,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_printk.c)(0x5DE9B216)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_printk.o --omf_browse .\objects\pango_m1_printk.crf --depend .\objects\pango_m1_printk.d)
+F (..\PERIPHERAL\src\PANGO_M1_printk.c)(0x5DE9B216)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_printk.o --omf_browse .\objects\pango_m1_printk.crf --depend .\objects\pango_m1_printk.d)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -164,10 +164,10 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
@@ -176,7 +176,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-F (..\PERIPHERAL\src\PANGO_M1_i2c.c)(0x5DE9C86C)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_i2c.o --omf_browse .\objects\pango_m1_i2c.crf --depend .\objects\pango_m1_i2c.d)
+F (..\PERIPHERAL\src\PANGO_M1_i2c.c)(0x5DE9C86C)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_i2c.o --omf_browse .\objects\pango_m1_i2c.crf --depend .\objects\pango_m1_i2c.d)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -189,19 +189,19 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\PERIPHERAL\src\PANGO_M1_memory.c)(0x5DE9CADB)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_memory.o --omf_browse .\objects\pango_m1_memory.crf --depend .\objects\pango_m1_memory.d)
+F (..\PERIPHERAL\src\PANGO_M1_memory.c)(0x5DE9CADB)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_memory.o --omf_browse .\objects\pango_m1_memory.crf --depend .\objects\pango_m1_memory.d)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -214,7 +214,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -222,11 +222,11 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\FreeRTOS\croutine.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+F (..\FreeRTOS\croutine.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -239,7 +239,7 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\croutine.h)(0x5D3A6834)
-F (..\FreeRTOS\event_groups.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+F (..\FreeRTOS\event_groups.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
@@ -254,7 +254,7 @@ I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\timers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\event_groups.h)(0x5D3A6834)
-F (..\FreeRTOS\list.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+F (..\FreeRTOS\list.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
@@ -266,7 +266,7 @@ I (..\FreeRTOS\include\deprecated_definitions.h)(0x5D3A6834)
 I (..\FreeRTOS\portable\Keil\ARM_CM1\portmacro.h)(0x5D3A6834)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
-F (..\FreeRTOS\queue.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+F (..\FreeRTOS\queue.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
@@ -281,7 +281,7 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\queue.h)(0x5D3A6834)
-F (..\FreeRTOS\tasks.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+F (..\FreeRTOS\tasks.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
@@ -297,7 +297,7 @@ I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\timers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\StackMacros.h)(0x5D3A6834)
-F (..\FreeRTOS\timers.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+F (..\FreeRTOS\timers.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
@@ -312,7 +312,7 @@ I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\queue.h)(0x5D3A6834)
 I (..\FreeRTOS\include\timers.h)(0x5D3A6834)
-F (..\FreeRTOS\portable\Keil\ARM_CM1\port.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+F (..\FreeRTOS\portable\Keil\ARM_CM1\port.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -324,7 +324,7 @@ I (..\FreeRTOS\portable\Keil\ARM_CM1\portmacro.h)(0x5D3A6834)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
-F (..\FreeRTOS\portable\MemMang\heap_4.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+F (..\FreeRTOS\portable\MemMang\heap_4.c)(0x5D3A6834)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x5D3A6834)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
@@ -337,7 +337,7 @@ I (..\FreeRTOS\portable\Keil\ARM_CM1\portmacro.h)(0x5D3A6834)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
-F (..\USER\main.c)(0x6058AC0B)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\USER\main.c)(0x605C8B21)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -349,7 +349,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -357,7 +357,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
@@ -375,7 +375,7 @@ I (..\FreeRTOS\include\task.h)(0x5D3A6834)
 I (..\FreeRTOS\include\list.h)(0x5D3A6834)
 I (..\FreeRTOS\include\timers.h)(0x5D3A6834)
 I (..\FreeRTOS\include\queue.h)(0x5D3A6834)
-F (..\USER\PANGO_M1_it.c)(0x5DEB4E03)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_it.o --omf_browse .\objects\pango_m1_it.crf --depend .\objects\pango_m1_it.d)
+F (..\USER\PANGO_M1_it.c)(0x5DEB4E03)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_m1_it.o --omf_browse .\objects\pango_m1_it.crf --depend .\objects\pango_m1_it.d)
 I (..\USER\PANGO_M1_it.h)(0x5D843FE2)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -388,7 +388,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -396,13 +396,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\USER\PANGO_spi_flash.c)(0x60518C85)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_spi_flash.o --omf_browse .\objects\pango_spi_flash.crf --depend .\objects\pango_spi_flash.d)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+F (..\USER\PANGO_spi_flash.c)(0x6059AC15)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_spi_flash.o --omf_browse .\objects\pango_spi_flash.crf --depend .\objects\pango_spi_flash.d)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -414,7 +414,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -426,7 +426,7 @@ I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)
-F (..\USER\PANGO_i2c_eeprom.c)(0x5E85449C)(--c99 -c --cpu Cortex-M1 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_i2c_eeprom.o --omf_browse .\objects\pango_i2c_eeprom.crf --depend .\objects\pango_i2c_eeprom.d)
+F (..\USER\PANGO_i2c_eeprom.c)(0x5E85449C)(--c99 -c --cpu Cortex-M1 --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FreeRTOS\ff14a\source -I ..\FatFs-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DARMCM1-o .\objects\pango_i2c_eeprom.o --omf_browse .\objects\pango_i2c_eeprom.crf --depend .\objects\pango_i2c_eeprom.d)
 I (..\USER\PANGO_i2c_eeprom.h)(0x5E85450D)
 I (..\SYSTEM\PANGO_M1.h)(0x5F98C83F)
 I (..\CORE\core_cm1.h)(0x5FD071ED)
@@ -439,7 +439,7 @@ I (..\USER\PANGO_M1_conf.h)(0x5DEA0151)
 I (..\PERIPHERAL\inc\PANGO_M1_uart.h)(0x5DEA2438)
 I (..\PERIPHERAL\inc\PANGO_M1_wdog.h)(0x5DEA2500)
 I (..\PERIPHERAL\inc\PANGO_M1_timer.h)(0x5DEA2329)
-I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x5DEA21A2)
+I (..\PERIPHERAL\inc\PANGO_M1_spi.h)(0x605AAD39)
 I (..\PERIPHERAL\inc\PANGO_M1_i2c.h)(0x5DEA0D75)
 I (..\PERIPHERAL\inc\PANGO_M1_gpio.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_printk.h)(0x5DEA0E5F)
@@ -447,7 +447,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E2EB2)
-I (..\USER\PANGO_spi_flash.h)(0x605180FF)
+I (..\USER\PANGO_spi_flash.h)(0x6059AC17)
 I (..\PERIPHERAL\inc\PANGO_M1_memory.h)(0x5DEA0D8E)
 I (..\PERIPHERAL\inc\PANGO_M1_ddr3.h)(0x5DEA027E)
 I (..\USER\PANGO_ddr3.h)(0x5DE9FFB8)

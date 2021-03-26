@@ -1,0 +1,66 @@
+library verilog;
+use verilog.vl_types.all;
+entity INT_PREADD_MULTADD is
+    generic(
+        GRS_EN          : string  := "FALSE";
+        SYNC_RST        : string  := "FALSE";
+        SIC0_EN         : string  := "FALSE";
+        SIB1_EN         : string  := "FALSE";
+        SIC1_EN         : string  := "FALSE";
+        INREG_EN        : string  := "FALSE";
+        PREREG_EN       : string  := "FALSE";
+        PIPEREG_EN      : string  := "FALSE";
+        OUTREG_EN       : string  := "FALSE";
+        ADDSUB_OP       : integer := 0;
+        DYN_OP_ADDSUB   : integer := 1;
+        ASIZE           : integer := 9;
+        BSIZE           : integer := 8;
+        SC_PSE_A0       : vl_logic_vector;
+        SC_PSE_A1       : vl_logic_vector;
+        SC_PSE_B0       : vl_logic_vector;
+        SC_PSE_B1       : vl_logic_vector;
+        SC_PSE_C0       : vl_logic_vector;
+        SC_PSE_C1       : vl_logic_vector;
+        PREADD_EN       : integer := 1;
+        PSIZE           : vl_logic_vector(31 downto 0)
+    );
+    port(
+        CE              : in     vl_logic;
+        RST             : in     vl_logic;
+        CLK             : in     vl_logic;
+        A0              : in     vl_logic_vector;
+        A1              : in     vl_logic_vector;
+        B0              : in     vl_logic_vector;
+        B1              : in     vl_logic_vector;
+        C0              : in     vl_logic_vector;
+        C1              : in     vl_logic_vector;
+        A_SIGNED        : in     vl_logic;
+        B_SIGNED        : in     vl_logic;
+        C_SIGNED        : in     vl_logic;
+        PREADDSUB       : in     vl_logic_vector(1 downto 0);
+        ADDSUB          : in     vl_logic;
+        P               : out    vl_logic_vector
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of GRS_EN : constant is 1;
+    attribute mti_svvh_generic_type of SYNC_RST : constant is 1;
+    attribute mti_svvh_generic_type of SIC0_EN : constant is 1;
+    attribute mti_svvh_generic_type of SIB1_EN : constant is 1;
+    attribute mti_svvh_generic_type of SIC1_EN : constant is 1;
+    attribute mti_svvh_generic_type of INREG_EN : constant is 1;
+    attribute mti_svvh_generic_type of PREREG_EN : constant is 1;
+    attribute mti_svvh_generic_type of PIPEREG_EN : constant is 1;
+    attribute mti_svvh_generic_type of OUTREG_EN : constant is 1;
+    attribute mti_svvh_generic_type of ADDSUB_OP : constant is 1;
+    attribute mti_svvh_generic_type of DYN_OP_ADDSUB : constant is 1;
+    attribute mti_svvh_generic_type of ASIZE : constant is 1;
+    attribute mti_svvh_generic_type of BSIZE : constant is 1;
+    attribute mti_svvh_generic_type of SC_PSE_A0 : constant is 4;
+    attribute mti_svvh_generic_type of SC_PSE_A1 : constant is 4;
+    attribute mti_svvh_generic_type of SC_PSE_B0 : constant is 4;
+    attribute mti_svvh_generic_type of SC_PSE_B1 : constant is 4;
+    attribute mti_svvh_generic_type of SC_PSE_C0 : constant is 4;
+    attribute mti_svvh_generic_type of SC_PSE_C1 : constant is 4;
+    attribute mti_svvh_generic_type of PREADD_EN : constant is 2;
+    attribute mti_svvh_generic_type of PSIZE : constant is 4;
+end INT_PREADD_MULTADD;

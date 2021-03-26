@@ -40,7 +40,7 @@ BUSY:忙标记位(1,忙;0,空闲)
  ** 输出参数：无
  ** 返回参数：无
  ********************************************************************/
-static void SPI_WriteByte(uint8_t TxData)
+void SPI_WriteByte(uint8_t TxData)
 {
 	SPI_WriteData(TxData);
 	while(SPI_GetTmtStatus() == 1);
@@ -53,7 +53,7 @@ static void SPI_WriteByte(uint8_t TxData)
  ** 输出参数：无
  ** 返回参数：读出的SPI数据
  ********************************************************************/
-static uint8_t SPI_ReadByte(void)
+uint8_t SPI_ReadByte(void)
 {
 	while(SPI_GetTmtStatus() == 1);
 	SPI_SetRcvStatus();
@@ -68,7 +68,7 @@ static uint8_t SPI_ReadByte(void)
  ** 输出参数：无
  ** 返回参数：无
  ********************************************************************/
-static void SFLASH_WriteEnable(void)
+void SFLASH_WriteEnable(void)
 {
 	SPI0_CS_ENABLE;                                 //使能器件
 	SPI_WriteByte(SFLASH_WRITE_ENABLE);            //《写使能》指令
@@ -249,6 +249,8 @@ void SFLASH_WriteNoCheck(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t nByte)
 **           nByte:要写入的字节数(最大65535B = 64K 块)
 ** 输出参数：无
 ** 返回参数：无
+** N25Q128 = 128-Mbit, 4-Kbyte subsector
+** sectors = 128Mbit / 4KB = (128*1024/8)/4 = 4,096
 ********************************************************************/
 void SFLASH_WriteNByte(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t nByte)
 {

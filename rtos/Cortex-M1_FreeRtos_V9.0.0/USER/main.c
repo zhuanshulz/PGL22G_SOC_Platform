@@ -7,6 +7,7 @@
 #include "timers.h"
 #include "queue.h"
 #include "PANGO_spi_flash.h"
+//#include "ff.h"
 
 #define DELAY_CNT		8000000
 #define LED_CNT			(2)
@@ -64,6 +65,7 @@ xQueueHandle Queue1 = NULL;										//消息队列句柄
 #define IIC_TASK  	"IIC"										//IIC消息传输
 #define DDR_TASK  	"DDR"										//DDR消息传输
 #define MEMORY_TASK "MEMORY"									//MEMORY消息传输
+
 void vApplicationTickHook()
 {
 }
@@ -209,33 +211,16 @@ void SPIInit0(void)
 {
 	SPI_InitTypeDef SPI_InitStruct;
 
-	SPI_InitStruct.CLKSEL= CLKSEL_CLK_DIV_4;						//设置SPI时钟频率，系统4分频
+	SPI_InitStruct.CLKSEL= CLKSEL_CLK_DIV_32;						//设置SPI时钟频率，系统4分频
 	SPI_InitStruct.DIRECTION = DISABLE;								
 	SPI_InitStruct.PHASE =DISABLE;									
 	SPI_InitStruct.POLARITY =DISABLE;								
 
 	SPI_Init(&SPI_InitStruct);
 	SPI0_CS_ENABLE;													//SPI片选拉高
-}
-/********************************************************************
- ** 函数名称：SPIInit1
- ** 函数功能：SPI初始化(用户只可以设置分频系数，其他设置操作无效)
- ** 输入参数：无
- ** 输出参数：无
- ** 返回参数：无
- ********************************************************************/
-void SPIInit1(void)
-{
-	SPI_InitTypeDef SPI_InitStruct;
-
-	SPI_InitStruct.CLKSEL= CLKSEL_CLK_DIV_4;						//设置SPI时钟频率，系统4分频
-	SPI_InitStruct.DIRECTION = DISABLE;								
-	SPI_InitStruct.PHASE =DISABLE;									
-	SPI_InitStruct.POLARITY =DISABLE;								
-
-	SPI_Init(&SPI_InitStruct);
 	SPI1_CS_ENABLE;													//SPI片选拉高
 }
+
 
 /********************************************************************
  ** 函数名称：SPI_Flash_Test
@@ -246,6 +231,7 @@ void SPIInit1(void)
  ********************************************************************/
 void SPI_Flash_Test(void)
 {
+	SPI_CS_DISABLE;
 	for(int j = 0;j < DATA_LEN; j++)
 	{
 		send_buf1[j] = j+ 1;
@@ -523,7 +509,32 @@ void SoftTmr_Callback(void *temp)
 
 	}
 }
+#define cmd0_1  0x40
+#define cmd0_2  0x00
+#define cmd0_3  0x00
+#define cmd0_4  0x00
+#define cmd0_5  0x00
+#define cmd0_6  0x95
+#define cmd1		0xff
 
+void test(void)
+{
+	Delay(2000000);
+	SFLASH_WriteEnable();                          //写使能
+
+	SPI1_CS_ENABLE;                                 //使能器件
+	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
+	SPI_WriteByte((uint8_t)(cmd0_2));
+	SPI_WriteByte((uint8_t)cmd0_3);
+	SPI_WriteByte((uint8_t)cmd0_4);
+	SPI_WriteByte((uint8_t)cmd0_5);
+	SPI_WriteByte((uint8_t)cmd0_6);
+	uint8_t pBuffer;
+	pBuffer = SPI_ReadByte();
+	DEBUG_P("-----%x----",pBuffer);
+	SPI_CS_DISABLE;
+	SFLASH_WaitForNoBusy();                        //等待空闲（等待写入结束）
+}
 
 int main(void)
 {
@@ -531,32 +542,54 @@ int main(void)
 	TimerInit();
 	GpioInit();
 	UartInit();
-	SPIInit0();	//SPI0 for spi flash device
-	SPIInit1();	//SPI1 for spi sdcard device
-	I2CInit();								
-	DEBUG_P("--- RTSO starting ---");
+	SPIInit0();	//SPI0 for spi flash and spi sdcard device
+	//I2CInit();								
+	DEBUG_P("-");//-- RTOS starting ---");
+	Delay(2000000);
+		uint8_t pBuffer;
+	SPI_CS_DISABLE;
+	SPI1_CS_ENABLE;                                 //使能器件
+	DEBUG_P("-");
+	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
 	
-	DEBUG_P("PANGO Cortex-M1 FreeRTOS Start Run......\r\n");
-	DEBUG_P("JEDEC  id = 0x%x\n",SFLASH_ReadJEDEC_ID());
+	SPI_WriteByte((uint8_t)(cmd0_2));
+	SPI_WriteByte((uint8_t)cmd0_3);
+	SPI_WriteByte((uint8_t)cmd0_4);
+	SPI_WriteByte((uint8_t)cmd0_5);
+	SPI_WriteByte((uint8_t)cmd0_6);
+// 这里写完了CMD0
+	while(1)
+	{
+	pBuffer = SPI_ReadByte();
+		if (pBuffer != 0xff)
+			break;
+			SPI_WriteByte((uint8_t)cmd1);
+	}
+	DEBUG_P("\n-----%x----\n",pBuffer);
+	
+	SPI_CS_DISABLE;
+//	SFLASH_WaitForNoBusy();                        //等待空闲（等待写入结束）这是针对flash的指令操作，不针对spi外设，因此在sdcard处不需要添加。
+//	DEBUG_P("PANGO Cortex-M1 FreeRTOS Start Run......\r\n");
+//	DEBUG_P("JEDEC  id = 0x%x\n",SFLASH_ReadJEDEC_ID());
 
-	xTaskCreate(queue_task,"queue",80,NULL,1,NULL);
-	xTaskCreate(led_task,"led",40,NULL,1,NULL);
-	Queue1 = xQueueCreate(Queue1_Length, Queue1_ItemSize);
-	if(0 == Queue1)
-	{
-		DEBUG_P("Queue1 Create Fail......\r\n");
-		return 0;
-	}
-	SoftTmr = xTimerCreate(	"AutoReloadTimer", 
-							(TickType_t)300, 							//定时器周期1000(tick)
-							(UBaseType_t)pdTRUE, 						//周期模式
-							(void *)1, 									//为每个计时器分配一个唯一ID
-							(TimerCallbackFunction_t)SoftTmr_Callback);	//软定时器回调函数
-	if(NULL != SoftTmr)
-	{
-		xTimerStart(SoftTmr, 0);						//开启定时器
-	}
-	vTaskStartScheduler();
+//	xTaskCreate(queue_task,"queue",80,NULL,1,NULL);
+//	xTaskCreate(led_task,"led",40,NULL,1,NULL);
+//	Queue1 = xQueueCreate(Queue1_Length, Queue1_ItemSize);
+//	if(0 == Queue1)
+//	{
+//		DEBUG_P("Queue1 Create Fail......\r\n");
+//		return 0;
+//	}
+//	SoftTmr = xTimerCreate(	"AutoReloadTimer", 
+//							(TickType_t)300, 							//定时器周期1000(tick)
+//							(UBaseType_t)pdTRUE, 						//周期模式
+//							(void *)1, 									//为每个计时器分配一个唯一ID
+//							(TimerCallbackFunction_t)SoftTmr_Callback);	//软定时器回调函数
+//	if(NULL != SoftTmr)
+//	{
+//		xTimerStart(SoftTmr, 0);						//开启定时器
+//	}
+//	vTaskStartScheduler();
 	while(1)
 	{
 		Delay(200);

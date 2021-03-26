@@ -29,11 +29,11 @@
 #define SFLASH_DEVICE_ID          0x90                     //设备ID
 #define SFLASH_JEDEC_ID           0x9F                     //Jedec ID
 
-static void SPI_WriteByte(uint8_t TxData);
-static uint8_t SPI_ReadByte(void);
+void SPI_WriteByte(uint8_t TxData);
+uint8_t SPI_ReadByte(void);
 void SFLASH_Initializes(void);
 uint8_t SPI_WriteReadByte(uint8_t TxData);
-static void SFLASH_WriteEnable(void);                      //写使能
+void SFLASH_WriteEnable(void);                      //写使能
 static void SFLASH_WriteDisable(void);                     //写失能
 uint8_t SFLASH_ReadSR(void);                               //读状态寄存器
 void SFLASH_WriteSR(uint8_t SR);                           //写状态寄存器

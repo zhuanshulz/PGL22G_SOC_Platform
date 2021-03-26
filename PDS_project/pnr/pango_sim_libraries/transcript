@@ -1,0 +1,881 @@
+# do msim_pango.tcl 
+# Modifying C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/pango_sim_libraries/modelsim.ini
+# Modifying C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/pango_sim_libraries/modelsim.ini
+# C:/pango/PDS_2020.3-SP3.1-ads/arch/vendor/pango/verilog/simulation
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module GTP_ADC_E1
+# -- Compiling module GTP_ADC_E2
+# -- Compiling module GTP_APB
+# -- Compiling module GTP_APM_E1
+# -- Compiling module GTP_APM_E2
+# -- Compiling module GTP_BANKCTL
+# -- Compiling module GTP_BUF
+# -- Compiling module GTP_CFGCLK
+# -- Compiling module GTP_CLKBUFG
+# -- Compiling module GTP_CLKBUFGCE
+# -- Compiling module GTP_CLKBUFGMUX
+# -- Compiling module GTP_CLKBUFGMUX_E1
+# -- Compiling module GTP_CLKBUFGMUX_E2
+# -- Compiling module GTP_CLKBUFM
+# -- Compiling module GTP_CLKBUFMCE
+# -- Compiling module GTP_CLKBUFR
+# -- Compiling module GTP_CLKBUFX
+# -- Compiling module GTP_CLKBUFXCE
+# -- Compiling module GTP_CLKPD
+# -- Compiling module GTP_CRYSTAL
+# -- Compiling module GTP_DCC
+# -- Compiling module GTP_DDC
+# -- Compiling module GTP_DDC_E1
+# -- Compiling module GTP_DDC_E2
+# -- Compiling module GTP_DDRC
+# -- Compiling module GTP_DDRPHY
+# -- Compiling module GTP_DFF
+# -- Compiling module GTP_DFF_C
+# -- Compiling module GTP_DFF_CE
+# -- Compiling module GTP_DFF_E
+# -- Compiling module GTP_DFF_P
+# -- Compiling module GTP_DFF_PE
+# -- Compiling module GTP_DFF_R
+# -- Compiling module GTP_DFF_RE
+# -- Compiling module GTP_DFF_S
+# -- Compiling module GTP_DFF_SE
+# -- Compiling module GTP_DLATCH
+# -- Compiling module GTP_DLATCH_C
+# -- Compiling module GTP_DLATCH_CE
+# -- Compiling module GTP_DLATCH_E
+# -- Compiling module GTP_DLATCH_P
+# -- Compiling module GTP_DLATCH_PE
+# -- Compiling module GTP_DLL
+# -- Compiling module GTP_DLL_E1
+# -- Compiling module GTP_DLL_E2
+# -- Compiling module GTP_DRM18K
+# -- Compiling module GTP_DRM18K_E1
+# -- Compiling module GTP_DRM36K_E1
+# -- Compiling module GTP_DRM9K
+# -- Compiling module GTP_DRM9K_E1
+# -- Compiling module GTP_EFUSECODE
+# -- Compiling module GTP_FIFO18K
+# -- Compiling module INT_FIFO18K_SYNCLOGIC
+# -- Compiling module INT_FIFO18K_MEM
+# -- Compiling module GTP_FIFO18K_E1
+# -- Compiling module GTP_FIFO36K_E1
+# -- Compiling module GTP_FIFO9K
+# -- Compiling module GTP_FIR_A
+# -- Compiling module GTP_FIR_B
+# -- Compiling module GTP_FLASHIF
+# -- Compiling module GTP_GPLL
+# -- Compiling module GTP_GRS
+# -- Compiling module GTP_HSST
+# -- Compiling module GTP_HSSTHP_HPLL
+# -- Compiling module GTP_HSSTHP_LANE
+# -- Compiling module GTP_HSSTLP_LANE
+# -- Compiling module GTP_HSSTLP_PLL
+# -- Compiling module GTP_HSST_E1
+# -- Compiling module GTP_HSST_E2
+# -- Compiling module GTP_I2C
+# -- Compiling module GTP_IDDR
+# -- Compiling module GTP_IGDDR
+# -- Compiling module GTP_IGDES10
+# -- Compiling module GTP_IGDES4
+# -- Compiling module GTP_IGDES7
+# -- Compiling module GTP_IGDES8
+# -- Compiling module GTP_IMDDR
+# -- Compiling module GTP_IMDES4
+# -- Compiling module GTP_IMDES8
+# -- Compiling module GTP_INBUF
+# -- Compiling module GTP_INBUFDS
+# -- Compiling module GTP_INBUFE
+# -- Compiling module GTP_INBUFEDS
+# -- Compiling module GTP_INBUFG
+# -- Compiling module GTP_INBUFGDS
+# -- Compiling module GTP_INV
+# -- Compiling module GTP_IOBUF
+# -- Compiling module GTP_IOBUFCO
+# -- Compiling module GTP_IOBUFDS
+# -- Compiling module GTP_IOBUFE
+# -- Compiling module GTP_IOBUFECO
+# -- Compiling module GTP_IOBUFEDS
+# -- Compiling module GTP_IOBUF_RX_MIPI
+# -- Compiling module GTP_IOBUF_TX_MIPI
+# -- Compiling module GTP_IOCLKBUF
+# -- Compiling module GTP_IOCLKDELAY
+# -- Compiling module GTP_IOCLKDIV
+# -- Compiling module GTP_IOCLKDIV_E1
+# -- Compiling module GTP_IOCLKDIV_E2
+# -- Compiling module GTP_IOCLKDIV_E3
+# -- Compiling module GTP_IOCLKMUX
+# -- Compiling module GTP_IODELAY
+# -- Compiling module GTP_IODELAY_E1
+# -- Compiling module GTP_IODELAY_E2
+# -- Compiling module GTP_IPAL
+# -- Compiling module GTP_IPAL_E1
+# -- Compiling module GTP_IPAL_E2
+# -- Compiling module GTP_ISERDES
+# -- Compiling module GTP_ISERDES_E1
+# -- Compiling module GTP_ISERDES_E2
+# -- Compiling module GTP_JTAGIF
+# -- Compiling module GTP_KEYRAM
+# -- Compiling module GTP_LUT1
+# -- Compiling module GTP_LUT2
+# -- Compiling module GTP_LUT3
+# -- Compiling module GTP_LUT4
+# -- Compiling module GTP_LUT5
+# -- Compiling module GTP_LUT5CARRY
+# -- Compiling module GTP_LUT5M
+# -- Compiling module GTP_LUT6
+# -- Compiling module GTP_LUT6CARRY
+# -- Compiling module GTP_LUT6D
+# -- Compiling module GTP_LUT7
+# -- Compiling module GTP_LUT8
+# -- Compiling module GTP_LUTMUX4
+# -- Compiling module GTP_MULT18
+# -- Compiling module GTP_MULT27
+# -- Compiling module GTP_MULT36
+# -- Compiling module GTP_MULT9
+# -- Compiling module GTP_MULTACC18
+# -- Compiling module GTP_MULTACC27
+# -- Compiling module GTP_MULTACC36
+# -- Compiling module GTP_MULTACC9
+# -- Compiling module GTP_MULTADD18
+# -- Compiling module GTP_MULTADD27
+# -- Compiling module GTP_MULTADD36
+# -- Compiling module GTP_MULTADD9
+# -- Compiling module GTP_MULTADDACC18
+# -- Compiling module GTP_MULTADDACC9
+# -- Compiling module GTP_MULTADDSUM18
+# -- Compiling module GTP_MULTADDSUM9
+# -- Compiling module GTP_MUX2LUT6
+# -- Compiling module GTP_MUX2LUT7
+# -- Compiling module GTP_MUX2LUT8
+# -- Compiling module GTP_ODDR
+# -- Compiling module GTP_OGDDR
+# -- Compiling module GTP_OGSER10
+# -- Compiling module GTP_OGSER4
+# -- Compiling module GTP_OGSER7
+# -- Compiling module GTP_OGSER8
+# -- Compiling module GTP_OMDDR
+# -- Compiling module GTP_OMSER4
+# -- Compiling module GTP_OMSER8
+# -- Compiling module GTP_ONE
+# -- Compiling module GTP_OSC_E1
+# -- Compiling module GTP_OSC_E2
+# -- Compiling module GTP_OSC_E3
+# -- Compiling module GTP_OSC_E4
+# -- Compiling module GTP_OSERDES
+# -- Compiling module GTP_OSERDES_E1
+# -- Compiling module GTP_OSERDES_E2
+# -- Compiling module GTP_OUTBUF
+# -- Compiling module GTP_OUTBUFCO
+# -- Compiling module GTP_OUTBUFDS
+# -- Compiling module GTP_OUTBUFT
+# -- Compiling module GTP_OUTBUFTCO
+# -- Compiling module GTP_OUTBUFTDS
+# -- Compiling module GTP_PCIEGEN2
+# -- Compiling module GTP_PCIEGEN3
+# -- Compiling module GTP_PLL
+# -- Compiling module GTP_PLL_E1
+# -- Compiling module GTP_PLL_E2
+# -- Compiling module GTP_PLL_E3
+# -- Compiling module GTP_POWERCTL
+# -- Compiling module GTP_PPLL
+# -- Compiling module GTP_PREADD_FIR_A
+# -- Compiling module GTP_PREADD_FIR_B
+# -- Compiling module GTP_PREADD_MULT18
+# -- Compiling module GTP_PREADD_MULT27
+# -- Compiling module GTP_PREADD_MULT36
+# -- Compiling module GTP_PREADD_MULT9
+# -- Compiling module GTP_PREADD_MULTACC18
+# -- Compiling module GTP_PREADD_MULTACC27
+# -- Compiling module GTP_PREADD_MULTACC36
+# -- Compiling module GTP_PREADD_MULTACC9
+# -- Compiling module GTP_PREADD_MULTADD18
+# -- Compiling module GTP_PREADD_MULTADD27
+# -- Compiling module GTP_PREADD_MULTADD36
+# -- Compiling module GTP_PREADD_MULTADD9
+# -- Compiling module GTP_PREADD_MULTADDACC18
+# -- Compiling module GTP_PREADD_MULTADDACC9
+# -- Compiling module GTP_PREADD_MULTADDSUM18
+# -- Compiling module GTP_PREADD_MULTADDSUM9
+# -- Compiling module GTP_RAM128X1DP
+# -- Compiling module GTP_RAM128X1SP
+# -- Compiling module GTP_RAM144K
+# -- Compiling module GTP_RAM144KSDP
+# -- Compiling module GTP_RAM16X1DP
+# -- Compiling module GTP_RAM16X1SP
+# -- Compiling module GTP_RAM16X4DP
+# -- Compiling module GTP_RAM16X4SP
+# -- Compiling module GTP_RAM256X1SP
+# -- Compiling module GTP_RAM32X1DP
+# -- Compiling module GTP_RAM32X1SP
+# -- Compiling module GTP_RAM32X2DP
+# -- Compiling module GTP_RAM32X2SP
+# -- Compiling module GTP_RAM64X1DP
+# -- Compiling module GTP_RAM64X1SP
+# -- Compiling module GTP_RBCRC
+# -- Compiling module GTP_RES_CAL
+# -- Compiling module GTP_ROM128X1
+# -- Compiling module GTP_ROM256X1
+# -- Compiling module GTP_ROM32X1
+# -- Compiling module GTP_ROM32X2
+# -- Compiling module GTP_ROM64X1
+# -- Compiling module GTP_SCANCHAIN
+# -- Compiling module GTP_SCANCHAIN_E1
+# -- Compiling module GTP_SPI
+# -- Compiling module GTP_START
+# -- Compiling module GTP_START_E1
+# -- Compiling module GTP_TIMER
+# -- Compiling module GTP_UDID
+# -- Compiling module GTP_ZERO
+# -- Compiling module GTP_ZEROHOLDDELAY
+# -- Compiling module INT_FLAG
+# -- Compiling UPD INT_LUTMUX2_UDP
+# -- Compiling UPD INT_LUTMUX4_UDP
+# -- Compiling module INT_MULTADDSUM
+# -- Compiling module INT_PREADD_MULT
+# -- Compiling module INT_PREADD_MULTACC
+# -- Compiling module INT_PREADD_MULTADD
+# -- Compiling module INT_PREADD_MULTADDACC
+# -- Compiling module INT_PREADD_MULTADDSUM
+# -- Compiling module INT_PSE
+# -- Compiling module INT_REG
+# -- Compiling module INT_REG2D
+# -- Compiling module INT_RAM144K
+# 
+# Top level modules:
+# 	GTP_ADC_E1
+# 	GTP_ADC_E2
+# 	GTP_APB
+# 	GTP_APM_E1
+# 	GTP_APM_E2
+# 	GTP_BANKCTL
+# 	GTP_BUF
+# 	GTP_CFGCLK
+# 	GTP_CLKBUFG
+# 	GTP_CLKBUFGCE
+# 	GTP_CLKBUFGMUX
+# 	GTP_CLKBUFGMUX_E1
+# 	GTP_CLKBUFGMUX_E2
+# 	GTP_CLKBUFM
+# 	GTP_CLKBUFMCE
+# 	GTP_CLKBUFR
+# 	GTP_CLKBUFX
+# 	GTP_CLKBUFXCE
+# 	GTP_CLKPD
+# 	GTP_CRYSTAL
+# 	GTP_DCC
+# 	GTP_DDC
+# 	GTP_DDC_E1
+# 	GTP_DDC_E2
+# 	GTP_DDRC
+# 	GTP_DDRPHY
+# 	GTP_DFF
+# 	GTP_DFF_C
+# 	GTP_DFF_CE
+# 	GTP_DFF_E
+# 	GTP_DFF_P
+# 	GTP_DFF_PE
+# 	GTP_DFF_R
+# 	GTP_DFF_RE
+# 	GTP_DFF_S
+# 	GTP_DFF_SE
+# 	GTP_DLATCH
+# 	GTP_DLATCH_C
+# 	GTP_DLATCH_CE
+# 	GTP_DLATCH_E
+# 	GTP_DLATCH_P
+# 	GTP_DLATCH_PE
+# 	GTP_DLL
+# 	GTP_DLL_E1
+# 	GTP_DLL_E2
+# 	GTP_DRM18K
+# 	GTP_DRM18K_E1
+# 	GTP_DRM36K_E1
+# 	GTP_DRM9K
+# 	GTP_DRM9K_E1
+# 	GTP_EFUSECODE
+# 	GTP_FIFO18K
+# 	GTP_FIFO18K_E1
+# 	GTP_FIFO36K_E1
+# 	GTP_FIFO9K
+# 	GTP_FIR_A
+# 	GTP_FIR_B
+# 	GTP_FLASHIF
+# 	GTP_GPLL
+# 	GTP_GRS
+# 	GTP_HSST
+# 	GTP_HSSTHP_HPLL
+# 	GTP_HSSTHP_LANE
+# 	GTP_HSSTLP_LANE
+# 	GTP_HSSTLP_PLL
+# 	GTP_HSST_E1
+# 	GTP_HSST_E2
+# 	GTP_I2C
+# 	GTP_IDDR
+# 	GTP_IGDDR
+# 	GTP_IGDES10
+# 	GTP_IGDES4
+# 	GTP_IGDES7
+# 	GTP_IGDES8
+# 	GTP_IMDDR
+# 	GTP_IMDES4
+# 	GTP_IMDES8
+# 	GTP_INBUF
+# 	GTP_INBUFDS
+# 	GTP_INBUFE
+# 	GTP_INBUFEDS
+# 	GTP_INBUFG
+# 	GTP_INBUFGDS
+# 	GTP_INV
+# 	GTP_IOBUF
+# 	GTP_IOBUFCO
+# 	GTP_IOBUFDS
+# 	GTP_IOBUFE
+# 	GTP_IOBUFECO
+# 	GTP_IOBUFEDS
+# 	GTP_IOBUF_RX_MIPI
+# 	GTP_IOBUF_TX_MIPI
+# 	GTP_IOCLKBUF
+# 	GTP_IOCLKDELAY
+# 	GTP_IOCLKDIV
+# 	GTP_IOCLKDIV_E1
+# 	GTP_IOCLKDIV_E2
+# 	GTP_IOCLKDIV_E3
+# 	GTP_IOCLKMUX
+# 	GTP_IODELAY
+# 	GTP_IODELAY_E1
+# 	GTP_IODELAY_E2
+# 	GTP_IPAL
+# 	GTP_IPAL_E1
+# 	GTP_IPAL_E2
+# 	GTP_ISERDES
+# 	GTP_ISERDES_E1
+# 	GTP_ISERDES_E2
+# 	GTP_JTAGIF
+# 	GTP_KEYRAM
+# 	GTP_LUT1
+# 	GTP_LUT2
+# 	GTP_LUT3
+# 	GTP_LUT4
+# 	GTP_LUT5CARRY
+# 	GTP_LUT5M
+# 	GTP_LUT6CARRY
+# 	GTP_LUT6D
+# 	GTP_LUT7
+# 	GTP_LUT8
+# 	GTP_LUTMUX4
+# 	GTP_MULT18
+# 	GTP_MULT27
+# 	GTP_MULT36
+# 	GTP_MULT9
+# 	GTP_MULTACC18
+# 	GTP_MULTACC27
+# 	GTP_MULTACC36
+# 	GTP_MULTACC9
+# 	GTP_MULTADD18
+# 	GTP_MULTADD27
+# 	GTP_MULTADD36
+# 	GTP_MULTADD9
+# 	GTP_MULTADDACC18
+# 	GTP_MULTADDACC9
+# 	GTP_MULTADDSUM18
+# 	GTP_MULTADDSUM9
+# 	GTP_ODDR
+# 	GTP_OGDDR
+# 	GTP_OGSER10
+# 	GTP_OGSER4
+# 	GTP_OGSER7
+# 	GTP_OGSER8
+# 	GTP_OMDDR
+# 	GTP_OMSER4
+# 	GTP_OMSER8
+# 	GTP_ONE
+# 	GTP_OSC_E1
+# 	GTP_OSC_E2
+# 	GTP_OSC_E3
+# 	GTP_OSC_E4
+# 	GTP_OSERDES
+# 	GTP_OSERDES_E1
+# 	GTP_OSERDES_E2
+# 	GTP_OUTBUF
+# 	GTP_OUTBUFCO
+# 	GTP_OUTBUFDS
+# 	GTP_OUTBUFT
+# 	GTP_OUTBUFTCO
+# 	GTP_OUTBUFTDS
+# 	GTP_PCIEGEN2
+# 	GTP_PCIEGEN3
+# 	GTP_PLL
+# 	GTP_PLL_E1
+# 	GTP_PLL_E2
+# 	GTP_PLL_E3
+# 	GTP_POWERCTL
+# 	GTP_PPLL
+# 	GTP_PREADD_FIR_A
+# 	GTP_PREADD_FIR_B
+# 	GTP_PREADD_MULT18
+# 	GTP_PREADD_MULT27
+# 	GTP_PREADD_MULT36
+# 	GTP_PREADD_MULT9
+# 	GTP_PREADD_MULTACC18
+# 	GTP_PREADD_MULTACC27
+# 	GTP_PREADD_MULTACC36
+# 	GTP_PREADD_MULTACC9
+# 	GTP_PREADD_MULTADD18
+# 	GTP_PREADD_MULTADD27
+# 	GTP_PREADD_MULTADD36
+# 	GTP_PREADD_MULTADD9
+# 	GTP_PREADD_MULTADDACC18
+# 	GTP_PREADD_MULTADDACC9
+# 	GTP_PREADD_MULTADDSUM18
+# 	GTP_PREADD_MULTADDSUM9
+# 	GTP_RAM128X1DP
+# 	GTP_RAM128X1SP
+# 	GTP_RAM144K
+# 	GTP_RAM144KSDP
+# 	GTP_RAM16X1DP
+# 	GTP_RAM16X1SP
+# 	GTP_RAM16X4DP
+# 	GTP_RAM16X4SP
+# 	GTP_RAM256X1SP
+# 	GTP_RAM32X1DP
+# 	GTP_RAM32X1SP
+# 	GTP_RAM32X2DP
+# 	GTP_RAM32X2SP
+# 	GTP_RAM64X1DP
+# 	GTP_RAM64X1SP
+# 	GTP_RBCRC
+# 	GTP_RES_CAL
+# 	GTP_ROM128X1
+# 	GTP_ROM256X1
+# 	GTP_ROM32X1
+# 	GTP_ROM32X2
+# 	GTP_ROM64X1
+# 	GTP_SCANCHAIN
+# 	GTP_SCANCHAIN_E1
+# 	GTP_SPI
+# 	GTP_START
+# 	GTP_START_E1
+# 	GTP_TIMER
+# 	GTP_UDID
+# 	GTP_ZERO
+# 	GTP_ZEROHOLDDELAY
+# 	INT_REG2D
+# Modifying C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/pango_sim_libraries/modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# ** Warning: [13] ./ddrc_source_codes/ddrc/rt/rt.vp(25): in protected region.
+# ** Warning: ./ddrc_source_codes/ddrc/ts/gs_rank_constraints.vp(25): in protected region.
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# ** Warning: ./pciegen3_source_codes/rtl/Adm/radm_outq_mgr.svp(25): in protected region.
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# C:/pango/PDS_2020.3-SP3.1-ads/arch/vendor/pango/verilog/bsim
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling UPD INT_LUTMUX2_UDP
+# -- Compiling UPD INT_LUTMUX4_UDP
+# -- Compiling module V_APM_REG
+# -- Compiling module V_APM_ADDSUB
+# -- Compiling module V_APM_MULT_TEMPLATE
+# -- Compiling module V_APM_MULT9
+# -- Compiling module V_APM_MULT18
+# -- Compiling module V_APM_MULT27
+# -- Compiling module V_APM_MULT36
+# -- Compiling module V_APM_FIR_A
+# -- Compiling module V_APM_FIR_B
+# -- Compiling module V_APM_PREADD_FIR_A
+# -- Compiling module V_APM_PREADD_FIR_B
+# -- Compiling module V_ADC_E1
+# -- Compiling module V_ADC_E2
+# -- Compiling module V_APM
+# -- Compiling module apm_sign_extend
+# -- Compiling module V_APM_E1
+# -- Compiling module V_APM_E2
+# -- Compiling module V_APM_H
+# -- Compiling module V_BUF
+# -- Compiling module V_CGRA
+# -- Compiling module V_CLKBUFGMUX_E1
+# -- Compiling module V_CLKBUFGMUX_E2
+# -- Compiling module V_CLKBUFMXCE
+# -- Compiling module V_CLKPD
+# -- Compiling module V_CRYSTAL
+# -- Compiling module V_DCC
+# -- Compiling module V_DDC
+# -- Compiling module V_DDC_E1
+# -- Compiling module V_DDC_E2
+# -- Compiling module V_DDRC
+# -- Compiling module V_DDRPHY
+# -- Compiling module V_DLL
+# -- Compiling module V_DLL_E1
+# -- Compiling module V_DLL_E2
+# -- Compiling module V_DRM18K
+# -- Compiling module V_DRM18K_E1
+# -- Compiling module V_DRM36K_E1
+# -- Compiling module V_DRM9K
+# -- Compiling module V_DRM9K_E1
+# -- Compiling module V_EFUSECODE
+# -- Compiling module V_FFASYN
+# -- Compiling module V_FFSYN
+# -- Compiling module V_FIFO18K
+# -- Compiling module INT_FIFO18K_SYNCLOGIC
+# -- Compiling module INT_FIFO18K_MEM
+# -- Compiling module V_FIFO18K_E1
+# -- Compiling module V_FIFO36K_E1
+# -- Compiling module V_FIFO9K
+# -- Compiling module V_GPLL
+# -- Compiling module V_GRS
+# -- Compiling module V_HSST
+# -- Compiling module V_HSSTHP_HPLL
+# -- Compiling module V_HSSTHP_LANE
+# -- Compiling module V_HSSTLP_LANE
+# -- Compiling module V_HSSTLP_PLL
+# -- Compiling module V_HSST_E1
+# -- Compiling module V_HSST_E2
+# -- Compiling module V_IBUF
+# -- Compiling module V_IBUFDS
+# -- Compiling module V_IDDR
+# -- Compiling module V_IDDR_E1
+# -- Compiling module V_IGDDR
+# -- Compiling module V_IGDES10
+# -- Compiling module V_IGDES4
+# -- Compiling module V_IGDES7
+# -- Compiling module V_IGDES8
+# -- Compiling module V_IMDDR
+# -- Compiling module V_IMDES4
+# -- Compiling module V_IMDES8
+# -- Compiling module V_INBUFE
+# -- Compiling module V_INBUFEDS
+# -- Compiling module V_INBUF_MIPI
+# -- Compiling module V_INV
+# -- Compiling module V_IOCLKBUF
+# -- Compiling module V_IOCLKDELAY
+# -- Compiling module V_IOCLKDIV
+# -- Compiling module V_IOCLKDIV_E1
+# -- Compiling module V_IOCLKDIV_E2
+# -- Compiling module V_IOCLKDIV_E3
+# -- Compiling module V_IODELAY
+# -- Compiling module V_IODELAY_E1
+# -- Compiling module V_IODELAY_E2
+# -- Compiling module V_IPAL
+# -- Compiling module V_IPAL_E1
+# -- Compiling module V_IPAL_E2
+# -- Compiling module V_ISERDES
+# -- Compiling module V_ISERDES_E1
+# -- Compiling module V_ISERDES_E2
+# -- Compiling module V_JTAGIF
+# -- Compiling module V_LAASYN
+# -- Compiling module V_LUT5
+# -- Compiling module V_LUT5CARRY
+# -- Compiling module V_LUT5CARRY2
+# -- Compiling module V_LUT5M
+# -- Compiling module V_LUT6CARRY
+# -- Compiling module V_MUX
+# -- Compiling module V_MUX2
+# -- Compiling module V_MUX2LUT6
+# -- Compiling module V_MUX2LUT7
+# -- Compiling module V_MUX2LUT8
+# -- Compiling module V_MUX4
+# -- Compiling module V_OBUF
+# -- Compiling module V_OBUFDS
+# -- Compiling module V_OBUFT
+# -- Compiling module V_OBUFTDS
+# -- Compiling module V_ODDR
+# -- Compiling module V_ODDR_E1
+# -- Compiling module V_OGDDR
+# -- Compiling module V_OGSER10
+# -- Compiling module V_OGSER4
+# -- Compiling module V_OGSER7
+# -- Compiling module V_OGSER8
+# -- Compiling module V_OMDDR
+# -- Compiling module V_OMSER4
+# -- Compiling module V_OMSER8
+# -- Compiling module V_ONE
+# -- Compiling module V_OSC_E1
+# -- Compiling module V_OSC_E2
+# -- Compiling module V_OSC_E3
+# -- Compiling module V_OSC_E4
+# -- Compiling module V_OSERDES
+# -- Compiling module V_OSERDES_E1
+# -- Compiling module V_OSERDES_E2
+# -- Compiling module V_OUTBUFT_MIPI
+# -- Compiling module V_OUTBUFT_MIPI_SLAVE
+# -- Compiling module V_PCIEGEN2
+# -- Compiling module V_PCIEGEN3
+# -- Compiling module V_PLL
+# -- Compiling module V_PLL_E1
+# -- Compiling module V_PLL_E2
+# -- Compiling module V_PLL_E3
+# -- Compiling module V_PPLL
+# -- Compiling module V_RAM16X1
+# -- Compiling module V_RAM32X1
+# -- Compiling module V_RAM32X2
+# -- Compiling module V_RAM64X1
+# -- Compiling module V_RES_CAL
+# -- Compiling module V_RES_CAL_E1
+# -- Compiling module V_SCANCHAIN
+# -- Compiling module V_SCANCHAIN_E1
+# -- Compiling module V_START
+# -- Compiling module V_START_E1
+# -- Compiling module V_UDID
+# -- Compiling module V_USCM
+# -- Compiling module V_ZERO
+# -- Compiling module V_ZEROHOLDDELAY
+# -- Compiling module APM
+# -- Compiling module APM_INST_CTRL
+# -- Compiling module APM_INST_REG
+# -- Compiling module APM_UNIT_INPUT
+# -- Compiling module APM_UNIT_MULT
+# -- Compiling module APM_UNIT_PRAD
+# -- Compiling module APM_UNIT_POST
+# -- Compiling module APM_H
+# -- Compiling module APM_H_INST_CTRL
+# -- Compiling module APM_H_INST_REG
+# -- Compiling module APM_H_UNIT_INPUT
+# -- Compiling module APM_H_UNIT_MULT
+# -- Compiling module APM_H_UNIT_PRAD
+# -- Compiling module APM_H_UNIT_POST
+# 
+# Top level modules:
+# 	V_APM_MULT9
+# 	V_APM_MULT18
+# 	V_APM_MULT27
+# 	V_APM_MULT36
+# 	V_APM_FIR_A
+# 	V_APM_FIR_B
+# 	V_APM_PREADD_FIR_A
+# 	V_APM_PREADD_FIR_B
+# 	V_ADC_E1
+# 	V_ADC_E2
+# 	V_APM
+# 	V_APM_E1
+# 	V_APM_E2
+# 	V_APM_H
+# 	V_BUF
+# 	V_CGRA
+# 	V_CLKBUFGMUX_E1
+# 	V_CLKBUFGMUX_E2
+# 	V_CLKBUFMXCE
+# 	V_CLKPD
+# 	V_CRYSTAL
+# 	V_DCC
+# 	V_DDC
+# 	V_DDC_E1
+# 	V_DDC_E2
+# 	V_DDRC
+# 	V_DDRPHY
+# 	V_DLL
+# 	V_DLL_E1
+# 	V_DLL_E2
+# 	V_DRM18K
+# 	V_DRM18K_E1
+# 	V_DRM36K_E1
+# 	V_DRM9K
+# 	V_DRM9K_E1
+# 	V_EFUSECODE
+# 	V_FFASYN
+# 	V_FFSYN
+# 	V_FIFO18K
+# 	V_FIFO18K_E1
+# 	V_FIFO36K_E1
+# 	V_FIFO9K
+# 	V_GPLL
+# 	V_GRS
+# 	V_HSST
+# 	V_HSSTHP_HPLL
+# 	V_HSSTHP_LANE
+# 	V_HSSTLP_LANE
+# 	V_HSSTLP_PLL
+# 	V_HSST_E1
+# 	V_HSST_E2
+# 	V_IBUF
+# 	V_IBUFDS
+# 	V_IDDR
+# 	V_IDDR_E1
+# 	V_IGDDR
+# 	V_IGDES10
+# 	V_IGDES4
+# 	V_IGDES7
+# 	V_IGDES8
+# 	V_IMDDR
+# 	V_IMDES4
+# 	V_IMDES8
+# 	V_INBUFE
+# 	V_INBUFEDS
+# 	V_INBUF_MIPI
+# 	V_INV
+# 	V_IOCLKBUF
+# 	V_IOCLKDELAY
+# 	V_IOCLKDIV
+# 	V_IOCLKDIV_E1
+# 	V_IOCLKDIV_E2
+# 	V_IOCLKDIV_E3
+# 	V_IODELAY
+# 	V_IODELAY_E1
+# 	V_IODELAY_E2
+# 	V_IPAL
+# 	V_IPAL_E1
+# 	V_IPAL_E2
+# 	V_ISERDES
+# 	V_ISERDES_E1
+# 	V_ISERDES_E2
+# 	V_JTAGIF
+# 	V_LAASYN
+# 	V_LUT5CARRY2
+# 	V_LUT5M
+# 	V_LUT6CARRY
+# 	V_MUX
+# 	V_MUX2
+# 	V_MUX2LUT6
+# 	V_MUX2LUT7
+# 	V_MUX2LUT8
+# 	V_MUX4
+# 	V_OBUF
+# 	V_OBUFDS
+# 	V_OBUFT
+# 	V_OBUFTDS
+# 	V_ODDR
+# 	V_ODDR_E1
+# 	V_OGDDR
+# 	V_OGSER10
+# 	V_OGSER4
+# 	V_OGSER7
+# 	V_OGSER8
+# 	V_OMDDR
+# 	V_OMSER4
+# 	V_OMSER8
+# 	V_ONE
+# 	V_OSC_E1
+# 	V_OSC_E2
+# 	V_OSC_E3
+# 	V_OSC_E4
+# 	V_OSERDES
+# 	V_OSERDES_E1
+# 	V_OSERDES_E2
+# 	V_OUTBUFT_MIPI
+# 	V_OUTBUFT_MIPI_SLAVE
+# 	V_PCIEGEN2
+# 	V_PCIEGEN3
+# 	V_PLL
+# 	V_PLL_E1
+# 	V_PLL_E2
+# 	V_PLL_E3
+# 	V_PPLL
+# 	V_RAM16X1
+# 	V_RAM32X2
+# 	V_RAM64X1
+# 	V_RES_CAL
+# 	V_RES_CAL_E1
+# 	V_SCANCHAIN
+# 	V_SCANCHAIN_E1
+# 	V_START
+# 	V_START_E1
+# 	V_UDID
+# 	V_USCM
+# 	V_ZERO
+# 	V_ZEROHOLDDELAY
+# Modifying C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/pango_sim_libraries/modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# ** Warning: [13] ./ddrc_source_codes/ddrc/rt/rt.vp(25): in protected region.
+# ** Warning: ./ddrc_source_codes/ddrc/ts/gs_rank_constraints.vp(25): in protected region.
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# ** Warning: ./pciegen3_source_codes/rtl/Adm/radm_outq_mgr.svp(25): in protected region.
+# 
+# Top level modules:
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# 
+# Top level modules:
