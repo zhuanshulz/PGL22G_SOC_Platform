@@ -44,7 +44,7 @@ module sd_card_cmd(
 	output reg[7:0]             block_read_data,              //SD card sector data read data
 	output                      block_read_req_ack,           //SD card sector data read response
 	input                       block_write_req,              //SD card sector data write request
-	input[7:0]                  block_write_data,             //SD card sector data write data next clock is valid
+	input[31:0]                  block_write_data,             //SD card sector data write data next clock is valid
 	output                      block_write_data_rd,          //SD card sector data write data
 	output                      block_write_req_ack,          //SD card sector data write response
 	output                      nCS_ctrl,                     //SPI module chip select control
@@ -52,7 +52,9 @@ module sd_card_cmd(
 	output reg                  spi_wr_req,                   //SPI module data sending request
 	input                       spi_wr_ack,                   //SPI module data request response
 	output[7:0]                 spi_data_in,                  //SPI module send data
-	input[7:0]                  spi_data_out                  //SPI module data returned
+	input[7:0]                  spi_data_out,                  //SPI module data returned
+	output reg 					byte_valid,
+	output reg[9:0]             wr_data_cnt
 );
 parameter S_IDLE         = 0;
 parameter S_WAIT         = 1;
@@ -72,13 +74,16 @@ parameter S_WRITE_BUSY   = 14;
 parameter S_WRITE_ACK    = 15;
 parameter S_ERR          = 16;
 parameter S_END          = 17;
+parameter S_WRITE_DATA_2 = 18;
+parameter S_WRITE_DATA_3 = 19;
 
 reg[4:0]                      state;
 reg                           CS_reg;
 reg[15:0]                     byte_cnt;
 reg[7:0]                      send_data;
 wire[7:0]                     data_recv;
-reg[9:0]                      wr_data_cnt;
+
+reg[7:0]					  temp_data;
 
 assign cmd_req_ack = (state == S_END);
 assign block_read_req_ack = (state == S_READ_ACK);
@@ -87,6 +92,7 @@ assign block_write_data_rd = (state == S_WRITE_DATA_0);
 assign spi_data_in = send_data;
 assign data_recv = spi_data_out;
 assign nCS_ctrl = CS_reg;
+
 always@(posedge sys_clk or posedge rst)
 begin
 	if(rst == 1'b1)
@@ -107,6 +113,7 @@ begin
 				state <= S_INIT;
 				clk_div <= spi_clk_div;
 				CS_reg <= 1'b1;
+				byte_valid <= 1'b0;
 			end
 			S_INIT:
 			begin
@@ -249,9 +256,11 @@ begin
 						state <= S_READ_ACK;
 						spi_wr_req <= 1'b0;
 						byte_cnt <= 16'd0;
+						byte_valid <= 1'b0;
 					end
 					else
 					begin
+						byte_valid <= 1'b1;
 						byte_cnt <= byte_cnt + 16'd1;
 					end
 				end
@@ -275,10 +284,26 @@ begin
 				end
 			S_WRITE_DATA_0:
 			begin
+				send_data <=block_write_data[7:0];
 				state <= S_WRITE_DATA_1;
 				wr_data_cnt <= wr_data_cnt + 10'd1;
+				temp_data = block_write_data>>((wr_data_cnt+1)*8);
 			end
 			S_WRITE_DATA_1:
+			begin
+				send_data <=block_write_data[7:0];
+				state <= S_WRITE_DATA_2;
+				wr_data_cnt <= wr_data_cnt + 10'd1;
+				temp_data = block_write_data>>((wr_data_cnt+1)*8);
+			end
+			S_WRITE_DATA_2:
+			begin
+				send_data <=block_write_data[7:0];
+				state <= S_WRITE_DATA_3;
+				wr_data_cnt <= wr_data_cnt + 10'd1;
+				temp_data = block_write_data>>((wr_data_cnt+1)*8);
+			end
+			S_WRITE_DATA_3:
 			begin
 				if(spi_wr_ack == 1'b1 && wr_data_cnt == 10'd512)
 				begin
@@ -293,7 +318,7 @@ begin
 				else
 				begin
 					spi_wr_req <= 1'b1;
-					send_data <= block_write_data;
+					send_data <= temp_data;
 				end
 			end
 			S_WRITE_CRC:

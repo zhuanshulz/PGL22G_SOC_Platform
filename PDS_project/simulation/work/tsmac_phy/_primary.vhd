@@ -1,0 +1,46 @@
+library verilog;
+use verilog.vl_types.all;
+entity tsmac_phy is
+    port(
+        tx_clki         : in     vl_logic;
+        rx_clki         : in     vl_logic;
+        tx_rst          : in     vl_logic;
+        rx_rst          : in     vl_logic;
+        mdi             : in     vl_logic;
+        mdc             : out    vl_logic;
+        mdo             : out    vl_logic;
+        mdoen           : out    vl_logic;
+        tsmac_tdata     : in     vl_logic_vector(7 downto 0);
+        tsmac_tstart    : in     vl_logic;
+        tsmac_tlast     : in     vl_logic;
+        tsmac_tcrq      : in     vl_logic;
+        tsmac_cfpt      : in     vl_logic_vector(15 downto 0);
+        tsmac_thdf      : in     vl_logic;
+        rx_dv           : in     vl_logic;
+        rxd             : in     vl_logic_vector(3 downto 0);
+        presetn         : in     vl_logic;
+        pclk            : in     vl_logic;
+        pselx           : in     vl_logic;
+        pwrite          : in     vl_logic;
+        penable         : in     vl_logic;
+        paddr           : in     vl_logic_vector(7 downto 0);
+        pwdata          : in     vl_logic_vector(31 downto 0);
+        prdata          : out    vl_logic_vector(31 downto 0);
+        tx_en           : out    vl_logic;
+        txd             : out    vl_logic_vector(3 downto 0);
+        tsmac_tpnd      : out    vl_logic;
+        tsmac_tprt      : out    vl_logic;
+        tsmac_tpar      : out    vl_logic;
+        tsmac_tsvp      : out    vl_logic;
+        tsmac_tsv       : out    vl_logic_vector(51 downto 0);
+        tsmac_txcf      : out    vl_logic;
+        tsmac_tcdr      : out    vl_logic;
+        tsmac_rdata     : out    vl_logic_vector(7 downto 0);
+        tsmac_rvalid    : out    vl_logic;
+        tsmac_rlast     : out    vl_logic;
+        tsmac_rsvp      : out    vl_logic;
+        tsmac_rsv       : out    vl_logic_vector(32 downto 0);
+        rxd_gm          : out    vl_logic_vector(7 downto 0);
+        speed           : out    vl_logic
+    );
+end tsmac_phy;

@@ -7,6 +7,7 @@
 #include "timers.h"
 #include "queue.h"
 #include "PANGO_spi_flash.h"
+#include "PANGO_sdcard.h"
 //#include "ff.h"
 
 #define DELAY_CNT		8000000
@@ -544,30 +545,45 @@ int main(void)
 	UartInit();
 	SPIInit0();	//SPI0 for spi flash and spi sdcard device
 	//I2CInit();								
-	DEBUG_P("-");//-- RTOS starting ---");
-	Delay(2000000);
-		uint8_t pBuffer;
-	SPI_CS_DISABLE;
-	SPI1_CS_ENABLE;                                 //使能器件
-	DEBUG_P("-");
-	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
-	
-	SPI_WriteByte((uint8_t)(cmd0_2));
-	SPI_WriteByte((uint8_t)cmd0_3);
-	SPI_WriteByte((uint8_t)cmd0_4);
-	SPI_WriteByte((uint8_t)cmd0_5);
-	SPI_WriteByte((uint8_t)cmd0_6);
-// 这里写完了CMD0
+	DEBUG_P("\n--- RTOS starting ---\n");
 	while(1)
 	{
-	pBuffer = SPI_ReadByte();
-		if (pBuffer != 0xff)
-			break;
-			SPI_WriteByte((uint8_t)cmd1);
+			if (SD_Init()==1)
+			{
+				DEBUG_P("\n--- SD init success---\n");
+				DEBUG_P("\n  %x   \n",(uint32_t)(SDCARD->INITIALISED));
+				break;
+			}
+			else
+				DEBUG_P("\n--- SD init failed---\n");
+			Delay(200);
 	}
-	DEBUG_P("\n-----%x----\n",pBuffer);
-	
-	SPI_CS_DISABLE;
+	while(1)
+	{
+	}
+//	Delay(2000000);
+//		uint8_t pBuffer;
+//	SPI_CS_DISABLE;
+//	SPI1_CS_ENABLE;                                 //使能器件
+//	DEBUG_P("-");
+//	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
+//	
+//	SPI_WriteByte((uint8_t)(cmd0_2));
+//	SPI_WriteByte((uint8_t)cmd0_3);
+//	SPI_WriteByte((uint8_t)cmd0_4);
+//	SPI_WriteByte((uint8_t)cmd0_5);
+//	SPI_WriteByte((uint8_t)cmd0_6);
+//// 这里写完了CMD0
+//	while(1)
+//	{
+//	pBuffer = SPI_ReadByte();
+//		if (pBuffer != 0xff)
+//			break;
+//			SPI_WriteByte((uint8_t)cmd1);
+//	}
+//	DEBUG_P("\n-----%x----\n",pBuffer);
+//	
+//	SPI_CS_DISABLE;
 //	SFLASH_WaitForNoBusy();                        //等待空闲（等待写入结束）这是针对flash的指令操作，不针对spi外设，因此在sdcard处不需要添加。
 //	DEBUG_P("PANGO Cortex-M1 FreeRTOS Start Run......\r\n");
 //	DEBUG_P("JEDEC  id = 0x%x\n",SFLASH_ReadJEDEC_ID());

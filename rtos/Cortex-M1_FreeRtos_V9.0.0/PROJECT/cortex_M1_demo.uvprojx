@@ -515,6 +515,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>SDcard</GroupName>
+          <Files>
+            <File>
+              <FileName>PANGO_sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\PANGO_sdcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>PANGO_sdcard.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\USER\PANGO_sdcard.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

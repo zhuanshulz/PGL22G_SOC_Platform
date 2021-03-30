@@ -27,10 +27,6 @@
 //  2017/6/21     meisq         1.0         Original
 //*******************************************************************************/
 module sd_card_sec_read_write
-#(
-	parameter  SPI_LOW_SPEED_DIV = 248,         // spi clk speed = clk speed /((SPI_LOW_SPEED_DIV + 2) * 2 )
-	parameter  SPI_HIGH_SPEED_DIV = 0           // spi clk speed = clk speed /((SPI_HIGH_SPEED_DIV + 2) * 2 )
-)
 (
 	input            clk,
 	input            rst,
@@ -42,7 +38,7 @@ module sd_card_sec_read_write
 	output           sd_sec_read_end,
 	input            sd_sec_write,
 	input[31:0]      sd_sec_write_addr,
-	input[7:0]       sd_sec_write_data,
+	input[31:0]       sd_sec_write_data,
 	output           sd_sec_write_data_req,
 	output           sd_sec_write_end,
 
@@ -58,10 +54,16 @@ module sd_card_sec_read_write
 	input[7:0]       block_read_data,
 	input            block_read_req_ack,
 	output reg       block_write_req,
-	output[7:0]      block_write_data,
+	output[31:0]      block_write_data,
 	input            block_write_data_rd,
-	input            block_write_req_ack
+	input            block_write_req_ack,
+
+	input[15:0]      SPI_LOW_SPEED_DIV,         // spi clk speed = clk speed /((SPI_LOW_SPEED_DIV + 2) * 2 )
+    input[15:0]      SPI_HIGH_SPEED_DIV,         // spi clk speed = clk speed /((SPI_LOW_SPEED_DIV + 2) * 2 )
+
+	output[4:0] run_state
 );
+
 reg[7:0] read_data;
 reg[31:0] timer;
 
@@ -81,6 +83,7 @@ localparam S_WAIT_READ_WRITE    = 17;
 localparam S_CMD16              = 18;
 
 reg[4:0]                       state;
+assign run_state = state;
 reg[31:0]                      sec_addr;
 assign sd_sec_read_data_valid = (state == S_READ) && block_read_valid;
 assign sd_sec_read_data = block_read_data;
@@ -88,6 +91,7 @@ assign sd_sec_read_end = (state == S_READ_END);
 assign sd_sec_write_data_req = (state == S_WRITE) && block_write_data_rd;
 assign block_write_data = sd_sec_write_data;
 assign sd_sec_write_end = (state == S_WRITE_END);
+
 
 always@(posedge clk or posedge rst)
 begin
@@ -227,7 +231,6 @@ begin
 					cmd_data_len <= 16'd0;
 					cmd_r1 <= 8'h00;
 					cmd <= {8'd24,sec_addr,8'hff};
-
 				end
 			end
 			S_WRITE:

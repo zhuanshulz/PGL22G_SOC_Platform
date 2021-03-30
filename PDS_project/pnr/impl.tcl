@@ -102,3 +102,69 @@ dev_map -detail -devmap_remove_dups 1
 pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
 report_timing 
 gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 

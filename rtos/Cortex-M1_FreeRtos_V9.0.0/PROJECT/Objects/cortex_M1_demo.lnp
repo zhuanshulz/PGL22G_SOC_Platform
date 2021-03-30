@@ -21,6 +21,7 @@
 ".\objects\pango_m1_it.o"
 ".\objects\pango_spi_flash.o"
 ".\objects\pango_i2c_eeprom.o"
+".\objects\pango_sdcard.o"
 --strict --scatter ".\Objects\cortex_M1_demo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

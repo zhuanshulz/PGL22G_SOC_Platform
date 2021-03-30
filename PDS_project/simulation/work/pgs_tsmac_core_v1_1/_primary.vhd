@@ -1,0 +1,60 @@
+library verilog;
+use verilog.vl_types.all;
+entity pgs_tsmac_core_v1_1 is
+    generic(
+        WR_ADDR_WIDTH   : integer := 11;
+        SPEED_TYPE      : string  := "10/100/1000M_MAC"
+    );
+    port(
+        tx_clki         : in     vl_logic;
+        tx_rst          : in     vl_logic;
+        rx_clki         : in     vl_logic;
+        rx_rst          : in     vl_logic;
+        txceni          : in     vl_logic;
+        rxceni          : in     vl_logic;
+        crs             : in     vl_logic;
+        col             : in     vl_logic;
+        mdi             : in     vl_logic;
+        mdc             : out    vl_logic;
+        mdo             : out    vl_logic;
+        mdoen           : out    vl_logic;
+        tdata           : in     vl_logic_vector(7 downto 0);
+        tstart          : in     vl_logic;
+        tlast           : in     vl_logic;
+        tcrq            : in     vl_logic;
+        cfpt            : in     vl_logic_vector(15 downto 0);
+        thdf            : in     vl_logic;
+        rx_dv           : in     vl_logic;
+        rxd             : in     vl_logic_vector(7 downto 0);
+        rx_er           : in     vl_logic;
+        presetn         : in     vl_logic;
+        pclk            : in     vl_logic;
+        pselx           : in     vl_logic;
+        pwrite          : in     vl_logic;
+        penable         : in     vl_logic;
+        paddr           : in     vl_logic_vector(7 downto 0);
+        pwdata          : in     vl_logic_vector(31 downto 0);
+        prdata          : out    vl_logic_vector(31 downto 0);
+        tx_en           : out    vl_logic;
+        txd             : out    vl_logic_vector(7 downto 0);
+        tx_er           : out    vl_logic;
+        tpnd            : out    vl_logic;
+        tprt            : out    vl_logic;
+        tpar            : out    vl_logic;
+        tsvp            : out    vl_logic;
+        tsv             : out    vl_logic_vector(51 downto 0);
+        txcf            : out    vl_logic;
+        tcdr            : out    vl_logic;
+        rdata           : out    vl_logic_vector(7 downto 0);
+        rvalid          : out    vl_logic;
+        rlast           : out    vl_logic;
+        rsvp            : out    vl_logic;
+        rsv             : out    vl_logic_vector(32 downto 0);
+        speed           : out    vl_logic;
+        packet_cnt      : out    vl_logic_vector(63 downto 0);
+        crc_err_cnt     : out    vl_logic_vector(63 downto 0)
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of WR_ADDR_WIDTH : constant is 1;
+    attribute mti_svvh_generic_type of SPEED_TYPE : constant is 1;
+end pgs_tsmac_core_v1_1;

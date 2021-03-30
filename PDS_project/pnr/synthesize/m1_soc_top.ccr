@@ -1,4 +1,4 @@
-##### Written on 2021/03/26 19:43:46 ###############################
+##### Written on 2021/03/30 10:57:25 ###############################
 
 
 ##### DESIGN INFO ##################################################
@@ -29,10 +29,10 @@ Constraints with issues:
 
 
 define_attribue {RX} {PAP_IO_LOC} {A12}
-	C: ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc(line number: 590)] | Port RX has been placed at location A12, whose type is share pin.
+	C: ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc(line number: 602)] | Port RX has been placed at location A12, whose type is share pin.
 
 define_attribue {spi0_miso} {PAP_IO_LOC} {A4}
-	C: ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc(line number: 640)] | Port spi0_miso has been placed at location A4, whose type is share pin.
+	C: ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc(line number: 652)] | Port spi0_miso has been placed at location A4, whose type is share pin.
 
 
 
@@ -44,6 +44,9 @@ C: ConstraintEditor-2006: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port LED[2] lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 C: ConstraintEditor-2006: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port LED[3] lack of drive, output port and inout port had better set drive value, the default value is 4.
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port LED[3] lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port SD_DCLK lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port SD_MOSI lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port SD_nCS lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 C: ConstraintEditor-2006: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port TX lack of drive, output port and inout port had better set drive value, the default value is 4.
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port TX lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 C: ConstraintEditor-2006: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port i2c0_sck lack of drive, output port and inout port had better set drive value, the default value is 4.
@@ -53,9 +56,6 @@ C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi0_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi0_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi0_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.
-C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi1_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.
-C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi1_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.
-C: ConstraintEditor-2007: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/source/M1_SoC_TOP.fdc] Port spi1_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 
 
 

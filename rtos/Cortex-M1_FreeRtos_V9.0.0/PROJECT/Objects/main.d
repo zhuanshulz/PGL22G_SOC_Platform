@@ -37,3 +37,6 @@
 .\objects\main.o: ..\FreeRTOS\include\list.h
 .\objects\main.o: ..\FreeRTOS\include\timers.h
 .\objects\main.o: ..\FreeRTOS\include\queue.h
+.\objects\main.o: ..\USER\PANGO_sdcard.h
+.\objects\main.o: ..\FreeRTOS\ff14a\source\ff.h
+.\objects\main.o: ..\FreeRTOS\ff14a\source\ffconf.h
