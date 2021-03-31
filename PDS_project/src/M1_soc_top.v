@@ -530,11 +530,9 @@ module m1_soc_top (
     
 //SD Card--------------------------------------------------------------
   wire [31:0] rdata1;
-  wire SD_READYOUT;
-  wire SD_RESP;
     wire a_wr_en;
     sd_card_top u_SD_CARD(
-        .HCLK            (HLK),
+        .HCLK            (HCLK),
         .cs              (mem_cs[1]),
         .rst             (rst_key),
         .wr_en           (a_wr_en),
@@ -547,16 +545,14 @@ module m1_soc_top (
         .SD_nCS          (SD_nCS),
         .SD_DCLK         (SD_DCLK),
         .SD_MOSI         (SD_MOSI),
-        .SD_MISO         (SD_MISO),
-        .SD_READYOUT     (SD_READYOUT),
-        .SD_RESP         (SD_RESP)
+        .SD_MISO         (SD_MISO)
     );
 //MEM-------------------------------------------------------------------
 
     assign a_wr_en = w_en | ~r_en;
 
     wire [31:0] rdata0;
-    assign rdata =mem_cs[0]?rdata0:rdata1;
+    assign rdata = rdata1;
 
     TEST_RAM u_TEST_RAM (
       .wr_data                  (wdata),        // input  [31:0]

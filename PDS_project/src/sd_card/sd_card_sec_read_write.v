@@ -67,20 +67,20 @@ module sd_card_sec_read_write
 reg[7:0] read_data;
 reg[31:0] timer;
 
-localparam S_IDLE               = 0;
-localparam S_CMD0               = 1;
-localparam S_CMD8               = 2;
-localparam S_CMD55              = 3;
-localparam S_CMD41              = 4;
-localparam S_CMD17              = 5;
-localparam S_READ               = 6;
-localparam S_CMD24              = 7;
-localparam S_WRITE              = 8;
-localparam S_ERR                = 14;
-localparam S_WRITE_END          = 15;
-localparam S_READ_END           = 16;
-localparam S_WAIT_READ_WRITE    = 17;
-localparam S_CMD16              = 18;
+localparam S_IDLE               = 5'd0;
+localparam S_CMD0               = 5'd1;
+localparam S_CMD8               = 5'd2;
+localparam S_CMD55              = 5'd3;
+localparam S_CMD41              = 5'd4;
+localparam S_CMD17              = 5'd5;
+localparam S_READ               = 5'd6;
+localparam S_CMD24              = 5'd7;
+localparam S_WRITE              = 5'd8;
+localparam S_ERR                = 5'd14;
+localparam S_WRITE_END          = 5'd15;
+localparam S_READ_END           = 5'd16;
+localparam S_WAIT_READ_WRITE    = 5'd17;
+localparam S_CMD16              = 5'd18;
 
 reg[4:0]                       state;
 assign run_state = state;
@@ -93,9 +93,9 @@ assign block_write_data = sd_sec_write_data;
 assign sd_sec_write_end = (state == S_WRITE_END);
 
 
-always@(posedge clk or posedge rst)
+always@(posedge clk or negedge rst)
 begin
-	if(rst == 1'b1)
+	if(~rst)
 	begin
 		state <= S_IDLE;
 		cmd_req <= 1'b0;

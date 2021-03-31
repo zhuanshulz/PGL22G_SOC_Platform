@@ -61,9 +61,9 @@ assign DCLK = DCLK_reg;
 assign data_out = MISO_shift;
 assign wr_ack = (state == ACK);
 assign nCS = nCS_ctrl;
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		state <= IDLE;
 	else
 		state <= next_state;
@@ -106,9 +106,9 @@ begin
 	endcase
 end
 
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		DCLK_reg <= 1'b0;
 	else if(state == IDLE)
 		DCLK_reg <= CPOL;
@@ -116,9 +116,9 @@ begin
 		DCLK_reg <= ~DCLK_reg;//SPI clock edge
 end
 //SPI clock wait counter
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		clk_cnt <= 16'd0;
 	else if(state == DCLK_IDLE || state == LAST_HALF_CYCLE)
 		clk_cnt <= clk_cnt + 16'd1;
@@ -126,9 +126,9 @@ begin
 		clk_cnt <= 16'd0;
 end
 //SPI clock edge counter
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		clk_edge_cnt <= 5'd0;
 	else if(state == DCLK_EDGE)
 		clk_edge_cnt <= clk_edge_cnt + 5'd1;
@@ -136,9 +136,9 @@ begin
 		clk_edge_cnt <= 5'd0;
 end
 //SPI data output
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		MOSI_shift <= 8'd0;
 	else if(state == IDLE && wr_req)
 		MOSI_shift <= data_in;
@@ -149,9 +149,9 @@ begin
 			MOSI_shift <= {MOSI_shift[6:0],MOSI_shift[7]};
 end
 //SPI data input
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst)
+	if(~rst)
 		MISO_shift <= 8'd0;
 	else if(state == IDLE && wr_req)
 		MISO_shift <= 8'h00;

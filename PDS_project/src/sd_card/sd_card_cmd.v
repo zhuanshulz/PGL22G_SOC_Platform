@@ -93,9 +93,9 @@ assign spi_data_in = send_data;
 assign data_recv = spi_data_out;
 assign nCS_ctrl = CS_reg;
 
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst == 1'b1)
+	if(~rst)
 	begin
 		CS_reg <= 1'b1;
 		spi_wr_req <= 1'b0;
@@ -387,9 +387,9 @@ begin
 				state <= S_IDLE;
 		endcase
 end
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst == 1'b1)
+	if(~rst)
 		block_read_valid <= 1'b0;
 	else if(state == S_READ && byte_cnt < 16'd512)
 		block_read_valid <= spi_wr_ack;
@@ -397,9 +397,9 @@ begin
 		block_read_valid <= 1'b0;
 end
 
-always@(posedge sys_clk or posedge rst)
+always@(posedge sys_clk or negedge rst)
 begin
-	if(rst == 1'b1)
+	if(~rst)
 		block_read_data <= 8'd0;
 	else if(state == S_READ && spi_wr_ack == 1'b1)
 		block_read_data <= data_recv;

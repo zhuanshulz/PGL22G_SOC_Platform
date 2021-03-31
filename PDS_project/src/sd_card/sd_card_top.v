@@ -33,8 +33,8 @@ module sd_card_top
 	input            rst,
     input            wr_en,
     input[31:0]      wr_data,                    // input  [31:0]
-    input[22:0]      waddr,						//waddr = addr[23:2];
-    input[22:0]      rd_addr,					//raddr  = HADDR[23:2];[1,0]
+    input[21:0]      waddr,						//waddr = addr[23:2];
+    input[21:0]      rd_addr,					//raddr  = HADDR[23:2];[1,0]
     input            rd_en,
 
 	//	SPI interface 
@@ -44,9 +44,8 @@ module sd_card_top
 	input            SD_MISO,                   //SD card controller data input
 	
 	// AHB feedback signals
-	output 			 SD_READYOUT,
-	output[31:0]     rd_data,
-	output 			 SD_RESP);
+	output[31:0]     rd_data
+	);
 
 
 	wire           sd_init_done;              //SD card initialization is complete
@@ -101,10 +100,9 @@ reg [31:0] READEN;						/* Offset: 0x204 (R/W) Read Enable Register    *///129
 reg [31:0] INITIALISED;					/* Offset: 0x208 (R/ ) Initialization Register *///130
 reg [31:0] STATUS;						/* Offset: 0x20c (R/ ) showing status Register */ //eg. command execution status//131
 
-assign SD_RESP = 1'b0;
-assign HREADYOUT = 1'b1;
-assign SPI_LOW_SPEED_DIV = 16'd248;
-assign SPI_HIGH_SPEED_DIV = 16'd0;
+
+assign SPI_LOW_SPEED_DIV = 16'd498;			 // spi clk speed = clk speed /((SPI_LOW_SPEED_DIV + 2) * 2 )
+assign SPI_HIGH_SPEED_DIV = 16'd2;			 // spi clk speed = clk speed /((SPI_LOW_SPEED_DIV + 2) * 2 )
 
 assign sd_sec_write_data = TRANSDATA[wr_data_cnt];
 
@@ -115,7 +113,6 @@ always @(posedge HCLK or negedge rst) begin
 		STATUS <= 32'd0;
 	else
 	 	STATUS <= {25'd0,
-
 		 sd_sec_read_end,		// 1
 		 sd_sec_write_end,		// 1
 		 state};				// 5 bits
@@ -137,7 +134,7 @@ localparam WRITE_ACK   = 6;
 
 always @(posedge HCLK or negedge rst) begin
 	if(~rst)
-		INITIALISED<=32'h14;
+		INITIALISED<=32'd0;
 	else
 		INITIALISED <= {31'd0,sd_init_done};
 end
@@ -149,7 +146,7 @@ assign rd_data = temp_rd_data;//(rd_addr[2:0]==3'b000)?INITIALISED:(rd_addr[2:0]
 always @(posedge HCLK or negedge rst) begin
 	if(~rst)
 		begin
-			temp_rd_data  <= 32'hffff;
+			temp_rd_data  <= 32'd0;
 		end
 	else
 		begin
@@ -157,7 +154,8 @@ always @(posedge HCLK or negedge rst) begin
 				begin
 					if(rd_addr <= 22'd127)
 						temp_rd_data <= TRANSDATA[rd_addr];
-					else case (rd_addr)
+					else 
+					case (rd_addr)
 						22'd128 : temp_rd_data <= BASEADDR;
 						22'd129 : temp_rd_data <= READEN;
 						22'd130 : temp_rd_data <= INITIALISED;
@@ -165,8 +163,6 @@ always @(posedge HCLK or negedge rst) begin
 						default: temp_rd_data  <= 32'd0;
 					endcase
 				end
-			else
-				 temp_rd_data  <= 32'd0;
 		end
 end
 
@@ -198,85 +194,86 @@ always @(posedge HCLK or negedge rst) begin
 				end
 		end
 end
-// sd_card_sec_read_write sd_card_sec_read_write_m0(
-// 	.clk                            (HCLK                    ),
-// 	.rst                            (rst                    ),
-// 	.sd_init_done                   (sd_init_done           ),
-// 	.sd_sec_read                    (sd_sec_read            ),
-// 	.sd_sec_read_addr               (sd_sec_read_addr       ),
-// 	.sd_sec_read_data               (sd_sec_read_data       ),
-// 	.sd_sec_read_data_valid         (sd_sec_read_data_valid ),
-// 	.sd_sec_read_end                (sd_sec_read_end        ),
-// 	.sd_sec_write                   (sd_sec_write           ),
-// 	.sd_sec_write_addr              (sd_sec_write_addr      ),
-// 	.sd_sec_write_data              (sd_sec_write_data      ),
-// 	.sd_sec_write_data_req          (sd_sec_write_data_req  ),
-// 	.sd_sec_write_end               (sd_sec_write_end       ),
-// 	.spi_clk_div                    (spi_clk_div            ),
-// 	.cmd_req                        (cmd_req                ),
-// 	.cmd_req_ack                    (cmd_req_ack            ),
-// 	.cmd_req_error                  (cmd_req_error          ),
-// 	.cmd                            (cmd                    ),
-// 	.cmd_r1                         (cmd_r1                 ),
-// 	.cmd_data_len                   (cmd_data_len           ),
-// 	.block_read_req                 (block_read_req         ),
-// 	.block_read_valid               (block_read_valid       ),
-// 	.block_read_data                (block_read_data        ),
-// 	.block_read_req_ack             (block_read_req_ack     ),
-// 	.block_write_req                (block_write_req        ),
-// 	.block_write_data               (block_write_data       ),
-// 	.block_write_data_rd            (block_write_data_rd    ),
-// 	.block_write_req_ack            (block_write_req_ack    ),
 
-//     .SPI_LOW_SPEED_DIV(SPI_LOW_SPEED_DIV),
-// 	.SPI_HIGH_SPEED_DIV(SPI_HIGH_SPEED_DIV),
-//  .run_state(state)
-// );
+sd_card_sec_read_write sd_card_sec_read_write_m0(
+	.clk                            (HCLK                    ),
+	.rst                            (rst                    ),
+	.sd_init_done                   (sd_init_done           ),
+	.sd_sec_read                    (sd_sec_read            ),
+	.sd_sec_read_addr               (sd_sec_read_addr       ),
+	.sd_sec_read_data               (sd_sec_read_data       ),
+	.sd_sec_read_data_valid         (sd_sec_read_data_valid ),
+	.sd_sec_read_end                (sd_sec_read_end        ),
+	.sd_sec_write                   (sd_sec_write           ),
+	.sd_sec_write_addr              (sd_sec_write_addr      ),
+	.sd_sec_write_data              (sd_sec_write_data      ),
+	.sd_sec_write_data_req          (sd_sec_write_data_req  ),
+	.sd_sec_write_end               (sd_sec_write_end       ),
+	.spi_clk_div                    (spi_clk_div            ),
+	.cmd_req                        (cmd_req                ),
+	.cmd_req_ack                    (cmd_req_ack            ),
+	.cmd_req_error                  (cmd_req_error          ),
+	.cmd                            (cmd                    ),
+	.cmd_r1                         (cmd_r1                 ),
+	.cmd_data_len                   (cmd_data_len           ),
+	.block_read_req                 (block_read_req         ),
+	.block_read_valid               (block_read_valid       ),
+	.block_read_data                (block_read_data        ),
+	.block_read_req_ack             (block_read_req_ack     ),
+	.block_write_req                (block_write_req        ),
+	.block_write_data               (block_write_data       ),
+	.block_write_data_rd            (block_write_data_rd    ),
+	.block_write_req_ack            (block_write_req_ack    ),
 
-// sd_card_cmd sd_card_cmd_m0(
-// 	.sys_clk                        (HCLK                    ),
-// 	.rst                            (rst                    ),
-// 	.spi_clk_div                    (spi_clk_div            ),
-// 	.cmd_req                        (cmd_req                ),
-// 	.cmd_req_ack                    (cmd_req_ack            ),
-// 	.cmd_req_error                  (cmd_req_error          ),
-// 	.cmd                            (cmd                    ),
-// 	.cmd_r1                         (cmd_r1                 ),
-// 	.cmd_data_len                   (cmd_data_len           ),
-// 	.block_read_req                 (block_read_req         ),
-// 	.block_read_req_ack             (block_read_req_ack     ),
-// 	.block_read_data                (block_read_data        ),
-// 	.block_read_valid               (block_read_valid       ),
-// 	.block_write_req                (block_write_req        ),
-// 	.block_write_data               (block_write_data       ),
-// 	.block_write_data_rd            (block_write_data_rd    ),
-// 	.block_write_req_ack            (block_write_req_ack    ),
-// 	.nCS_ctrl                       (nCS_ctrl               ),
-// 	.clk_div                        (clk_div                ),
-// 	.spi_wr_req                     (spi_wr_req             ),
-// 	.spi_wr_ack                     (spi_wr_ack             ),
-// 	.spi_data_in                    (spi_data_in            ),
-// 	.spi_data_out                   (spi_data_out           ),
-//	.wr_data_cnt					(wr_data_cnt			)
+    .SPI_LOW_SPEED_DIV(SPI_LOW_SPEED_DIV),
+	.SPI_HIGH_SPEED_DIV(SPI_HIGH_SPEED_DIV),
+ .run_state(state)
+);
 
-// );
+sd_card_cmd sd_card_cmd_m0(
+	.sys_clk                        (HCLK                    ),
+	.rst                            (rst                    ),
+	.spi_clk_div                    (spi_clk_div            ),
+	.cmd_req                        (cmd_req                ),
+	.cmd_req_ack                    (cmd_req_ack            ),
+	.cmd_req_error                  (cmd_req_error          ),
+	.cmd                            (cmd                    ),
+	.cmd_r1                         (cmd_r1                 ),
+	.cmd_data_len                   (cmd_data_len           ),
+	.block_read_req                 (block_read_req         ),
+	.block_read_req_ack             (block_read_req_ack     ),
+	.block_read_data                (block_read_data        ),
+	.block_read_valid               (block_read_valid       ),
+	.block_write_req                (block_write_req        ),
+	.block_write_data               (block_write_data       ),
+	.block_write_data_rd            (block_write_data_rd    ),
+	.block_write_req_ack            (block_write_req_ack    ),
+	.nCS_ctrl                       (nCS_ctrl               ),
+	.clk_div                        (clk_div                ),
+	.spi_wr_req                     (spi_wr_req             ),
+	.spi_wr_ack                     (spi_wr_ack             ),
+	.spi_data_in                    (spi_data_in            ),
+	.spi_data_out                   (spi_data_out           ),
+	.wr_data_cnt					(wr_data_cnt			)
 
-// spi_master spi_master_m0(
-// 	.sys_clk                        (HCLK                    ),
-// 	.rst                            (rst                    ),
-// 	.nCS                            (SD_nCS                 ),
-// 	.DCLK                           (SD_DCLK                ),
-// 	.MOSI                           (SD_MOSI                ),
-// 	.MISO                           (SD_MISO                ),
-// 	.clk_div                        (clk_div                ),
-// 	.CPOL                           (1'b1                   ),
-// 	.CPHA                           (1'b1                   ),
-// 	.nCS_ctrl                       (nCS_ctrl               ),
-// 	.wr_req                         (spi_wr_req             ),
-// 	.wr_ack                         (spi_wr_ack             ),
-// 	.data_in                        (spi_data_in            ),
-// 	.data_out                       (spi_data_out           ),
+);
+
+spi_master spi_master_m0(
+	.sys_clk                        (HCLK                    ),
+	.rst                            (rst                    ),
+	.nCS                            (SD_nCS                 ),
+	.DCLK                           (SD_DCLK                ),
+	.MOSI                           (SD_MOSI                ),
+	.MISO                           (SD_MISO                ),
+	.clk_div                        (clk_div                ),
+	.CPOL                           (1'b1                   ),
+	.CPHA                           (1'b1                   ),
+	.nCS_ctrl                       (nCS_ctrl               ),
+	.wr_req                         (spi_wr_req             ),
+	.wr_ack                         (spi_wr_ack             ),
+	.data_in                        (spi_data_in            ),
+	.data_out                       (spi_data_out           )
 //  .byte_valid						(byte_valid				)
-// );
+);
 
 endmodule
