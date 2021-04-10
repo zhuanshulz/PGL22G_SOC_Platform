@@ -596,9 +596,9 @@ ARM Macro Assembler    Page 10
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M1 --apcs=interw
 ork --depend=.\objects\startup_pango_m1.d -o.\objects\startup_pango_m1.o -IC:\U
 sers\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include -I
-C:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 533" --predefi
-ne="ARMCM1 SETA 1" --list=.\listings\startup_pango_m1.lst ..\STARTUP\startup_PA
-NGO_M1.s
+C:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVI
+SION_VERSION SETA 533" --predefine="ARMCM1 SETA 1" --list=.\listings\startup_pa
+ngo_m1.lst ..\STARTUP\startup_PANGO_M1.s
 
 
 
@@ -1240,4 +1240,4 @@ Symbol: __main
       At line 125 in file ..\STARTUP\startup_PANGO_M1.s
 Comment: __main used once
 2 symbols
-389 symbols in table
+390 symbols in table

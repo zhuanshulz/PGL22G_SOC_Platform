@@ -16,10 +16,6 @@ entity m1_soc_top is
         spi0_cs         : out    vl_logic;
         spi0_mosi       : out    vl_logic;
         spi0_miso       : in     vl_logic;
-        spi1_clk        : out    vl_logic;
-        spi1_cs         : out    vl_logic;
-        spi1_mosi       : out    vl_logic;
-        spi1_miso       : in     vl_logic;
         i2c0_sck        : inout  vl_logic;
         i2c0_sda        : inout  vl_logic;
         pad_loop_in     : in     vl_logic;

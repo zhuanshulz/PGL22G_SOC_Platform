@@ -17,7 +17,7 @@
 / by use of this software.
 /
 /----------------------------------------------------------------------------*/
-
+#include <PANGO_M1_printk.h>
 
 #ifndef FF_DEFINED
 #define FF_DEFINED	80196	/* Revision ID */

@@ -534,8 +534,8 @@ module m1_soc_top (
     sd_card_top u_SD_CARD(
         .HCLK            (HCLK),
         .cs              (mem_cs[1]),
-        .rst             (rst_key),
-        .wr_en           (a_wr_en),
+        .rst             (SYSRESETn),
+        .wr_en           (w_en),
         .wr_data         (wdata),
         .waddr           (waddr),
 
@@ -552,7 +552,7 @@ module m1_soc_top (
     assign a_wr_en = w_en | ~r_en;
 
     wire [31:0] rdata0;
-    assign rdata = rdata1;
+    assign rdata = mem_cs[0]?rdata0:rdata1;
 
     TEST_RAM u_TEST_RAM (
       .wr_data                  (wdata),        // input  [31:0]

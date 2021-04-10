@@ -1,6 +1,6 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /m1_test/uut/TH_1S
+
 add wave -noupdate /m1_test/uut/ex_clk_50m
 add wave -noupdate /m1_test/uut/rst_key
 add wave -noupdate /m1_test/uut/gpio_in0
@@ -8,14 +8,29 @@ add wave -noupdate /m1_test/uut/gpio_in1
 add wave -noupdate /m1_test/uut/LED
 add wave -noupdate /m1_test/uut/RX
 add wave -noupdate /m1_test/uut/TX
-add wave -noupdate /m1_test/uut/spi0_clk
-add wave -noupdate /m1_test/uut/spi0_cs
-add wave -noupdate /m1_test/uut/spi0_mosi
-add wave -noupdate /m1_test/uut/spi0_miso
-add wave -noupdate /m1_test/uut/spi1_clk
-add wave -noupdate /m1_test/uut/spi1_cs
-add wave -noupdate /m1_test/uut/spi1_mosi
-add wave -noupdate /m1_test/uut/spi1_miso
+
+add wave -noupdate /m1_test/uut/HCLK
+
+
+add wave -noupdate /m1_test/uut/mem_cs
+add wave -noupdate /m1_test/uut/r_en
+add wave -noupdate /m1_test/uut/raddr
+add wave -noupdate /m1_test/uut/rdata1
+
+add wave -noupdate /m1_test/uut/HSEL
+add wave -noupdate /m1_test/uut/HTRANS
+add wave -noupdate /m1_test/uut/HBURST
+add wave -noupdate /m1_test/uut/mem_cs
+add wave -noupdate /m1_test/uut/HSEL
+add wave -noupdate /m1_test/uut/HSIZE
+add wave -noupdate /m1_test/uut/HMASTLOCK
+add wave -noupdate /m1_test/uut/HADDR
+add wave -noupdate /m1_test/uut/HWDATA
+add wave -noupdate /m1_test/uut/HREADY
+add wave -noupdate /m1_test/uut/HREADYOUT_udp
+add wave -noupdate /m1_test/uut/HRESP_udp
+add wave -noupdate /m1_test/uut/HRDATA_udp
+add wave -noupdate /m1_test/uut/HRDATAmux
 
 
 TreeUpdate [SetDefaultTree]

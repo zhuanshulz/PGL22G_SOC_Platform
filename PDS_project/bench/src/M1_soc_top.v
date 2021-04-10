@@ -22,11 +22,6 @@ module m1_soc_top (
     output            spi0_mosi,
     input             spi0_miso,
 
-    output            spi1_clk,
-    output            spi1_cs,
-    output            spi1_mosi,
-    input             spi1_miso,
-
     inout             i2c0_sck,
     inout             i2c0_sda,
 
@@ -259,16 +254,6 @@ module m1_soc_top (
 
     wire [7:0] spi0_cs_0;
     assign spi0_cs = spi0_cs_0[0];
-    assign spi1_cs = spi0_cs_0[1];
-
-    wire spi_clk;
-    assign spi0_clk = spi_clk;
-    assign spi1_clk = spi_clk;
-    wire spi_mosi;
-    assign spi0_mosi = spi_mosi;
-    assign spi1_mosi = spi_mosi;
-    wire spi_miso;
-    assign spi_miso = (~spi0_cs_0[0])?spi0_miso:(~spi0_cs_0[1])?spi1_miso:1'bz;
 
     wire scl_pad_i;
     wire scl_pad_o;
@@ -354,10 +339,10 @@ module m1_soc_top (
         .watchdog_reset    (watchdog_reset),
 
         //SPI
-        .spi0_clk          (spi_clk),
+        .spi0_clk          (spi0_clk),
         .spi0_cs           (spi0_cs_0),
-        .spi0_mosi         (spi_mosi),
-        .spi0_miso         (spi_miso),
+        .spi0_mosi         (spi0_mosi),
+        .spi0_miso         (spi0_miso),
 
         //I2C 
         .scl_pad_i         (scl_pad_i),
@@ -527,7 +512,8 @@ module m1_soc_top (
     assign a_wr_en = w_en | ~r_en;
 
     wire [31:0] rdata0;
-    assign rdata = rdata0;
+    wire [31:0] rdata1;
+    assign rdata = rdata1;
 
     TEST_RAM u_TEST_RAM (
       .wr_data                  (wdata),        // input  [31:0]
@@ -541,6 +527,23 @@ module m1_soc_top (
       .rd_data                  (rdata0),       // output [31:0]
       .rd_clk                   (HCLK),         // input
       .rd_rst                   (1'b0)          // input
+    );
+
+    sd_card_top u_SD_CARD(
+        .HCLK            (HCLK),
+        .cs              (mem_cs[1]),
+        .rst             (SYSRESETn),
+        .wr_en           (w_en),
+        .wr_data         (wdata),
+        .waddr           (waddr),
+
+        .rd_addr         (raddr),
+        .rd_en           (r_en),
+        .rd_data         (rdata1),
+        .SD_nCS          (SD_nCS),
+        .SD_DCLK         (SD_DCLK),
+        .SD_MOSI         (SD_MOSI),
+        .SD_MISO         (SD_MISO)
     );
 
 //DDR------------------------------------------------------------------

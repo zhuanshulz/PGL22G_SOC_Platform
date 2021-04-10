@@ -10,4 +10,4 @@ vlog +define+SIM_ON \
 -f file_list.f \
 -l vlog.log
 vsim -novopt -suppress 3486,3680,3781  m1_test -L work -L usim -l sim.log
-do wave.do
+do wave_ahb.do

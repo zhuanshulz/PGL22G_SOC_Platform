@@ -38,5 +38,8 @@
 .\objects\main.o: ..\FreeRTOS\include\timers.h
 .\objects\main.o: ..\FreeRTOS\include\queue.h
 .\objects\main.o: ..\USER\PANGO_sdcard.h
-.\objects\main.o: ..\FreeRTOS\ff14a\source\ff.h
-.\objects\main.o: ..\FreeRTOS\ff14a\source\ffconf.h
+.\objects\main.o: ..\FatFs\integer.h
+.\objects\main.o: ..\FatFs\ff.h
+.\objects\main.o: ..\FatFs\ffconf.h
+.\objects\main.o: ..\FatFs\ff.h
+.\objects\main.o: ..\FatFs\diskio.h

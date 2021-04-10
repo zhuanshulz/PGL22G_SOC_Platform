@@ -6,9 +6,10 @@
 #include "task.h"
 #include "timers.h"
 #include "queue.h"
-#include "PANGO_spi_flash.h"
+//#include "PANGO_spi_flash.h"
 #include "PANGO_sdcard.h"
-//#include "ff.h"
+#include "ff.h"
+#include "diskio.h"
 
 #define DELAY_CNT		8000000
 #define LED_CNT			(2)
@@ -510,33 +511,13 @@ void SoftTmr_Callback(void *temp)
 
 	}
 }
-#define cmd0_1  0x40
-#define cmd0_2  0x00
-#define cmd0_3  0x00
-#define cmd0_4  0x00
-#define cmd0_5  0x00
-#define cmd0_6  0x95
-#define cmd1		0xff
 
-void test(void)
-{
-	Delay(2000000);
-	SFLASH_WriteEnable();                          //写使能
-
-	SPI1_CS_ENABLE;                                 //使能器件
-	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
-	SPI_WriteByte((uint8_t)(cmd0_2));
-	SPI_WriteByte((uint8_t)cmd0_3);
-	SPI_WriteByte((uint8_t)cmd0_4);
-	SPI_WriteByte((uint8_t)cmd0_5);
-	SPI_WriteByte((uint8_t)cmd0_6);
-	uint8_t pBuffer;
-	pBuffer = SPI_ReadByte();
-	DEBUG_P("-----%x----",pBuffer);
-	SPI_CS_DISABLE;
-	SFLASH_WaitForNoBusy();                        //等待空闲（等待写入结束）
-}
-
+char        write_buf[] = "123456";
+UINT        bw;
+FATFS fatfs;   ///定义一个文件系统对象 
+FIL         fp;
+FRESULT res;
+//#define _MAX_SS 64
 int main(void)
 {
 	SystemInit();
@@ -544,68 +525,67 @@ int main(void)
 	GpioInit();
 	UartInit();
 	SPIInit0();	//SPI0 for spi flash and spi sdcard device
-	//I2CInit();								
-	DEBUG_P("\n--- RTOS starting ---\n");
-	while(1)
-	{
-			if (SD_Init()==1)
-			{
-				DEBUG_P("\n--- SD init success---\n");
-				DEBUG_P("\n  %x   \n",(uint32_t)(SDCARD->INITIALISED));
-				break;
-			}
-			else
-				DEBUG_P("\n--- SD init failed---\n");
-			Delay(200);
-	}
-	while(1)
-	{
-	}
-//	Delay(2000000);
-//		uint8_t pBuffer;
-//	SPI_CS_DISABLE;
-//	SPI1_CS_ENABLE;                                 //使能器件
-//	DEBUG_P("-");
-//	SPI_WriteByte((uint8_t)(cmd0_1));     //发送24bit地址
-//	
-//	SPI_WriteByte((uint8_t)(cmd0_2));
-//	SPI_WriteByte((uint8_t)cmd0_3);
-//	SPI_WriteByte((uint8_t)cmd0_4);
-//	SPI_WriteByte((uint8_t)cmd0_5);
-//	SPI_WriteByte((uint8_t)cmd0_6);
-//// 这里写完了CMD0
-//	while(1)
+	
+	
+	
+	static unsigned char buffer[1024];
+//	static unsigned char buffer_1[1024];
+//	for(int i = 0;i<1024;i++)
 //	{
-//	pBuffer = SPI_ReadByte();
-//		if (pBuffer != 0xff)
-//			break;
-//			SPI_WriteByte((uint8_t)cmd1);
+//		buffer[i] = 0;
+//		buffer_1[i] = 0;
 //	}
-//	DEBUG_P("\n-----%x----\n",pBuffer);
-//	
-//	SPI_CS_DISABLE;
-//	SFLASH_WaitForNoBusy();                        //等待空闲（等待写入结束）这是针对flash的指令操作，不针对spi外设，因此在sdcard处不需要添加。
-//	DEBUG_P("PANGO Cortex-M1 FreeRTOS Start Run......\r\n");
-//	DEBUG_P("JEDEC  id = 0x%x\n",SFLASH_ReadJEDEC_ID());
+//		disk_initialize(0);
+//DEBUG_P(" \n");
+//	MMC_SD_ReadMultiBlock(0,buffer,2);
+//	for(int i = 0;i<1024;i++)
+//		DEBUG_P(" %x ",buffer[i]);
+//	for(int i = 0;i<1024;i++)
+//	{
+//		buffer[i] = 3;
+//	}
+//	DEBUG_P(" \n");
+//	DEBUG_P(" \n");
+//	MMC_SD_WriteMultiBlock(0,buffer,2);
+//	MMC_SD_ReadMultiBlock(0,buffer_1,2);
+//	for(int i = 0;i<1024;i++)
+//		DEBUG_P(" %x ",buffer_1[i]);
 
-//	xTaskCreate(queue_task,"queue",80,NULL,1,NULL);
-//	xTaskCreate(led_task,"led",40,NULL,1,NULL);
-//	Queue1 = xQueueCreate(Queue1_Length, Queue1_ItemSize);
-//	if(0 == Queue1)
-//	{
-//		DEBUG_P("Queue1 Create Fail......\r\n");
-//		return 0;
-//	}
-//	SoftTmr = xTimerCreate(	"AutoReloadTimer", 
-//							(TickType_t)300, 							//定时器周期1000(tick)
-//							(UBaseType_t)pdTRUE, 						//周期模式
-//							(void *)1, 									//为每个计时器分配一个唯一ID
-//							(TimerCallbackFunction_t)SoftTmr_Callback);	//软定时器回调函数
-//	if(NULL != SoftTmr)
-//	{
-//		xTimerStart(SoftTmr, 0);						//开启定时器
-//	}
-//	vTaskStartScheduler();
+	
+	res = f_mount(&fatfs, "0:", 1);	//返回13		/* (13) There is no valid FAT volume */
+	DEBUG_P("\r\n mkfs res = %d \r\n", res);
+	if(res == FR_OK){
+		 res = f_open(&fp, "0:test.txt", FA_READ|FA_WRITE|FA_CREATE_ALWAYS);
+		 DEBUG_P("\r\n f_open     res = %d\r\n", res);
+		res = f_write(&fp, write_buf, sizeof(write_buf), &bw);
+		DEBUG_P("\r\n f_write    res = %d\r\n", res);
+				
+		res = f_close(&fp);
+		DEBUG_P("\r\n f_close    res = %d\r\n", res);
+		res = f_open(&fp, "0:test.txt", FA_READ);
+		DEBUG_P("\r\n f_open    res = %d\r\n", res);
+		res = f_read(&fp, buffer, 1024, &bw);
+		DEBUG_P("\r\n f_read res = %d , read_buf = %s\r\n", res, buffer);
+		res = f_close(&fp);
+		DEBUG_P("\r\n f_close    res = %d\r\n", res);
+	}
+	
+	
+	
+	
+	//res = f_mkfs("0:", &parm_fs , work,sizeof(work));
+//	if(res == FR_NO_FILESYSTEM)     // SPI_FLASH设备没有挂在文件系统
+//    {
+//        // 文件系统格式化
+//        res = f_mkfs("0:", &parm_fs , work,sizeof(work));
+//			//Delay(200);
+//         DEBUG_P("\r\n mkfs res = %d \r\n", res);
+//        // 再次判断
+//        if(res != FR_OK)
+//        {
+//            printf("\r\n f_mkfs res = %d \r\n", res);
+//        }
+//    }
 	while(1)
 	{
 		Delay(200);

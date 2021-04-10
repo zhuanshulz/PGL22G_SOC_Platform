@@ -529,9 +529,9 @@
             <data>Peak Memory (B)</data>
         </column_headers>
         <row>
-            <data>11.2969</data>
-            <data>17</data>
-            <data>208,556,032</data>
+            <data>11.2031</data>
+            <data>14</data>
+            <data>209,068,032</data>
         </row>
     </table>
     <table id="compile_messages" title="Compile Messages" column_number="1">
@@ -5907,118 +5907,13 @@
             <data color="4278190080" align="0" message="4" bold="0">Verilog-0003: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 29)] Elaborating module sd_card_top</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2024: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 29)] Give an initial value for the no drive output pin SD_nCS in graph of sdm module sd_card_top</data>
+            <data color="4278190080" align="0" message="4" bold="0">Verilog-0003: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/spi_master.v(line number: 29)] Elaborating module spi_master</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2024: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 29)] Give an initial value for the no drive output pin SD_DCLK in graph of sdm module sd_card_top</data>
+            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 196)] Net temp_read_word in module sd_card_top does not have a driver, tie it to 0</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2024: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 29)] Give an initial value for the no drive output pin SD_MOSI in graph of sdm module sd_card_top</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2024: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 29)] Give an initial value for the no drive output pin SD_READYOUT in graph of sdm module sd_card_top</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 52)] Net sd_init_done in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 53)] Net sd_sec_read_end in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 54)] Net sd_sec_write_end in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 58)] Net sd_sec_read_addr in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 59)] Net sd_sec_read_data in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 60)] Net sd_sec_read_data_valid in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 62)] Net sd_sec_write_addr in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 64)] Net sd_sec_write_data_req in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 70)] Net spi_clk_div in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 71)] Net cmd_req in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 72)] Net cmd_req_ack in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 73)] Net cmd_req_error in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 74)] Net cmd in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 75)] Net cmd_r1 in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 76)] Net cmd_data_len in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 77)] Net block_read_valid in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 78)] Net block_read_req in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 79)] Net block_read_data in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 80)] Net block_read_req_ack in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 81)] Net block_write_data in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 82)] Net block_write_data_rd in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 83)] Net block_write_req_ack in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 84)] Net block_write_req in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 86)] Net nCS_ctrl in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 87)] Net spi_wr_req in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 88)] Net spi_wr_ack in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 89)] Net spi_data_in in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 90)] Net spi_data_out in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 91)] Net clk_div in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 95)] Net byte_valid in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 96)] Net wr_data_cnt in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 111)] Net state in module sd_card_top does not have a driver, tie it to 0</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2019: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 536)] Width mismatch between port waddr and signal bound to it for instantiated module sd_card_top</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2019: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 536)] Width mismatch between port rd_addr and signal bound to it for instantiated module sd_card_top</data>
+            <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/sd_card/sd_card_top.v(line number: 197)] Net temp_write_word in module sd_card_top does not have a driver, tie it to 0</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Verilog-0003: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/ipcore/TEST_RAM/TEST_RAM.v(line number: 18)] Elaborating module TEST_RAM</data>
@@ -6939,9 +6834,6 @@
             <data color="4278190080" align="0" message="5" bold="0">Verilog-2023: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 292)] Give initial value 0 for the no drive pin RX1 in module instance</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="5" bold="0">Verilog-2036: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 536)] Net HLK connected to input port of module instance has no driver, tie it to 0</data>
-        </row>
-        <row>
             <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 89)] Net HREADYOUT in module m1_soc_top does not have a driver, tie it to 0</data>
         </row>
         <row>
@@ -6984,25 +6876,22 @@
             <data color="4278190080" align="0" message="5" bold="0">Verilog-2021: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/src/M1_soc_top.v(line number: 201)] Net tsmac_phy_pwdata in module m1_soc_top does not have a driver, tie it to 0</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram TRANSDATA, depth=128, width=1.</data>
-        </row>
-        <row>
             <data color="4278190080" align="0" message="4" bold="0">Removed inst wvalid_i that is redundant to wlast_i.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Removed inst wvalid_d that is redundant to wlast_d.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem3, depth=1024, width=8.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem3, depth=4096, width=8.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem1, depth=1024, width=8.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem1, depth=4096, width=8.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem2, depth=1024, width=8.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem2, depth=4096, width=8.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem0, depth=1024, width=8.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem0, depth=4096, width=8.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Sdm-0001: Found Ram mem3, depth=1024, width=8.</data>
@@ -7117,6 +7006,12 @@
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">FSM c_state[4:0]_fsm[4:0] inferred.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">FSM state[3:0]_fsm[3:0] inferred.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">FSM state[2:0]_fsm[2:0] inferred.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">FSM state[3:0]_fsm[3:0] inferred.</data>

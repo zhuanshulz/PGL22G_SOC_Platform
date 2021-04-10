@@ -12,10 +12,28 @@
 #include "PANGO_sdcard.h"
 /* Definitions of physical drive number for each drive */
 #define SD_CARD		0	/* Example: Map Ramdisk to physical drive 0 */
-//#define DEV_MMC		1	/* Example: Map MMC/SD card to physical drive 1 */
-//#define DEV_USB		2	/* Example: Map USB MSD to physical drive 2 */
-
-
+#define CMD0	(0)			/* GO_IDLE_STATE */
+#define CMD1	(1)			/* SEND_OP_COND (MMC) */
+#define	ACMD41	(0x80+41)	/* SEND_OP_COND (SDC) */
+#define CMD8	(8)			/* SEND_IF_COND */
+#define CMD9	(9)			/* SEND_CSD */
+#define CMD10	(10)		/* SEND_CID */
+#define CMD12	(12)		/* STOP_TRANSMISSION */
+#define ACMD13	(0x80+13)	/* SD_STATUS (SDC) */
+#define CMD16	(16)		/* SET_BLOCKLEN */
+#define CMD17	(17)		/* READ_SINGLE_BLOCK */
+#define CMD18	(18)		/* READ_MULTIPLE_BLOCK */
+#define CMD23	(23)		/* SET_BLOCK_COUNT (MMC) */
+#define	ACMD23	(0x80+23)	/* SET_WR_BLK_ERASE_COUNT (SDC) */
+#define CMD24	(24)		/* WRITE_BLOCK */
+#define CMD25	(25)		/* WRITE_MULTIPLE_BLOCK */
+#define CMD32	(32)		/* ERASE_ER_BLK_START */
+#define CMD33	(33)		/* ERASE_ER_BLK_END */
+#define CMD38	(38)		/* ERASE */
+#define CMD55	(55)		/* APP_CMD */
+#define CMD58	(58)		/* READ_OCR */
+#define	MMC_WP		0 /* Write protected (yes:true, no:false, default:false) */
+#define	MMC_CD		1 
 /*-----------------------------------------------------------------------*/
 /* Get Drive Status                                                      */
 /*-----------------------------------------------------------------------*/
@@ -24,31 +42,12 @@ DSTATUS disk_status (
 	BYTE pdrv		/* Physical drive nmuber to identify the drive */
 )
 {
-	DSTATUS stat;
-	int result;
-
-	switch (pdrv) {
-	case SD_CARD :
-		result = RAM_disk_status();
-		// translate the reslut code here
-		return stat;
-
-	// case DEV_MMC :
-	// 	result = MMC_disk_status();
-
-	// 	// translate the reslut code here
-
-	// 	return stat;
-
-	// case DEV_USB :
-	// 	result = USB_disk_status();
-
-	// 	// translate the reslut code here
-
-	// 	return stat;
-	}
-	return STA_NOINIT;
+	DSTATUS Stat = STA_NOINIT;
+	if (pdrv) Stat =  STA_NOINIT;		/* Supports only drive 0 */
+	else Stat = 0;
+	return Stat;	/* Return disk status */
 }
+
 
 
 
@@ -61,41 +60,12 @@ DSTATUS disk_initialize (
 )
 {
 	DSTATUS stat;
-	int result;
-	int Status; 
-	switch (pdrv) {
-	case SD_CARD :
-	{
-		Status= SD_Init();
-		if(Status==0){
-				return RES_OK;
-		}else{
-				return STA_NOINIT;
-		}
-	}
-	default:
-     return STA_NOINIT;
-		// result = RAM_disk_initialize();
-
-		// translate the reslut code here
-
-//		return stat;
-
-	// case DEV_MMC :
-	// 	result = MMC_disk_initialize();
-
-	// 	// translate the reslut code here
-
-	// 	return stat;
-
-	// case DEV_USB :
-	// 	result = USB_disk_initialize();
-
-	// 	// translate the reslut code here
-
-	// 	return stat;
-	}
-	return STA_NOINIT;
+	if (pdrv) return STA_NOINIT;			/* Supports only drive 0 */
+	MMC_SD_Init();
+	stat = MMC_SD_Reset();
+	if(stat!=0)
+			stat = RES_ERROR;
+	return stat;
 }
 
 
@@ -112,59 +82,12 @@ DRESULT disk_read (
 )
 {
 	DRESULT res;
-	int result;
 
-	switch (pdrv) {
-	case SD_CARD :
-		// translate the arguments here
-		if(count==1)            /* 1个sector的读操作 */      
-    {   
-			result = SD_Read(buff, sector, count);
-
-			// translate the reslut code here
-			if(result == 0){
-							return RES_OK;
-			}else{
-							return RES_ERROR;
-			}
-		}                                                
-		else                    /* 多个sector的读操作 */     
-		{  
-					
-					result = SD_Read(buff, sector, count);
-					if(result == 0){
-									return RES_OK;
-					}else{
-									return RES_ERROR;
-					}
-		}          
-			
-			
-			
-			
-			
-		return res;
-
-//	case DEV_MMC :
-//		// translate the arguments here
-
-//		result = MMC_disk_read(buff, sector, count);
-
-//		// translate the reslut code here
-
-//		return res;
-
-//	case DEV_USB :
-//		// translate the arguments here
-
-//		result = USB_disk_read(buff, sector, count);
-
-//		// translate the reslut code here
-
-//		return res;
+	if (pdrv) res =  RES_ERROR;			/* Supports only drive 0 */
+	else {
+		res = MMC_SD_ReadMultiBlock(sector,buff,count);
 	}
-
-	return RES_PARERR;
+	return res;
 }
 
 
@@ -183,38 +106,12 @@ DRESULT disk_write (
 )
 {
 	DRESULT res;
-	int result;
 
-	switch (pdrv) {
-	case SD_CARD :
-		// translate the arguments here
-
-		result = SD_Write(buff, sector, count);
-
-		// translate the reslut code here
-
-		return res;
-
-//	case DEV_MMC :
-//		// translate the arguments here
-
-//		result = MMC_disk_write(buff, sector, count);
-
-//		// translate the reslut code here
-
-//		return res;
-
-//	case DEV_USB :
-//		// translate the arguments here
-
-//		result = USB_disk_write(buff, sector, count);
-
-//		// translate the reslut code here
-
-//		return res;
+	if (pdrv) res =  RES_ERROR;			/* Supports only drive 0 */
+	else {
+		res = MMC_SD_WriteMultiBlock(sector,buff,count);
 	}
-
-	return RES_PARERR;
+	return res;
 }
 
 #endif
@@ -231,28 +128,31 @@ DRESULT disk_ioctl (
 )
 {
 	DRESULT res;
-	int result;
-
-	switch (pdrv) {
-	case SD_CARD :
-
-		// Process of the command for the RAM drive
-
+	if (pdrv) res =  RES_ERROR;			/* Supports only drive 0 */
+	else {
+			switch(cmd)
+			{
+				//返回扇区个数
+				case GET_SECTOR_COUNT:
+						*(DWORD *)buff = 2048; //1GB，即16777216字节
+						res = RES_OK;
+				break;
+				//返回扇区大小
+				case GET_SECTOR_SIZE:
+						*(WORD *)buff = 512 ;
+				res = RES_OK;
+				break;
+				//返回擦除扇区的最小个数
+				case GET_BLOCK_SIZE:
+						*(WORD *)buff = 1 ;   //每次擦除一个扇区
+					res = RES_OK;
+				break;
+				default:
+					res = RES_OK;
+			}
+		         //由此看出，此处的数据返回值不是通过return返回的，如之前的讲解是通过指针返回
 		return res;
-
-//	case DEV_MMC :
-
-//		// Process of the command for the MMC/SD card
-
-//		return res;
-
-//	case DEV_USB :
-
-//		// Process of the command the USB drive
-
-//		return res;
 	}
-
 	return RES_PARERR;
 }
 

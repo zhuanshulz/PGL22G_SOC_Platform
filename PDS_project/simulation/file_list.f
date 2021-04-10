@@ -90,6 +90,10 @@
   ../bench/src/logical/cmsdk_apb_i2c/verilog/i2c_master_byte_ctrl.vp
   
   ../bench/src/logical/cmsdk_apb_mem/verilog/cmsdk_ahb_mem.v
+  ../bench/src/logical/cmsdk_apb_mem/verilog/sd_card_top.v
+  ../bench/src/logical/cmsdk_apb_mem/verilog/spi_master.v
+  ../bench/src/logical/cmsdk_apb_mem/verilog/sd_card_cmd.v
+  ../bench/src/logical/cmsdk_apb_mem/verilog/sd_card_sec_read_write.v
   
   ../bench/src/logical/cmsdk_apb_slave_mux/verilog/cmsdk_apb_slave_mux.vp
 

@@ -1,8 +1,7 @@
 .\objects\pango_sdcard.o: ..\USER\PANGO_sdcard.c
 .\objects\pango_sdcard.o: ..\USER\PANGO_sdcard.h
-.\objects\pango_sdcard.o: ..\FreeRTOS\ff14a\source\ff.h
-.\objects\pango_sdcard.o: ..\FreeRTOS\ff14a\source\ffconf.h
 .\objects\pango_sdcard.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pango_sdcard.o: ..\FatFs\integer.h
 .\objects\pango_sdcard.o: ..\SYSTEM\PANGO_M1.h
 .\objects\pango_sdcard.o: ..\CORE\core_cm1.h
 .\objects\pango_sdcard.o: ..\CORE\cmsis_version.h
@@ -27,3 +26,5 @@
 .\objects\pango_sdcard.o: ..\PERIPHERAL\inc\PANGO_M1_memory.h
 .\objects\pango_sdcard.o: ..\PERIPHERAL\inc\PANGO_M1_ddr3.h
 .\objects\pango_sdcard.o: ..\USER\PANGO_ddr3.h
+.\objects\pango_sdcard.o: ..\FatFs\ff.h
+.\objects\pango_sdcard.o: ..\FatFs\ffconf.h

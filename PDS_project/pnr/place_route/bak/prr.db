@@ -135,6 +135,25 @@
             <data>YES</data>
         </row>
         <row>
+            <data>SD_MISO</data>
+            <data>input</data>
+            <data>U13</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>NA</data>
+            <data>PULLUP</data>
+            <data>NA</data>
+            <data>NOHYS</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>YES</data>
+        </row>
+        <row>
             <data>SD_MOSI</data>
             <data>output</data>
             <data>U14</data>
@@ -3300,9 +3319,9 @@
             <data>U13</data>
             <data>IOBD_152_110</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>SD_MISO</data>
+            <data>input</data>
+            <data>YES</data>
         </row>
         <row>
             <data>V13</data>
@@ -3612,50 +3631,50 @@
         </row>
         <row>
             <data>Use of CLMA</data>
-            <data>2235</data>
+            <data>2350</data>
             <data>3274</data>
-            <data>68</data>
+            <data>72</data>
             <row>
                 <data>  FF</data>
-                <data>3482</data>
+                <data>3708</data>
                 <data>19644</data>
-                <data>18</data>
+                <data>19</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>5949</data>
+                <data>6274</data>
                 <data>13096</data>
-                <data>45</data>
+                <data>48</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>2020</data>
+                <data>2081</data>
                 <data>13096</data>
-                <data>15</data>
+                <data>16</data>
             </row>
         </row>
         <row>
             <data>Use of CLMS</data>
-            <data>746</data>
+            <data>753</data>
             <data>1110</data>
-            <data>67</data>
+            <data>68</data>
             <row>
                 <data>  FF</data>
-                <data>1109</data>
+                <data>1145</data>
                 <data>6660</data>
                 <data>17</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>1888</data>
+                <data>1854</data>
                 <data>4440</data>
-                <data>43</data>
+                <data>42</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>592</data>
+                <data>668</data>
                 <data>4440</data>
-                <data>13</data>
+                <data>15</data>
             </row>
             <row>
                 <data>  Distributed RAM</data>
@@ -3684,9 +3703,9 @@
         </row>
         <row>
             <data>Use of DRM</data>
-            <data>21</data>
+            <data>27</data>
             <data>48</data>
-            <data>44</data>
+            <data>56</data>
         </row>
         <row>
             <data>Use of FLSIF</data>
@@ -3714,14 +3733,14 @@
         </row>
         <row>
             <data>Use of IO</data>
-            <data>86</data>
+            <data>87</data>
             <data>240</data>
             <data>36</data>
             <row>
                 <data>  IOBD</data>
-                <data>41</data>
+                <data>42</data>
                 <data>120</data>
-                <data>34</data>
+                <data>35</data>
             </row>
             <row>
                 <data>  IOBR</data>
@@ -3762,7 +3781,7 @@
         </row>
         <row>
             <data>Use of IOL</data>
-            <data>86</data>
+            <data>87</data>
             <data>240</data>
             <data>36</data>
         </row>
@@ -3834,9 +3853,9 @@
         </row>
         <row>
             <data>Use of USCM</data>
-            <data>9</data>
+            <data>8</data>
             <data>20</data>
-            <data>45</data>
+            <data>40</data>
         </row>
         <row>
             <data>Use of USCMMUX_TEST</data>
@@ -3882,11 +3901,11 @@
         </column_headers>
         <row>
             <data>m1_soc_top</data>
-            <data>7612</data>
-            <data>4591</data>
+            <data>7895</data>
+            <data>4853</data>
             <data>96</data>
             <data>3</data>
-            <data>21</data>
+            <data>27</data>
             <data>0</data>
             <data>0</data>
             <data>2</data>
@@ -3894,7 +3913,7 @@
             <data>0</data>
             <data>0</data>
             <data>1</data>
-            <data>86</data>
+            <data>87</data>
             <data>1</data>
             <data>1</data>
             <data>2</data>
@@ -3906,7 +3925,7 @@
             <data>0</data>
             <data>0</data>
             <data>0</data>
-            <data>9</data>
+            <data>8</data>
             <row>
                 <data>u_rst_gen</data>
                 <data>11</data>
@@ -3937,11 +3956,11 @@
             </row>
             <row>
                 <data>u_integration_kit_dbg</data>
-                <data>5904</data>
-                <data>3492</data>
+                <data>5914</data>
+                <data>3504</data>
                 <data>96</data>
                 <data>3</data>
-                <data>19</data>
+                <data>25</data>
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
@@ -3964,11 +3983,11 @@
                 <data>0</data>
                 <row>
                     <data>gen_CortexM1Integration.u_cm1_integration</data>
-                    <data>2230</data>
+                    <data>2221</data>
                     <data>1022</data>
                     <data>64</data>
                     <data>3</data>
-                    <data>4</data>
+                    <data>10</data>
                     <data>0</data>
                     <data>0</data>
                     <data>0</data>
@@ -3991,7 +4010,7 @@
                     <data>0</data>
                     <row>
                         <data>u_cortexm1</data>
-                        <data>2230</data>
+                        <data>2221</data>
                         <data>1022</data>
                         <data>64</data>
                         <data>3</data>
@@ -4018,7 +4037,7 @@
                         <data>0</data>
                         <row>
                             <data>u_core</data>
-                            <data>1614</data>
+                            <data>1618</data>
                             <data>682</data>
                             <data>64</data>
                             <data>3</data>
@@ -4100,7 +4119,7 @@
                                 <data>0</data>
                                 <row>
                                     <data>u_decode</data>
-                                    <data>287</data>
+                                    <data>294</data>
                                     <data>14</data>
                                     <data>0</data>
                                     <data>0</data>
@@ -4157,7 +4176,7 @@
                             </row>
                             <row>
                                 <data>u_dp</data>
-                                <data>783</data>
+                                <data>787</data>
                                 <data>287</data>
                                 <data>64</data>
                                 <data>3</data>
@@ -4212,7 +4231,7 @@
                                 </row>
                                 <row>
                                     <data>u_alu_dec</data>
-                                    <data>45</data>
+                                    <data>47</data>
                                     <data>0</data>
                                     <data>0</data>
                                     <data>0</data>
@@ -4324,7 +4343,7 @@
                                 </row>
                                 <row>
                                     <data>u_mem_ctl</data>
-                                    <data>28</data>
+                                    <data>30</data>
                                     <data>6</data>
                                     <data>0</data>
                                     <data>0</data>
@@ -4410,7 +4429,7 @@
                         </row>
                         <row>
                             <data>u_nvic</data>
-                            <data>368</data>
+                            <data>365</data>
                             <data>180</data>
                             <data>0</data>
                             <data>0</data>
@@ -4465,7 +4484,7 @@
                             </row>
                             <row>
                                 <data>u_ahb_os</data>
-                                <data>85</data>
+                                <data>81</data>
                                 <data>57</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -4605,7 +4624,7 @@
                             </row>
                             <row>
                                 <data>u_main</data>
-                                <data>17</data>
+                                <data>18</data>
                                 <data>6</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -4634,7 +4653,7 @@
                         </row>
                         <row>
                             <data>u_ahb</data>
-                            <data>248</data>
+                            <data>238</data>
                             <data>160</data>
                             <data>0</data>
                             <data>0</data>
@@ -4667,7 +4686,7 @@
                         <data>0</data>
                         <data>0</data>
                         <data>0</data>
-                        <data>2</data>
+                        <data>8</data>
                         <data>0</data>
                         <data>0</data>
                         <data>0</data>
@@ -4804,8 +4823,8 @@
                 </row>
                 <row>
                     <data>gen_ahb_mem_0.u_cmsdk_ahb_mem</data>
-                    <data>4</data>
-                    <data>5</data>
+                    <data>13</data>
+                    <data>17</data>
                     <data>0</data>
                     <data>0</data>
                     <data>0</data>
@@ -4832,7 +4851,7 @@
                 </row>
                 <row>
                     <data>gen_ahb_icache.u_cmsdk_ahb_icache</data>
-                    <data>448</data>
+                    <data>452</data>
                     <data>532</data>
                     <data>32</data>
                     <data>0</data>
@@ -4859,7 +4878,7 @@
                     <data>0</data>
                     <row>
                         <data>u_I_Cache</data>
-                        <data>215</data>
+                        <data>217</data>
                         <data>173</data>
                         <data>32</data>
                         <data>0</data>
@@ -5000,7 +5019,7 @@
                 </row>
                 <row>
                     <data>gen_ahb_dcache.u_cmsdk_ahb_dcache</data>
-                    <data>761</data>
+                    <data>767</data>
                     <data>443</data>
                     <data>0</data>
                     <data>0</data>
@@ -5196,7 +5215,7 @@
                 </row>
                 <row>
                     <data>gen_ahb_ethernet_dmac.u_cmsdk_ahb_ethernet_dmac</data>
-                    <data>705</data>
+                    <data>707</data>
                     <data>596</data>
                     <data>0</data>
                     <data>0</data>
@@ -5306,7 +5325,7 @@
                         </row>
                         <row>
                             <data>u_RX_FIFO</data>
-                            <data>96</data>
+                            <data>95</data>
                             <data>53</data>
                             <data>0</data>
                             <data>0</data>
@@ -5364,7 +5383,7 @@
                 </row>
                 <row>
                     <data>u_apb_subsystem</data>
-                    <data>1204</data>
+                    <data>1208</data>
                     <data>772</data>
                     <data>0</data>
                     <data>0</data>
@@ -5419,7 +5438,7 @@
                     </row>
                     <row>
                         <data>u_apb_slave_mux</data>
-                        <data>108</data>
+                        <data>109</data>
                         <data>0</data>
                         <data>0</data>
                         <data>0</data>
@@ -5447,7 +5466,7 @@
                     </row>
                     <row>
                         <data>gen_apb_timer_0.u_apb_timer_0</data>
-                        <data>137</data>
+                        <data>136</data>
                         <data>77</data>
                         <data>0</data>
                         <data>0</data>
@@ -5503,7 +5522,7 @@
                     </row>
                     <row>
                         <data>gen_apb_watchdog.u_apb_watchdog</data>
-                        <data>176</data>
+                        <data>172</data>
                         <data>114</data>
                         <data>0</data>
                         <data>0</data>
@@ -5530,7 +5549,7 @@
                         <data>0</data>
                         <row>
                             <data>u_apb_watchdog_frc</data>
-                            <data>113</data>
+                            <data>111</data>
                             <data>78</data>
                             <data>0</data>
                             <data>0</data>
@@ -5559,7 +5578,7 @@
                     </row>
                     <row>
                         <data>gen_apb_uart_0.u_apb_uart_0</data>
-                        <data>148</data>
+                        <data>147</data>
                         <data>116</data>
                         <data>0</data>
                         <data>0</data>
@@ -5587,7 +5606,7 @@
                     </row>
                     <row>
                         <data>gen_apb_uart_1.u_apb_uart_1</data>
-                        <data>128</data>
+                        <data>129</data>
                         <data>99</data>
                         <data>0</data>
                         <data>0</data>
@@ -5615,7 +5634,7 @@
                     </row>
                     <row>
                         <data>gen_apb_spi_0.u_apb_spi_0</data>
-                        <data>110</data>
+                        <data>113</data>
                         <data>79</data>
                         <data>0</data>
                         <data>0</data>
@@ -5643,7 +5662,7 @@
                     </row>
                     <row>
                         <data>gen_apb_i2c_0.u_apb_i2c_0</data>
-                        <data>234</data>
+                        <data>239</data>
                         <data>159</data>
                         <data>0</data>
                         <data>0</data>
@@ -5670,7 +5689,7 @@
                         <data>0</data>
                         <row>
                             <data>byte_controller</data>
-                            <data>183</data>
+                            <data>188</data>
                             <data>98</data>
                             <data>0</data>
                             <data>0</data>
@@ -5697,7 +5716,7 @@
                             <data>0</data>
                             <row>
                                 <data>bit_controller</data>
-                                <data>131</data>
+                                <data>132</data>
                                 <data>73</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -5728,7 +5747,7 @@
                 </row>
                 <row>
                     <data>u_ahb_decoder</data>
-                    <data>4</data>
+                    <data>7</data>
                     <data>0</data>
                     <data>0</data>
                     <data>0</data>
@@ -5756,8 +5775,64 @@
                 </row>
                 <row>
                     <data>u_ahb_mux</data>
-                    <data>128</data>
+                    <data>115</data>
                     <data>8</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                    <data>0</data>
+                </row>
+            </row>
+            <row>
+                <data>u_SD_CARD</data>
+                <data>260</data>
+                <data>250</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <data>0</data>
+                <row>
+                    <data>spi_master_m0</data>
+                    <data>59</data>
+                    <data>44</data>
                     <data>0</data>
                     <data>0</data>
                     <data>0</data>
@@ -5869,7 +5944,7 @@
             </row>
             <row>
                 <data>u_tsmac_phy</data>
-                <data>1164</data>
+                <data>1177</data>
                 <data>836</data>
                 <data>0</data>
                 <data>0</data>
@@ -5980,7 +6055,7 @@
                 </row>
                 <row>
                     <data>U_pgs_tsmac_core_v1_1</data>
-                    <data>1162</data>
+                    <data>1175</data>
                     <data>822</data>
                     <data>0</data>
                     <data>0</data>
@@ -6063,7 +6138,7 @@
                     </row>
                     <row>
                         <data>U_pgs_tsmac_apb_modify_v1_0</data>
-                        <data>2</data>
+                        <data>1</data>
                         <data>0</data>
                         <data>0</data>
                         <data>0</data>
@@ -6091,7 +6166,7 @@
                     </row>
                     <row>
                         <data>U_pgs_tsmac_apb_port_v1_0</data>
-                        <data>5</data>
+                        <data>3</data>
                         <data>65</data>
                         <data>0</data>
                         <data>0</data>
@@ -6119,7 +6194,7 @@
                     </row>
                     <row>
                         <data>U_pe_mcxmac</data>
-                        <data>1063</data>
+                        <data>1079</data>
                         <data>636</data>
                         <data>0</data>
                         <data>0</data>
@@ -6146,7 +6221,7 @@
                         <data>0</data>
                         <row>
                             <data>pe_mcxmac_core_1</data>
-                            <data>1045</data>
+                            <data>1061</data>
                             <data>503</data>
                             <data>0</data>
                             <data>0</data>
@@ -6201,7 +6276,7 @@
                             </row>
                             <row>
                                 <data>petfn_top_1</data>
-                                <data>444</data>
+                                <data>442</data>
                                 <data>180</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -6257,7 +6332,7 @@
                             </row>
                             <row>
                                 <data>perfn_top_1</data>
-                                <data>434</data>
+                                <data>451</data>
                                 <data>219</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -6284,7 +6359,7 @@
                                 <data>0</data>
                                 <row>
                                     <data>pecrc_1</data>
-                                    <data>65</data>
+                                    <data>64</data>
                                     <data>32</data>
                                     <data>0</data>
                                     <data>0</data>
@@ -6313,7 +6388,7 @@
                             </row>
                             <row>
                                 <data>permc_top_1</data>
-                                <data>159</data>
+                                <data>160</data>
                                 <data>86</data>
                                 <data>0</data>
                                 <data>0</data>
@@ -6408,9 +6483,9 @@
             <data>Peak Memory (B)</data>
         </column_headers>
         <row>
-            <data>860.859</data>
-            <data>865</data>
-            <data>1,096,663,040</data>
+            <data>511.266</data>
+            <data>514</data>
+            <data>1,137,131,520</data>
         </row>
     </table>
     <table id="pnr_messages" title="Place &amp; Route Messages" column_number="1">
@@ -6482,262 +6557,265 @@
             <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/device_map/m1_soc_top.pcf(line number: 75)] | Port RX has been placed at location A12, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2001: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/device_map/m1_soc_top.pcf(line number: 76)] Object 'SD_MISO' is dangling, which has no connection. it will be ignored.</data>
-        </row>
-        <row>
             <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/yangl/Documents/IC_competition/arm/M1_PGL22G_RTOS/PDS_project/pnr/device_map/m1_soc_top.pcf(line number: 89)] | Port spi0_miso has been placed at location A4, whose type is share pin.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="6" bold="0">Route-2036: The clock path from ex_clk_50m_ibuf/opit_1:OUT to u_DDR3/u_pll_50_400/u_pll_e1/goppll:CLKIN1 is routed by SRB.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_106_28.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_157.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_9.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_209.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_126_305.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_105.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_86_149.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_341.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_73.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_228.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_157.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_133.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_176.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_152.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_54_129.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_10_213.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_252.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_28.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_14_217.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_14_196.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_114_329.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_220.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_114_341.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_86_77.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_112.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_38_201.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_18_300.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_97.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_72.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_38_289.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_217.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_201.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_168.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_168.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_160.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_161.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_46_164.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_54_129.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_113.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_22_212.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_54_157.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_117.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_54_137.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_54_137.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_86_157.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_126_201.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_56.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_145.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_64.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_22_212.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_268.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_136.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_52.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_117.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_46_165.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_46_165.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_46_169.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_237.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_116.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_106_129.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_58_112.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_204.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_180.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_46_168.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_46_168.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_149.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_200.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_204.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_134_296.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_157.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_38_165.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_46_161.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_66_204.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_121.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_120.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_105.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_165.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_94_145.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_220.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_46_224.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_220.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_84.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_197.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_85.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_180.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_85.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_228.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_96.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_133.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_96.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_113.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_232.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_85.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_96.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_114_149.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_264.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_94_68.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_225.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_112.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_148.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_92.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_260.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_106_136.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_46_161.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_265.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_273.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_277.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_72.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_165.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_96.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_109.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_253.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_45.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_92.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_114_145.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_118_188.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_54_136.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_137.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_196.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_142_333.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_265.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_94_244.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_201.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_14_189.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_133.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_229.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_212.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_248.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_165.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_209.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_86_241.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_172.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_157.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_253.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_130_253.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_173.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_129.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_141.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_256.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_300.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_140.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_257.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_257.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_94_101.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_38_193.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_180.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_38_233.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_208.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_273.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_22_233.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_110.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_109.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_108.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_132.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_111.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_133.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_186.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_186.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_184.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_311.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_184.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_309.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_60.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_186.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_308.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_62.</data>
@@ -6999,7 +7077,7 @@
                     <data>clkbufg_2/gopclkbufg</data>
                     <data>USCM_74_104</data>
                     <data>ntclkbufg_2</data>
-                    <data>4050</data>
+                    <data>4312</data>
                     <data>u_DDR3/u_pll_50_400/u_pll_e1/goppll</data>
                     <data>PLL_82_71</data>
                 </row>
@@ -7036,8 +7114,8 @@
                 </row>
                 <row>
                     <data>CLKIN2</data>
-                    <data>_N1271</data>
-                    <data>GND_85</data>
+                    <data>_N1249</data>
+                    <data>GND_87</data>
                     <data>CLMA_78_88</data>
                 </row>
             </table>

@@ -19,6 +19,10 @@
 # -- Compiling module rst_gen
 # -- Compiling module axi1_wr_test
 # -- Compiling module cmsdk_ahb_mem
+# -- Compiling module sd_card_top
+# -- Compiling module spi_master
+# -- Compiling module sd_card_cmd
+# -- Compiling module sd_card_sec_read_write
 # -- Compiling module ipml_sdpram_v1_5_TEST_RAM
 # -- Compiling module TEST_RAM
 # ** Warning: ../pnr/ipcore/TEST_RAM/TEST_RAM.v(139): (vlog-2249) Non-positive replication multiplier inside concat. Replication will be ignored.
@@ -137,6 +141,8 @@
 # 
 # Top level modules:
 # 	m1_test
+# 	sd_card_cmd
+# 	sd_card_sec_read_write
 # 	ipml_prefetch_fifo_v1_5_RX_FIFO
 # 	ipml_prefetch_fifo_v1_5_TX_FIFO
 # 	ipml_prefetch_fifo_v1_5_TSMAC_FIFO_RXCKLI

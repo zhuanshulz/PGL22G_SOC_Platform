@@ -100,7 +100,7 @@
 //        4'b1011   1 MB
 
  // defaults to 32K
-`define CM1_ITCMSIZE 4'b0011
+`define CM1_ITCMSIZE 4'b0101
 
  // defaults to 32K
 `define CM1_DTCMSIZE 4'b0011

@@ -1,5 +1,16 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
+add wave -noupdate /m1_test/uut/HCLK
+add wave -noupdate /m1_test/uut/mem_cs
+add wave -noupdate /m1_test/uut/raddr
+add wave -noupdate /m1_test/uut/rdata0
+add wave -noupdate /m1_test/uut/HCLK
+add wave -noupdate /m1_test/uut/mem_cs[0]
+add wave -noupdate /m1_test/uut/a_wr_en
+add wave -noupdate /m1_test/uut/waddr
+add wave -noupdate /m1_test/uut/wdata
+
+
 add wave -noupdate /m1_test/uut/TH_1S
 add wave -noupdate /m1_test/uut/ex_clk_50m
 add wave -noupdate /m1_test/uut/rst_key

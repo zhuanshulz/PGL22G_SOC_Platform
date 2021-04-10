@@ -1,0 +1,5 @@
+--c99 -c --cpu Cortex-M1 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\PERIPHERAL\inc -I ..\STARTUP -I ..\SYSTEM -I ..\USER -I ..\FreeRTOS -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\Keil\ARM_CM1 -I ..\FatFs
+-IC:\Users\yangl\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\Device\ARM\ARMCM1\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="533" -DARMCM1
+-o .\objects\pango_m1_timer.o --omf_browse .\objects\pango_m1_timer.crf --depend .\objects\pango_m1_timer.d --feedback ".\Objects\cortex_M1_demo.fed" "..\PERIPHERAL\src\PANGO_M1_timer.c"

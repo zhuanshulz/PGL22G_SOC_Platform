@@ -372,12 +372,19 @@ typedef struct
 }TRNG_RefDef;
 
 /*--------------------------SD-Card-----------------------------*/
+//typedef struct {
+//	__IO uint32_t TRANSDATA[128];    /* Offset: 0x000-0x1FF (R/ ) Data Registers    */ // 4096 bits = 512Byte
+//	__IO uint32_t BASEADDR;          /* Offset: 0x200 (R/W) Base Address Register   */
+//	__IO uint32_t READEN;            /* Offset: 0x204 (R/W) Read Enable Register    */
+//	__IO uint32_t INITIALISED;       /* Offset: 0x208 (R/ ) Initialization Register */
+//	__IO uint32_t STATUS;       		 /* Offset: 0x20c (R/ ) showing status Register */ //eg. command execution status
+//}SDCard_TypeDef;
 typedef struct {
-	__IO uint32_t TRANSDATA[128];    /* Offset: 0x000-0x1FF (R/ ) Data Registers    */ // 4096 bits = 512Byte
-	__IO uint32_t BASEADDR;          /* Offset: 0x200 (R/W) Base Address Register   */
-	__IO uint32_t READEN;            /* Offset: 0x204 (R/W) Read Enable Register    */
-	__IO uint32_t INITIALISED;       /* Offset: 0x208 (R/ ) Initialization Register */
-	__IO uint32_t STATUS;       		 /* Offset: 0x20c (R/ ) showing status Register */ //eg. command execution status
+	__IO uint32_t clk_div;    /* Offset: 0x000-0x1FF (R/ ) Data Registers    */ // 4096 bits = 512Byte
+	__IO uint32_t spi_write_data;          /* Offset: 0x200 (R/W) Base Address Register   */
+	__IO uint32_t spi_read_data;            /* Offset: 0x204 (R/W) Read Enable Register    */
+	__IO uint32_t start_stop;       /* Offset: 0x208 (R/ ) Initialization Register */
+	__IO uint32_t cs_control;       		 /* Offset: 0x20c (R/ ) showing status Register */ //eg. command execution status
 }SDCard_TypeDef;
 
 /*---------------------------DDR------------------------------*/
@@ -476,7 +483,7 @@ typedef struct{
 #define UART1_BASE        (APB1PERIPH_BASE + 0x5000)    	/* !< UART1  Base Address     */
 #define RTC_BASE          (APB1PERIPH_BASE + 0x6000)    	/* !< RTC Base Address        */
 #define WDOG_BASE         (APB1PERIPH_BASE + 0x8000)    	/* !< WATCHDOG  Base Address  */
-#define SDCARD_BASE       (BANK_RAM_BASE1 + 0x1000000)    	/* !< SD-Card Base Address    */
+#define SDCARD_BASE       (BANK_RAM_BASE1)    	/* !< SD-Card Base Address    */
 #define I2C_BASE          (APB1PERIPH_BASE + 0xA000)    	/* !< I2C Base Address        */
 #define SPI_BASE          (APB1PERIPH_BASE + 0xB000)    	/* !< SPI Base Address        */
 #define USER_BASE         (APB1PERIPH_BASE + 0xC300)    	/* !< USER Base Address        */

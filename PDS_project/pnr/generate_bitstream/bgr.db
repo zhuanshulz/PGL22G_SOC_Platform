@@ -7,9 +7,9 @@
             <data>Peak Memory (B)</data>
         </column_headers>
         <row>
-            <data>34.6094</data>
-            <data>36</data>
-            <data>475,992,064</data>
+            <data>28.4531</data>
+            <data>30</data>
+            <data>481,918,976</data>
         </row>
     </table>
     <general_container id="generate_bit_stream_settings" align="1">
