@@ -42,7 +42,6 @@ module frame_fifo_write
 	output reg                       wr_burst_req,               // to external memory controller,send out a burst write request  
 	output reg[BUSRT_BITS - 1:0]     wr_burst_len,               // to external memory controller,data length of the burst write request, not bytes 
 	output reg[ADDR_BITS - 1:0]      wr_burst_addr,              // to external memory controller,base address of the burst write request 
-	// input                            wr_burst_data_req,          // from external memory controller,write data request ,before data 1 clock 
 	input                            wr_burst_finish,            // from external memory controller,burst write finish
 	input                            write_req,                  // data write module write request,keep '1' until read_req_ack = '1'
 	output reg                       write_req_ack,              // data write module write request response
@@ -53,7 +52,6 @@ module frame_fifo_write
 	input[ADDR_BITS - 1:0]           write_addr_3,               // data write module write request base address 1, used when write_addr_index = 3
 	input[1:0]                       write_addr_index,           // select valid base address from write_addr_0 write_addr_1 write_addr_2 write_addr_3
 	input[ADDR_BITS - 1:0]           write_len,                  // data write module write request data length
-	output reg                       fifo_aclr,                  // to fifo asynchronous clear
 	input[15:0]                      rdusedw                     // from fifo read used words
 );
 localparam ONE                       = 256'd1;                   //256 bit '1'   you can use ONE[n-1:0] for n bit '1'
@@ -112,7 +110,6 @@ begin
 		wr_burst_addr <= ZERO[ADDR_BITS - 1:0];
 		wr_burst_req <= 1'b0;
 		write_cnt <= ZERO[ADDR_BITS - 1:0];
-		fifo_aclr <= 1'b0;
 		write_req_ack <= 1'b0;
 		wr_burst_len <= ZERO[BUSRT_BITS - 1:0];
 	end
@@ -134,15 +131,12 @@ begin
 				if(write_req_d2 == 1'b0)
 				begin
 					state <= S_CHECK_FIFO;
-					fifo_aclr <= 1'b0;
 					write_req_ack <= 1'b0;
 				end
 				else
 				begin
 					//write request response
 					write_req_ack <= 1'b1;
-					//FIFO reset
-					fifo_aclr <= 1'b1;
 					//select valid base address from write_addr_0 write_addr_1 write_addr_2 write_addr_3
 					if(write_addr_index_d1 == 1'd0)
 						wr_burst_addr <= write_addr_0;

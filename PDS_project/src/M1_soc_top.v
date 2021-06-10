@@ -302,6 +302,8 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
     .rd_empty(),
     .rd_water_level(fifo_data_count),
     .almost_empty());
+
+
 //CLK----------------------------------------------------------------
     // sysclk source
 	`ifdef UNCACHE
@@ -488,144 +490,16 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
         .rready_mux        (rready_mux)      
     );   
 
-//    // Read and write control signals
-//    assign  read_enable  = PSEL & (~PWRITE); // assert for whole APB read transfer
-//    assign  write_enable = PSEL & (~PENABLE) & PWRITE; // assert for 1st cycle of write transfer
-//    assign  write_enable00 = write_enable & (PADDR[11:2] == 10'h000);
-//    assign  write_enable04 = write_enable & (PADDR[11:2] == 10'h001);
-//
-//    //apb write
-//    reg [7:0] apb_out00;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_out00 <= {8{1'b0}};
-//      else if (write_enable00)
-//        apb_out00 <= PWDATA[7:0];
-//    end
-//
-//    reg [7:0] apb_out04;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_out04 <= {8{1'b0}};
-//      else if (write_enable04)
-//        apb_out04 <= PWDATA[7:0];
-//    end
-//
-//    //apb read   
-//    reg [7:0] apb_in;
-//    always @(*) begin
-//      if (PADDR[11:4] == 8'h00) begin
-//        case (PADDR[3:2])
-//        2'h2: apb_in = apb_out00;
-//        2'h3: apb_in = apb_out04;
-//        default: apb_in = {8{1'b0}};
-//        endcase
-//      end
-//      else 
-//        apb_in = {8{1'b0}};
-//    end
-//   
-//    reg [7:0] apb_in_temp;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_in_temp <= {8{1'b0}};
-//      else if (read_enable)
-//        apb_in_temp <= apb_in;
-//    end
-//
-//    assign PRDATA = (read_enable) ? {{24{1'b0}}, apb_in_temp} : 32'h0;
-
 //UDP_HW_SPEEDUP--------------------------------------------------------
     wire HSEL_temp;
     assign HSEL_temp = HSEL && (HADDR[31:28] == 4'h7);
 
-	reg [7:0] test_datai;
-	reg       test_dbusy;
-
-    wire      dready;
-    reg[10:0] byte_counter;
-    reg use_dummy;
-     reg [3:0] cam_state;
-     localparam CAM_IDEL_S = 4'd0;
-     localparam CAM_SEND_S = 4'd1;
-     always @(posedge HCLK or negedge SYSRESETn) begin
-       if (~SYSRESETn) begin
-           cam_state <= 'd0;
-       end
-       else begin
-           case(cam_state)
-             CAM_IDEL_S:begin
-                if(dready && (fifo_data_count >= 11'd1000))begin
-                    fifo_rd_en_reg <= 1'b1;
-                    cam_state <= CAM_SEND_S;
-                    use_dummy <= 1'b0;
-                end
-             end
-            CAM_SEND_S:begin
-                fifo_rd_en_reg <= 1'b1;
-                byte_counter <= byte_counter + 1'b1;
-                if(byte_counter > 'd1023)begin
-                    fifo_rd_en_reg <= 1'b0;
-                    use_dummy <= 1'b1;
-                end
-
-                if(~dready)begin
-                    use_dummy <= 1'b0;
-                    byte_counter <= 'd0;
-                    fifo_rd_en_reg <= 1'b0;
-                    cam_state <= CAM_IDEL_S;
-                end
-            end
-             default:begin
-                
-             end
-           endcase
-       end
-     end
-    // always @(posedge HCLK or negedge SYSRESETn) begin
-    //   if (~SYSRESETn) begin
-    //     fifo_rd_en_reg <= 'd0;
-    //   end
-    //   else begin
-    //         if(dready && (|fifo_data_count))begin
-    //             fifo_rd_en_reg <= 1'b1;
-    //         end
-    //         else begin
-    //             fifo_rd_en_reg <= 1'b0;
-    //         end
-
-    //   end
-    // end
-
-    assign fifo_rd_en = use_dummy?1'b0:fifo_rd_en_reg;   //(dready && (|fifo_data_count));
-    reg fifo_rd_en_d1;
-	always @(posedge HCLK or negedge SYSRESETn) begin
-      if (~SYSRESETn) begin
-          fifo_rd_en_d1 <= 'd0;
-	  end
-      else begin
-          fifo_rd_en_d1 <= fifo_rd_en;
-	  end
-    end
-
-    // assign fifo_rd_en = (dready && (|fifo_data_count));
-	always @(posedge HCLK or negedge SYSRESETn) begin
-      if (~SYSRESETn) begin
-        test_datai <= {8{1'b0}};
-	    test_dbusy <= 1'b0;
-	  end
-      else if(fifo_rd_en_d1 | use_dummy) begin
-        test_datai <= use_dummy?'d0:fifo_data;
-		test_dbusy <= 1'b1;
-	  end
-      else begin
-        test_datai <= {8{1'b0}};
-	    test_dbusy <= 1'b0;
-	  end
-    end
+    assign test_datai = 'd0;
+    assign test_dbusy = 'd0;
     assign udp_tpnd = tsmac_tpnd && udp_cs;
 
-    // UDP SPEEDUP is driven from the AHB
+    // UDP SPEEDUP is driven from the AHB 
+    // 关闭UDP 加速模块
     generate if (`CORTEXM1_AHB_UDP == 1) begin : gen_udp_hw_speedup_0
     udp_hw_speedup u_udp_hw_speedup(
         .HCLK                   (HCLK),         // system bus clock
@@ -693,7 +567,7 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
     assign a_wr_en = w_en | ~r_en;
 
     wire [31:0] rdata0;
-    assign rdata = mem_cs[0]?rdata0:rdata1;
+    assign rdata = mem_cs[0]?rdata0:(mem_cs[1]?rdata1:(mem_cs[3]?rdata3:'d0));
 
     TEST_RAM u_TEST_RAM (
       .wr_data                  (wdata),        // input  [31:0]
@@ -804,55 +678,74 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
       .csysack_0              (),               // output
       .cactive_0              (),               // output
 
-      .areset_1               (1'b0),           // input
-      .aclk_1                 (aclk_1),         // input
-      .awid_1                 (8'h00),          // input [7:0]
-      .awaddr_1               (awaddr_1),       // input [31:0]
-      .awlen_1                (8'hff),          // input [7:0]
-      .awsize_1               (3'b011),         // input [2:0]
-      .awburst_1              (2'b01),          // input [1:0]
-      .awlock_1               (1'b0),           // input
-      .awvalid_1              (awvalid_1),      // input
-      .awready_1              (awready_1),      // output
-      .awurgent_1             (1'b0),           // input
-      .awpoison_1             (1'b0),           // input
-      .wdata_1                (wdata_1),        // input [63:0]
-      .wstrb_1                (8'hff),          // input [7:0]
-      .wlast_1                (wlast_1),        // input
-      .wvalid_1               (wvalid_1),       // input
-      .wready_1               (wready_1),       // output
-      .bid_1                  (),               // output [7:0]
-      .bresp_1                (),               // output [1:0]
-      .bvalid_1               (),               // output
-      .bready_1               (1'b1),           // input
+       .areset_1               (1'b0),           // input
+       .aclk_1                 (aclk_1),         // input
+       .awid_1                 (8'h00),          // input [7:0]
+       .awaddr_1               (awaddr_1),       // input [31:0]
+       .awlen_1                (8'hff),          // input [7:0]
+       .awsize_1               (3'b011),         // input [2:0]
+       .awburst_1              (2'b01),          // input [1:0]
+       .awlock_1               (1'b0),           // input
+       .awvalid_1              (awvalid_1),      // input
+       .awready_1              (awready_1),      // output
+       .awurgent_1             (1'b0),           // input
+       .awpoison_1             (1'b0),           // input
+       .wdata_1                (wdata_1),        // input [63:0]
+       .wstrb_1                (8'hff),          // input [7:0]
+       .wlast_1                (wlast_1),        // input
+       .wvalid_1               (wvalid_1),       // input
+       .wready_1               (wready_1),       // output
+       .bid_1                  (),               // output [7:0]
+       .bresp_1                (),               // output [1:0]
+       .bvalid_1               (),               // output
+       .bready_1               (1'b1),           // input
 
-      .arid_1                 (8'h00),          // input [7:0]
-      .araddr_1               (araddr_1),       // input [31:0]
-      .arlen_1                (8'hff),          // input [7:0]
-      .arsize_1               (3'b011),         // input [2:0]
-      .arburst_1              (2'b01),          // input [1:0]
-      .arlock_1               (1'b0),           // input
-      .arvalid_1              (arvalid_1),      // input
-      .arready_1              (arready_1),      // output
-      .arpoison_1             (1'b0),           // input
-      .rid_1                  (),               // output [7:0]
-      .rdata_1                (rdata_1),        // output [63:0]
-      .rresp_1                (),               // output [1:0]
-      .rlast_1                (rlast_1),        // output
-      .rvalid_1               (rvalid_1),       // output
-      .rready_1               (rready_1),       // input
-      .arurgent_1             (1'b0),           // input
-      .csysreq_1              (1'b1),           // input
-      .csysack_1              (),               // output
-      .cactive_1              ()                // output
+       .arid_1                 (8'h00),          // input [7:0]
+       .araddr_1               (araddr_1),       // input [31:0]
+       .arlen_1                (8'hff),          // input [7:0]
+       .arsize_1               (3'b011),         // input [2:0]
+       .arburst_1              (2'b01),          // input [1:0]
+       .arlock_1               (1'b0),           // input
+       .arvalid_1              (arvalid_1),      // input
+       .arready_1              (arready_1),      // output
+       .arpoison_1             (1'b0),           // input
+       .rid_1                  (),               // output [7:0]
+       .rdata_1                (rdata_1),        // output [63:0]
+       .rresp_1                (),               // output [1:0]
+       .rlast_1                (rlast_1),        // output
+       .rvalid_1               (rvalid_1),       // output
+       .rready_1               (rready_1),       // input
+       .arurgent_1             (1'b0),           // input
+       .csysreq_1              (1'b1),           // input
+       .csysack_1              (),               // output
+       .cactive_1              ()                // output
     );
 
-    // close
-    axi1_wr_test axi1_wr_test(
-      .rstn                   (1'b0),           // input
-      .clk                    (aclk_1),         // input 100Mhz
+    // 
+    wire [31:0] rdata3;
+    cam_ddr_ahb_contorl cam_ddr_ahb_contorl_i0(
+                                                // 这个时钟是AXI接口的时钟，好像是100M
                                                 
+        /*              cmos signals        */
+        .fifo_data_count(fifo_data_count),       // input [11:0]
+        .fifo_data(fifo_data),           // input [7:0]
+        .fifo_rd_en(fifo_rd_en),         // output
+        .cmos_init_done(init_done), //input
+
+        /*------------ ahb interface ---------------*/
+        .HCLK            (HCLK),                // 这个时钟是AHB总线的读写时钟，频率不知道
+        .cs              (mem_cs[3]),
+        .rst             (SYSRESETn),
+        .wr_en           (w_en),
+        .wr_data         (wdata),
+        .waddr           (waddr),
+
+        .rd_addr         (raddr),
+        .rd_en           (r_en),
+        .rd_data         (rdata3),
+
       //AXI WRITE                               
+      .aclk                   (aclk_1),         // input 100Mhz 
       .awaddr_1               (awaddr_1),       // output
       .awvalid_1              (awvalid_1),      // output
       .awready_1              (awready_1),      // input
@@ -862,6 +755,7 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
       .wready_1               (wready_1),       // input
                                                 
       //AXI READ                                
+      // 读端口在这个版本用不上，不需要从这里读，软核通过Dcache读
       .araddr_1               (araddr_1),       // output
       .arvalid_1              (arvalid_1),      // output
       .arready_1              (arready_1),      // input
