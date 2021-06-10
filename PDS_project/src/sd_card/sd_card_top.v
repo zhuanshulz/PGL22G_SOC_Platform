@@ -157,6 +157,7 @@ always @(posedge HCLK or negedge rst) begin
 						end
 					endcase
 				end
+				
 			if(spi_wr_ack)
 				spi_read_data <= spi_data_out;
 			nCS_ctrl <= (cs_control==32'hffff_ffff)?1'b0:1'b1;

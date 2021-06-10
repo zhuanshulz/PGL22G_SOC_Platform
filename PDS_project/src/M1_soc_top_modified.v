@@ -28,13 +28,13 @@ module m1_soc_top (
     // input             spi1_miso,
 
 //COMS
-inout                       cmos_scl,          //cmos i2c clock
-inout                       cmos_sda,          //cmos i2c data
-input                       cmos_vsync,        //cmos vsync
-input                       cmos_href,         //cmos hsync refrence,data valid
-input                       cmos_pclk,         //cmos pxiel clock
-input   [7:0]               cmos_db,           //cmos data
-output  reg                    cmos_xclk,
+inout                       cmos1_scl,          //cmos i2c clock
+inout                       cmos1_sda,          //cmos i2c data
+input                       cmos1_vsync,        //cmos vsync
+input                       cmos1_href,         //cmos hsync refrence,data valid
+input                       cmos1_pclk,         //cmos pxiel clock
+input   [7:0]               cmos1_db,           //cmos data
+output                      cmos1_xclk,
 
 
     inout             i2c0_sck,
@@ -60,7 +60,8 @@ output  reg                    cmos_xclk,
     output 		      pad_loop_out,
     output 		      pad_loop_out_h,
 
-    // output            phy_rst_n,        
+//  千兆网口物理层接口
+    output            phy_rst_n,        
     input             rx_clki,          
     input             phy_rx_dv,        
     input             phy_rxd0,         
@@ -237,71 +238,6 @@ output  reg                    cmos_xclk,
 
     wire              udp_cs;
 
-
-always @(posedge ex_clk_50m or negedge SYSRESETn)begin
-    if( ~SYSRESETn )begin
-        cmos_xclk <= 1'b0;
-        end
-    else begin
-        cmos_xclk <= ~cmos_xclk;
-    end
-end
-//I2C master controller     //以下两个模块负责对CMOS图像进行初始化
-wire[9:0]                   cmos_lut_index;
-wire[31:0]                  cmos_lut_data;
-i2c_config i2c_config_m0(
-	.rst                        (~SYSRESETn               ),
-	.clk                        (ex_clk_50m               ),
-	.clk_div_cnt                (16'd500                  ),
-	.i2c_addr_2byte             (1'b1                     ),
-	.lut_index                  (cmos_lut_index          ),
-	.lut_dev_addr               (cmos_lut_data[31:24]    ),
-	.lut_reg_addr               (cmos_lut_data[23:8]     ),
-	.lut_reg_data               (cmos_lut_data[7:0]      ),
-	.error                      (                         ),
-	.done                       (init_done            ),
-	.i2c_scl                    (cmos_scl                ),
-	.i2c_sda                    (cmos_sda                )
-);
-//configure look-up table
-lut_ov5640_rgb565_800_600 lut_ov5640_rgb565_800_600_m0(
-	.lut_index                  (cmos_lut_index          ),
-	.lut_data                   (cmos_lut_data           )
-);
-wire       cmos_vsync_delay;
-wire       cmos_href_delay;
-wire [7:0] cmos_data_delay;
-camera_delay camera_delay_inst
-(
-   .cmos_pclk          (cmos_pclk),              //cmos pxiel clock
-   .cmos_href          (cmos_href),              //cmos hsync refrence
-   .cmos_vsync         (cmos_vsync),             //cmos vsync
-   .cmos_data          (cmos_db),              //cmos data
-
-   .cmos_href_delay    (cmos_href_delay),              //cmos hsync refrence
-   .cmos_vsync_delay   (cmos_vsync_delay),             //cmos vsync
-   .cmos_data_delay    (cmos_data_delay)             //cmos data
-) ;
-//////////////////// CMOS FIFO/////////////////// 
-wire [11 : 0] fifo_data_count;
-wire [7:0] fifo_data;
-wire fifo_rd_en;
-reg fifo_rd_en_reg;
-camera_fifo camera_fifo_inst(       // 这个是写缓存
-    .wr_clk(cmos_pclk),
-    .wr_rst(cmos_vsync),
-    .wr_en(cmos_href_delay),
-    .wr_data(cmos_data_delay),
-    .wr_full(),
-    .wr_water_level(),
-    .almost_full(),
-    .rd_clk(HCLK),
-    .rd_rst(cmos_vsync),
-    .rd_en(fifo_rd_en),
-    .rd_data(fifo_data),
-    .rd_empty(),
-    .rd_water_level(fifo_data_count),
-    .almost_empty());
 //CLK----------------------------------------------------------------
     // sysclk source
 	`ifdef UNCACHE
@@ -331,10 +267,53 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
         .SYSRESETn            (SYSRESETn)       // output
     );
 
+
+
+wire   [ 7:0]   gmii_txd;
+wire            gmii_tx_en;
+wire            gmii_tx_er;
+wire            gmii_tx_clk;
+wire            gmii_crs;
+wire            gmii_col;
+wire   [ 7:0]   gmii_rxd;
+wire            gmii_rx_dv;
+wire            gmii_rx_er;
+wire            gmii_rx_clk;
+wire  [ 1:0]    speed_selection; // 1x gigabit, 01 100Mbps, 00 10mbps
+wire            duplex_mode;     // 1 full, 0 half
+
+//MDIO config
+assign speed_selection = 2'b10;
+assign duplex_mode = 1'b1;
+
+
+
+
+
+//mac_test mac_test0
+//(
+// .gmii_tx_clk            (gmii_tx_clk        ),
+// .gmii_rx_clk            (gmii_rx_clk        ) ,
+// .rst_n                  (rst_n              ),
+// 
+// .cmos_vsync              (cmos_vsync        ),
+// .cmos_href               (cmos_href         ),
+// .reg_conf_done           (reg_conf_done     ),
+// .fifo_data               (fifo_data         ),           //FIFO璇诲?虹??8bit?版??
+// .fifo_data_count         (fifo_data_count   ),     //(fifo_rdusedw),     //FIFO涓???版??伴??
+// .fifo_rd_en              (fifo_rd_en        ),          //FIFO璇讳娇?? 
+// 
+// 
+// .udp_send_data_length   (16'd1024           ), 
+// .gmii_rx_dv             (gmii_rx_dv         ),
+// .gmii_rxd               (gmii_rxd           ),
+// .gmii_tx_en             (gmii_tx_en         ),
+// .gmii_txd               (gmii_txd           )
+//);	
+
 //M1 CORE------------------------------------------------------------ 
     assign LED[1:0]    = p0_outen[1:0]  & p0_out[1:0];
     assign LED[2]      = ddrc_init_done;
-    //assign LED[2]      = init_done;
     assign LED[3]      = heart_beat_led;
     assign gpio_out = p0_outen[15:8] & p0_out[15:8];
 
@@ -487,53 +466,47 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
         .rvalid_mux        (rvalid_mux),      
         .rready_mux        (rready_mux)      
     );   
+    
+wire [7:0]        udp_speedup_data;
 
-//    // Read and write control signals
-//    assign  read_enable  = PSEL & (~PWRITE); // assert for whole APB read transfer
-//    assign  write_enable = PSEL & (~PENABLE) & PWRITE; // assert for 1st cycle of write transfer
-//    assign  write_enable00 = write_enable & (PADDR[11:2] == 10'h000);
-//    assign  write_enable04 = write_enable & (PADDR[11:2] == 10'h001);
-//
-//    //apb write
-//    reg [7:0] apb_out00;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_out00 <= {8{1'b0}};
-//      else if (write_enable00)
-//        apb_out00 <= PWDATA[7:0];
-//    end
-//
-//    reg [7:0] apb_out04;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_out04 <= {8{1'b0}};
-//      else if (write_enable04)
-//        apb_out04 <= PWDATA[7:0];
-//    end
-//
-//    //apb read   
-//    reg [7:0] apb_in;
-//    always @(*) begin
-//      if (PADDR[11:4] == 8'h00) begin
-//        case (PADDR[3:2])
-//        2'h2: apb_in = apb_out00;
-//        2'h3: apb_in = apb_out04;
-//        default: apb_in = {8{1'b0}};
-//        endcase
-//      end
-//      else 
-//        apb_in = {8{1'b0}};
-//    end
-//   
-//    reg [7:0] apb_in_temp;
-//    always @(posedge HCLK or negedge SYSRESETn) begin
-//      if (~SYSRESETn)
-//        apb_in_temp <= {8{1'b0}};
-//      else if (read_enable)
-//        apb_in_temp <= apb_in;
-//    end
-//
-//    assign PRDATA = (read_enable) ? {{24{1'b0}}, apb_in_temp} : 32'h0;
+cam_ddr_udp_ahb_contorl  u_cam_ddr_udp_ahb_contorl (
+    .rst                     ( ~SYSRESETn                 ),
+    .pclk                    ( HCLK                     ),
+    .cmos_pclk               ( cmos1_pclk                ),
+    .cmos_href               ( cmos1_href                ),
+    .cmos_vsync              ( cmos1_vsync               ),
+    .cmos_data               ( cmos1_db                ),
+    .cmos_init_done          (            ),
+    .udp_speedup_data_ready  ( dready   ),
+    .cs                      (  1'b0                      ),        //mem_cs
+    .wr_en                   ( w_en                    ),
+    .waddr                   ( waddr                    ),
+    .wdata                   ( wdata                    ),
+    .rd_en                   ( r_en                    ),
+    .raddr                   ( raddr                    ),
+    .rdata                   ( rdata                    ),
+    .awready_1               (                 ),
+    .wready_1                (                  ),
+    .arready_1               (                 ),
+    .rdata_1                 (                   ),
+    .rlast_1                 (                   ),
+    .rvalid_1                (                  ),
+
+    .cmos1_xclk              ( cmos1_xclk               ),
+    .udp_speedup_data        ( udp_speedup_data         ),
+    .udp_speedup_data_valid  ( udp_speedup_data_valid   ),
+    .awaddr_1                (                  ),
+    .awvalid_1               (                  ),
+    .wdata_1                 (                  ),
+    .wlast_1                 (                  ),
+    .wvalid_1                (                  ),
+    .araddr_1                (                  ),
+    .arvalid_1               (                  ),
+    .rready_1                (                  ),
+
+    .cmos1_scl               ( cmos1_scl                ),
+    .cmos1_sda               ( cmos1_sda                )
+);
 
 //UDP_HW_SPEEDUP--------------------------------------------------------
     wire HSEL_temp;
@@ -541,81 +514,15 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
 
 	reg [7:0] test_datai;
 	reg       test_dbusy;
-
     wire      dready;
-    reg[10:0] byte_counter;
-    reg use_dummy;
-     reg [3:0] cam_state;
-     localparam CAM_IDEL_S = 4'd0;
-     localparam CAM_SEND_S = 4'd1;
-     always @(posedge HCLK or negedge SYSRESETn) begin
-       if (~SYSRESETn) begin
-           cam_state <= 'd0;
-       end
-       else begin
-           case(cam_state)
-             CAM_IDEL_S:begin
-                if(dready && (fifo_data_count >= 11'd1000))begin
-                    fifo_rd_en_reg <= 1'b1;
-                    cam_state <= CAM_SEND_S;
-                    use_dummy <= 1'b0;
-                end
-             end
-            CAM_SEND_S:begin
-                fifo_rd_en_reg <= 1'b1;
-                byte_counter <= byte_counter + 1'b1;
-                if(byte_counter > 'd1023)begin
-                    fifo_rd_en_reg <= 1'b0;
-                    use_dummy <= 1'b1;
-                end
 
-                if(~dready)begin
-                    use_dummy <= 1'b0;
-                    byte_counter <= 'd0;
-                    fifo_rd_en_reg <= 1'b0;
-                    cam_state <= CAM_IDEL_S;
-                end
-            end
-             default:begin
-                
-             end
-           endcase
-       end
-     end
-    // always @(posedge HCLK or negedge SYSRESETn) begin
-    //   if (~SYSRESETn) begin
-    //     fifo_rd_en_reg <= 'd0;
-    //   end
-    //   else begin
-    //         if(dready && (|fifo_data_count))begin
-    //             fifo_rd_en_reg <= 1'b1;
-    //         end
-    //         else begin
-    //             fifo_rd_en_reg <= 1'b0;
-    //         end
-
-    //   end
-    // end
-
-    assign fifo_rd_en = use_dummy?1'b0:fifo_rd_en_reg;   //(dready && (|fifo_data_count));
-    reg fifo_rd_en_d1;
-	always @(posedge HCLK or negedge SYSRESETn) begin
-      if (~SYSRESETn) begin
-          fifo_rd_en_d1 <= 'd0;
-	  end
-      else begin
-          fifo_rd_en_d1 <= fifo_rd_en;
-	  end
-    end
-
-    // assign fifo_rd_en = (dready && (|fifo_data_count));
 	always @(posedge HCLK or negedge SYSRESETn) begin
       if (~SYSRESETn) begin
         test_datai <= {8{1'b0}};
 	    test_dbusy <= 1'b0;
 	  end
-      else if(fifo_rd_en_d1 | use_dummy) begin
-        test_datai <= use_dummy?'d0:fifo_data;
+      else if(dready) begin
+        test_datai <= test_datai + 1'b1;
 		test_dbusy <= 1'b1;
 	  end
       else begin
@@ -623,6 +530,7 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
 	    test_dbusy <= 1'b0;
 	  end
     end
+
     assign udp_tpnd = tsmac_tpnd && udp_cs;
 
     // UDP SPEEDUP is driven from the AHB
@@ -631,8 +539,8 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
         .HCLK                   (HCLK),         // system bus clock
         .HRESETn                (SYSRESETn),    // system bus reset
                                       
-        .datai                  (test_datai),   // source data
-        .dbusy                  (test_dbusy),   // source data valid  
+        .datai                  (udp_speedup_data),   // source data
+        .dbusy                  (udp_speedup_data_valid),   // source data valid  
         .dready                 (dready),       // hw_speedup_ready
                                                                                             
         .HSEL                   (HSEL_temp),    // AHB peripheral select
@@ -808,9 +716,9 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
       .aclk_1                 (aclk_1),         // input
       .awid_1                 (8'h00),          // input [7:0]
       .awaddr_1               (awaddr_1),       // input [31:0]
-      .awlen_1                (8'hff),          // input [7:0]
-      .awsize_1               (3'b011),         // input [2:0]
-      .awburst_1              (2'b01),          // input [1:0]
+      .awlen_1                (8'hff),          // input [7:0]      //传输任务中的传输数据包个数,在INCR传输类型下可以传输1至256个数据包
+      .awsize_1               (3'b011),         // input [2:0]      //传输数据包大小 Bytes=2^Burst_size 3'b011 means 一次传输字节数 = 8 means 一次传输 64bits，也就是wdata_1是64位有效
+      .awburst_1              (2'b01),          // input [1:0]      //AWBURST = 2’b01递增（INCR）2’b00固定（FIXED）2’b10回环（WRAP）2’b11未定义
       .awlock_1               (1'b0),           // input
       .awvalid_1              (awvalid_1),      // input
       .awready_1              (awready_1),      // output
@@ -874,7 +782,7 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
 //TSMAC-------------------------------------------------------------------------------------------------  
     assign {phy_txd3,phy_txd2,phy_txd1,phy_txd0} = phy_txd;
     assign phy_rxd = {phy_rxd3,phy_rxd2,phy_rxd1,phy_rxd0};
-    // assign phy_rst_n = rst_key;
+    assign phy_rst_n = rst_key;
 
     assign tsmac_phy_mdi  = tsmac_phy_mdio;
     assign tsmac_phy_mdio = tsmac_phy_mdoen ? tsmac_phy_mdo : 1'bz;
@@ -973,7 +881,7 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
         .tsmac_cfpt           (16'h0000),
         .tsmac_thdf           (1'b0),
         .tsmac_tprt           (),
-        .tsmac_tpar           (),
+        .tsmac_tpar           (),  
         .tsmac_txcf           (),
         .tsmac_tcdr           (),
                               
@@ -1009,3 +917,4 @@ camera_fifo camera_fifo_inst(       // 这个是写缓存
     );
 
 endmodule
+

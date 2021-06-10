@@ -169,7 +169,7 @@
 `define CORTEXM1_APB_PERIP             1
 
 //custom-made
-`define CORTEXM1_AHB_UDP               0
+`define CORTEXM1_AHB_UDP               1
 
 // the source of sysclk,
 //`define UNCACHE
