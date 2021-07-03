@@ -570,9 +570,7 @@ int main(void)
 	if(res == FR_OK){
 		 res = f_open(&fp, "0:ABC.jpg", FA_READ);
 		res = f_read(&fp, buffer, 24, &bw);
-		DEBUG_P("\r\n f_read res = %d , read_buf = \r\n", res);
-		for(int i =0;i<24;i++)
-			DEBUG_P(" %x ", buffer[i]);
+		DEBUG_P("\r\n f_read res = %d , read_buf = %s\r\n", res, buffer);
 		res = f_close(&fp);
 	}
 	else 
